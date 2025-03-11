@@ -1,0 +1,353 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|c:\\users\\nguyen ngoc quang\\source\\repos\\quanhat\\quanhat\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\quanhat\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\quanhat\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\quanhat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\quanhat\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\quanhat\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\quanhat\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\quanhat\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\quanhat\\formmathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formmathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\quanhat\\formmathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formmathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\quanhat\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\quanhat\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\quanhat\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\quanhat\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\quanhat\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\quanhat\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\quanhat\\formmathang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formmathang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\quanhat\\formmathang.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formmathang.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\quanhat\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\quanhat\\formdatphong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formdatphong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\MainForm.cs",
+              "RelativeDocumentMoniker": "QuanHat\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\MainForm.cs",
+              "RelativeToolTip": "QuanHat\\MainForm.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T18:08:15.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "formDangNhap.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formDangNhap.cs",
+              "RelativeDocumentMoniker": "QuanHat\\formDangNhap.cs",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formDangNhap.cs",
+              "RelativeToolTip": "QuanHat\\formDangNhap.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAIA6wDsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T14:39:33.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "formDangNhap.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formDangNhap.cs",
+              "RelativeDocumentMoniker": "QuanHat\\formDangNhap.cs",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formDangNhap.cs [Design]",
+              "RelativeToolTip": "QuanHat\\formDangNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T14:30:06.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\Program.cs",
+              "RelativeDocumentMoniker": "QuanHat\\Program.cs",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\Program.cs",
+              "RelativeToolTip": "QuanHat\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwBIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T04:22:59.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\MainForm.cs",
+              "RelativeDocumentMoniker": "QuanHat\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\MainForm.cs [Design]",
+              "RelativeToolTip": "QuanHat\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T19:09:57.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "formNhanVien.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formNhanVien.cs",
+              "RelativeDocumentMoniker": "QuanHat\\formNhanVien.cs",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formNhanVien.cs",
+              "RelativeToolTip": "QuanHat\\formNhanVien.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T14:31:01.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DbHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\DbHelper.cs",
+              "RelativeDocumentMoniker": "QuanHat\\DbHelper.cs",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\DbHelper.cs",
+              "RelativeToolTip": "QuanHat\\DbHelper.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABoAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T15:54:16.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "QuanHat\\MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\MainForm.Designer.cs",
+              "RelativeToolTip": "QuanHat\\MainForm.Designer.cs",
+              "ViewState": "AgIAANkBAAAAAAAAAAAUwOoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T14:59:15.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "formMatHang.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formMatHang.cs",
+              "RelativeDocumentMoniker": "QuanHat\\formMatHang.cs",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formMatHang.cs",
+              "RelativeToolTip": "QuanHat\\formMatHang.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAFsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T16:02:30.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "formMatHang.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formMatHang.cs",
+              "RelativeDocumentMoniker": "QuanHat\\formMatHang.cs",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formMatHang.cs [Design]",
+              "RelativeToolTip": "QuanHat\\formMatHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T08:06:41.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "formPhongHat.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formPhongHat.cs",
+              "RelativeDocumentMoniker": "QuanHat\\formPhongHat.cs",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formPhongHat.cs",
+              "RelativeToolTip": "QuanHat\\formPhongHat.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAAwKMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T07:51:45.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "formPhongHat.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formPhongHat.cs",
+              "RelativeDocumentMoniker": "QuanHat\\formPhongHat.cs",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formPhongHat.cs [Design]",
+              "RelativeToolTip": "QuanHat\\formPhongHat.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T15:35:12.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "formNhanVien.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formNhanVien.cs",
+              "RelativeDocumentMoniker": "QuanHat\\formNhanVien.cs",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formNhanVien.cs [Design]",
+              "RelativeToolTip": "QuanHat\\formNhanVien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T14:55:06.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "formHoaDon.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formHoaDon.cs",
+              "RelativeDocumentMoniker": "QuanHat\\formHoaDon.cs",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formHoaDon.cs [Design]",
+              "RelativeToolTip": "QuanHat\\formHoaDon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T04:43:49.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "formHoaDon.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formHoaDon.cs",
+              "RelativeDocumentMoniker": "QuanHat\\formHoaDon.cs",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formHoaDon.cs",
+              "RelativeToolTip": "QuanHat\\formHoaDon.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAAAHcAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T04:46:15.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "formDatPhong.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formDatPhong.cs",
+              "RelativeDocumentMoniker": "QuanHat\\formDatPhong.cs",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formDatPhong.cs [Design]",
+              "RelativeToolTip": "QuanHat\\formDatPhong.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T05:00:05.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "formMatHang.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formMatHang.Designer.cs",
+              "RelativeDocumentMoniker": "QuanHat\\formMatHang.Designer.cs",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formMatHang.Designer.cs*",
+              "RelativeToolTip": "QuanHat\\formMatHang.Designer.cs*",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T16:18:42.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "formMatHang.resx",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formMatHang.resx",
+              "RelativeDocumentMoniker": "QuanHat\\formMatHang.resx",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formMatHang.resx*",
+              "RelativeToolTip": "QuanHat\\formMatHang.resx*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-03-10T14:54:50.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "formDatPhong.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formDatPhong.cs",
+              "RelativeDocumentMoniker": "QuanHat\\formDatPhong.cs",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formDatPhong.cs",
+              "RelativeToolTip": "QuanHat\\formDatPhong.cs",
+              "ViewState": "AgIAAD4AAACAMzMzM/MuwEoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T19:07:11.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "formDatPhong.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formDatPhong.Designer.cs",
+              "RelativeDocumentMoniker": "QuanHat\\formDatPhong.Designer.cs",
+              "ToolTip": "C:\\Users\\Nguyen Ngoc Quang\\source\\repos\\QuanHat\\QuanHat\\formDatPhong.Designer.cs",
+              "RelativeToolTip": "QuanHat\\formDatPhong.Designer.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAwwIYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T04:17:32.939Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
