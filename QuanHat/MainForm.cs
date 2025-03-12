@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace QuanHat
 {
     public partial class MainForm : Form
     {
-        private string userRole;
+        //private string userRole;
         DbHelper db = new DbHelper();
         private int selectedIDTK = -1;
 
@@ -17,17 +18,17 @@ namespace QuanHat
             LoadChucVu();
             LoadNhanVien();
             LoadTaiKhoan();
-            ConfigureAccess();
-            this.userRole = userRole;
+            //ConfigureAccess();
+            //this.userRole = userRole;
         }
-        private void ConfigureAccess()
-        {
-            if (userRole == "Nhân viên")
-            {
-                tabNhanSu.Visible = false;
-                tabTaiKhoan.Visible = false;
-            }
-        }
+        //private void ConfigureAccess()
+        //{
+        //    if (userRole == "Nhân viên")
+        //    {
+        //        tabNhanSu.Visible = false;
+        //        tabTaiKhoan.Visible = false;
+        //    }
+        //}
         private void LoadTaiKhoan()
         {
             string query = "SELECT * FROM TaiKhoan";
@@ -49,8 +50,8 @@ namespace QuanHat
 
             cboNhanVien.DataSource = dt;
             cboNhanVien.DisplayMember = "HoTen";
-            cboNhanVien.ValueMember = "MaNhanVien";
-            cboNhanVien.SelectedIndex = 0;
+            //cboNhanVien.ValueMember = "MaNhanVien";
+           // cboNhanVien.SelectedIndex = 0;
         }
 
         private bool IsTenDangNhapExists(string tenDangNhap)
@@ -184,10 +185,30 @@ namespace QuanHat
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide(); 
+            this.Hide();
             formDangNhap loginForm = new formDangNhap();
-            loginForm.ShowDialog(); 
-            this.Close(); 
+            loginForm.ShowDialog();
+            this.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

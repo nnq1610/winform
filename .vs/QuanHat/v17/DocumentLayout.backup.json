@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\tinhh\\source\\repos\\winform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\tinhh\\source\\repos\\winform\\quanhat\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|c:\\users\\tinhh\\source\\repos\\winform\\quanhat\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\tinhh\\source\\repos\\winform\\quanhat\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|c:\\users\\tinhh\\source\\repos\\winform\\quanhat\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\tinhh\\source\\repos\\winform\\quanhat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,12 +19,44 @@
       "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\tinhh\\source\\repos\\winform\\quanhat\\quanlykaraokedataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\quanlykaraokedataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\tinhh\\source\\repos\\winform\\quanhat\\formdatphong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formdatphong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\tinhh\\source\\repos\\winform\\quanhat\\quanlykaraokedataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
-      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\quanlykaraokedataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\tinhh\\source\\repos\\winform\\quanhat\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\tinhh\\source\\repos\\winform\\quanhat\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|c:\\users\\tinhh\\source\\repos\\winform\\quanhat\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\tinhh\\source\\repos\\winform\\quanhat\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\tinhh\\source\\repos\\winform\\quanhat\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\tinhh\\source\\repos\\winform\\quanhat\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\tinhh\\source\\repos\\winform\\quanhat\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|C:\\Users\\tinhh\\source\\repos\\winform\\quanhat\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662BCA41-8712-4D3C-912A-EBFC0B85134C}|QuanHat\\QuanHat.csproj|solutionrelative:quanhat\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tinhh\\source\\repos\\winform\\.vs\\winform\\v17\\DocumentLayout.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -46,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,42 +98,94 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "formHoaDon.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\formHoaDon.cs",
+              "RelativeDocumentMoniker": "QuanHat\\formHoaDon.cs",
+              "ToolTip": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\formHoaDon.cs [Design]*",
+              "RelativeToolTip": "QuanHat\\formHoaDon.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T15:44:27.065Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "QuanHat\\MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\MainForm.Designer.cs",
+              "RelativeToolTip": "QuanHat\\MainForm.Designer.cs",
+              "ViewState": "AgIAAE0CAAAAAAAAAAAkwFYCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T15:16:23.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\MainForm.cs",
+              "RelativeDocumentMoniker": "QuanHat\\MainForm.cs",
+              "ToolTip": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\MainForm.cs",
+              "RelativeToolTip": "QuanHat\\MainForm.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAApwNIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T14:06:11.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\MainForm.cs",
+              "RelativeDocumentMoniker": "QuanHat\\MainForm.cs",
+              "ToolTip": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\MainForm.cs [Design]",
+              "RelativeToolTip": "QuanHat\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T14:06:09.752Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "formDangNhap.cs",
+              "DocumentMoniker": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\formDangNhap.cs",
+              "RelativeDocumentMoniker": "QuanHat\\formDangNhap.cs",
+              "ToolTip": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\formDangNhap.cs",
+              "RelativeToolTip": "QuanHat\\formDangNhap.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAD4vzQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T14:05:45.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "formDangNhap.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\formDangNhap.cs",
+              "RelativeDocumentMoniker": "QuanHat\\formDangNhap.cs",
+              "ToolTip": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\formDangNhap.cs [Design]",
+              "RelativeToolTip": "QuanHat\\formDangNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T14:05:41.102Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DbHelper.cs",
-              "DocumentMoniker": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\DbHelper.cs",
-              "RelativeDocumentMoniker": "QuanHat\\DbHelper.cs",
-              "ToolTip": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\DbHelper.cs",
-              "RelativeToolTip": "QuanHat\\DbHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T08:02:31.096Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "formDatPhong.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\formDatPhong.Designer.cs",
-              "RelativeDocumentMoniker": "QuanHat\\formDatPhong.Designer.cs",
-              "ToolTip": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\formDatPhong.Designer.cs",
-              "RelativeToolTip": "QuanHat\\formDatPhong.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T06:24:36.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "formDatPhong.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\formDatPhong.cs",
               "RelativeDocumentMoniker": "QuanHat\\formDatPhong.cs",
               "ToolTip": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\formDatPhong.cs [Design]",
               "RelativeToolTip": "QuanHat\\formDatPhong.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T06:00:36.292Z"
+              "WhenOpened": "2025-03-12T06:00:36.292Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "formDatPhong.cs",
               "DocumentMoniker": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\formDatPhong.cs",
               "RelativeDocumentMoniker": "QuanHat\\formDatPhong.cs",
@@ -117,23 +193,25 @@
               "RelativeToolTip": "QuanHat\\formDatPhong.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T19:07:11.584Z"
+              "WhenOpened": "2025-03-06T19:07:11.584Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\Program.cs",
               "RelativeDocumentMoniker": "QuanHat\\Program.cs",
               "ToolTip": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\Program.cs",
               "RelativeToolTip": "QuanHat\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAQwBIAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAlwBMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T04:22:59.857Z"
+              "WhenOpened": "2025-03-07T04:22:59.857Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "formPhongHat.cs",
               "DocumentMoniker": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\formPhongHat.cs",
               "RelativeDocumentMoniker": "QuanHat\\formPhongHat.cs",
@@ -146,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "formPhongHat.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\formPhongHat.cs",
               "RelativeDocumentMoniker": "QuanHat\\formPhongHat.cs",
@@ -158,24 +236,49 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
+              "Title": "formDatPhong.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\formDatPhong.Designer.cs",
+              "RelativeDocumentMoniker": "QuanHat\\formDatPhong.Designer.cs",
+              "ToolTip": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\formDatPhong.Designer.cs",
+              "RelativeToolTip": "QuanHat\\formDatPhong.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T06:24:36.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DbHelper.cs",
+              "DocumentMoniker": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\DbHelper.cs",
+              "RelativeDocumentMoniker": "QuanHat\\DbHelper.cs",
+              "ToolTip": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\DbHelper.cs",
+              "RelativeToolTip": "QuanHat\\DbHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T08:02:31.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "QuanLyKaraokeDataSet.xsd",
               "DocumentMoniker": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\QuanLyKaraokeDataSet.xsd",
               "RelativeDocumentMoniker": "QuanHat\\QuanLyKaraokeDataSet.xsd",
               "ToolTip": "C:\\Users\\tinhh\\source\\repos\\winform\\QuanHat\\QuanLyKaraokeDataSet.xsd",
               "RelativeToolTip": "QuanHat\\QuanLyKaraokeDataSet.xsd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2025-03-12T04:20:25.624Z"
+              "WhenOpened": "2025-03-12T04:20:25.624Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "DocumentLayout.json",
               "DocumentMoniker": "C:\\Users\\tinhh\\source\\repos\\winform\\.vs\\winform\\v17\\DocumentLayout.json",
               "RelativeDocumentMoniker": ".vs\\winform\\v17\\DocumentLayout.json",
               "ToolTip": "C:\\Users\\tinhh\\source\\repos\\winform\\.vs\\winform\\v17\\DocumentLayout.json",
               "RelativeToolTip": ".vs\\winform\\v17\\DocumentLayout.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-03-11T17:55:23.857Z"
             }
