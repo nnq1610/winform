@@ -65,10 +65,12 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.LightBlue;
             this.splitContainer1.Panel1.Controls.Add(this.label1);
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.BackColor = System.Drawing.Color.LightCyan;
             this.splitContainer1.Panel2.Controls.Add(this.cboTrangThai);
             this.splitContainer1.Panel2.Controls.Add(this.cboLoaiPhong);
             this.splitContainer1.Panel2.Controls.Add(this.btnSua);
@@ -86,63 +88,68 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(281, 19);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(298, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 13);
+            this.label1.Size = new System.Drawing.Size(184, 42);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Quan ly phong hat";
+            this.label1.Text = "QUẢN LÝ PHÒNG HÁT\r\n\r\n";
             // 
             // cboTrangThai
             // 
             this.cboTrangThai.FormattingEnabled = true;
-            this.cboTrangThai.Location = new System.Drawing.Point(422, 72);
+            this.cboTrangThai.Location = new System.Drawing.Point(559, 67);
             this.cboTrangThai.Name = "cboTrangThai";
-            this.cboTrangThai.Size = new System.Drawing.Size(121, 21);
+            this.cboTrangThai.Size = new System.Drawing.Size(173, 21);
             this.cboTrangThai.TabIndex = 12;
             // 
             // cboLoaiPhong
             // 
             this.cboLoaiPhong.FormattingEnabled = true;
-            this.cboLoaiPhong.Location = new System.Drawing.Point(422, 20);
+            this.cboLoaiPhong.Location = new System.Drawing.Point(559, 26);
             this.cboLoaiPhong.Name = "cboLoaiPhong";
-            this.cboLoaiPhong.Size = new System.Drawing.Size(121, 21);
+            this.cboLoaiPhong.Size = new System.Drawing.Size(173, 21);
             this.cboLoaiPhong.TabIndex = 11;
             // 
             // btnSua
             // 
+            this.btnSua.BackColor = System.Drawing.Color.Linen;
             this.btnSua.Location = new System.Drawing.Point(440, 107);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 23);
             this.btnSua.TabIndex = 10;
             this.btnSua.Text = "Sua";
-            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.UseVisualStyleBackColor = false;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
+            this.btnXoa.BackColor = System.Drawing.Color.Linen;
             this.btnXoa.Location = new System.Drawing.Point(542, 107);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 23);
             this.btnXoa.TabIndex = 9;
             this.btnXoa.Text = "Xoa";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click_1);
             // 
             // btnThem
             // 
+            this.btnThem.BackColor = System.Drawing.Color.Linen;
             this.btnThem.Location = new System.Drawing.Point(344, 107);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 23);
             this.btnThem.TabIndex = 8;
             this.btnThem.Text = "Them";
-            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(318, 75);
+            this.label6.Location = new System.Drawing.Point(471, 75);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(59, 13);
             this.label6.TabIndex = 6;
@@ -151,7 +158,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(316, 29);
+            this.label5.Location = new System.Drawing.Point(469, 29);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 13);
             this.label5.TabIndex = 4;
@@ -161,7 +168,7 @@
             // 
             this.txtGiaPhong.Location = new System.Drawing.Point(153, 72);
             this.txtGiaPhong.Name = "txtGiaPhong";
-            this.txtGiaPhong.Size = new System.Drawing.Size(100, 20);
+            this.txtGiaPhong.Size = new System.Drawing.Size(167, 20);
             this.txtGiaPhong.TabIndex = 3;
             // 
             // label4
@@ -177,7 +184,7 @@
             // 
             this.txtTenPhong.Location = new System.Drawing.Point(153, 26);
             this.txtTenPhong.Name = "txtTenPhong";
-            this.txtTenPhong.Size = new System.Drawing.Size(100, 20);
+            this.txtTenPhong.Size = new System.Drawing.Size(167, 20);
             this.txtTenPhong.TabIndex = 1;
             // 
             // label2
@@ -209,15 +216,17 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(299, 22);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(10, 29);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 13);
+            this.label3.Size = new System.Drawing.Size(147, 21);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Danh sach phong";
+            this.label3.Text = "Danh sách phòng:";
             // 
             // dgvPhongHat
             // 
             this.dgvPhongHat.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvPhongHat.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dgvPhongHat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPhongHat.Location = new System.Drawing.Point(10, 3);
             this.dgvPhongHat.Name = "dgvPhongHat";
@@ -235,6 +244,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.splitContainer2);

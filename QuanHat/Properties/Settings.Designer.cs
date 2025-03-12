@@ -33,5 +33,16 @@ namespace QuanHat.Properties {
                 return ((string)(this["QuanLyKaraokeConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=Immagorst\\MSSQLSERVER01;Initial Catalog=QuanLyKaraoke;Integrated Secu" +
+            "rity=True;TrustServerCertificate=True")]
+        public string QuanLyKaraokeConnectionString1 {
+            get {
+                return ((string)(this["QuanLyKaraokeConnectionString1"]));
+            }
+        }
     }
 }

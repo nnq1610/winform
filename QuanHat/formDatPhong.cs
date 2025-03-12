@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
 namespace QuanHat
@@ -53,7 +55,7 @@ namespace QuanHat
             };
 
             DataTable dt = db.ExecuteQuery(query, parameters);
-          
+
             decimal GiaGio = Convert.ToDecimal(dt.Rows[0]["GiaGio"]);
             TimeSpan duration = dtpKetThuc.Value - dtpBatDau.Value;
             decimal totalAmount = GiaGio * (decimal)duration.TotalHours;
@@ -154,6 +156,48 @@ namespace QuanHat
             }
         }
 
-      
+        private void txtHoTenKhach_Enter(object sender, EventArgs e)
+        {
+            if (txtHoTenKhach.Text == "Nhap ten cua ban.....")
+            {
+                txtHoTenKhach.Text = "";
+                txtHoTenKhach.BackColor = Color.LightYellow;
+                txtHoTenKhach.ForeColor = Color.Black;
+            }
+
+        }
+
+        private void txtHoTenKhach_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtHoTenKhach.Text))
+            {
+                txtHoTenKhach.Text = "Nhap ten cua ban.....";
+                txtHoTenKhach.BackColor = Color.White;
+                txtHoTenKhach.ForeColor = Color.Gray;
+            }
+
+        }
+
+        private void txtSoDienThoai_Enter(object sender, EventArgs e)
+        {
+            if (txtSoDienThoai.Text == "Nhap so dien thoai cua ban.....")
+            {
+                txtSoDienThoai.Text = "";
+                txtSoDienThoai.BackColor = Color.LightYellow;
+                txtSoDienThoai.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtSoDienThoai_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtSoDienThoai.Text))
+            {
+                txtSoDienThoai.Text = "Nhap so dien thoai cua ban.....";
+                txtSoDienThoai.BackColor = Color.White;
+                txtSoDienThoai.ForeColor = Color.Gray;
+            }
+        }
+
+        
     }
 }
