@@ -28,7 +28,7 @@ namespace QuanHat
             DataTable dt = db.ExecuteQuery(query);
             cboNhanVien.DataSource = dt;
             cboNhanVien.DisplayMember = "HoTen";
-            cboNhanVien.ValueMember = "MaNhanVien";
+            //cboNhanVien.ValueMember = "MaNhanVien";
         }
         private void LoadMatHang()
         {
@@ -49,7 +49,7 @@ namespace QuanHat
 
             cboPhong.DataSource = dt;
             cboPhong.DisplayMember = "MaDatPhong";
-            cboPhong.ValueMember = "TongTien";
+            //cboPhong.ValueMember = "TongTien";
         }
 
         private void dgvMatHang_CellValueChanged(object sender, DataGridViewCellEventArgs e)
@@ -141,6 +141,5 @@ namespace QuanHat
                     MessageBox.Show("Thêm  thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-
     }
 }

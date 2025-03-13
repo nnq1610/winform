@@ -17,7 +17,7 @@ namespace QuanHat
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new formHoaDon());
+            Application.Run(new formMatHang());
 
 
         }

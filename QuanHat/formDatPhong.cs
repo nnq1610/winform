@@ -198,6 +198,9 @@ namespace QuanHat
             }
         }
 
-        
+        private void FormDatPhong_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

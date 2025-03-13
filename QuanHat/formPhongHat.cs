@@ -171,5 +171,15 @@ namespace QuanHat
                 cboLoaiPhong.SelectedItem = row.Cells["TrangThai"].Value.ToString();
             }
         }
+
+        private void dgvPhongHat_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
