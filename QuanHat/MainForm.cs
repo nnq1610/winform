@@ -8,7 +8,7 @@ namespace QuanHat
 {
     public partial class MainForm : Form
     {
-        //private string userRole;
+        private string userRole;
         DbHelper db = new DbHelper();
         private int selectedIDTK = -1;
 
@@ -18,17 +18,17 @@ namespace QuanHat
             LoadChucVu();
             LoadNhanVien();
             LoadTaiKhoan();
-            //ConfigureAccess();
-            //this.userRole = userRole;
+            ConfigureAccess();
+            this.userRole = userRole;
         }
-        //private void ConfigureAccess()
-        //{
-        //    if (userRole == "Nhân viên")
-        //    {
-        //        tabNhanSu.Visible = false;
-        //        tabTaiKhoan.Visible = false;
-        //    }
-        //}
+        private void ConfigureAccess()
+        {
+            if (userRole == "Nhân viên")
+            {
+                tabNhanSu.Visible = false;
+                tabTaiKhoan.Visible = false;
+            }
+        }
         private void LoadTaiKhoan()
         {
             string query = "SELECT * FROM TaiKhoan";
@@ -50,8 +50,8 @@ namespace QuanHat
 
             cboNhanVien.DataSource = dt;
             cboNhanVien.DisplayMember = "HoTen";
-            //cboNhanVien.ValueMember = "MaNhanVien";
-           // cboNhanVien.SelectedIndex = 0;
+            cboNhanVien.ValueMember = "MaNhanVien";
+            cboNhanVien.SelectedIndex = 0;
         }
 
         private bool IsTenDangNhapExists(string tenDangNhap)
@@ -65,7 +65,7 @@ namespace QuanHat
             return count > 0;
         }
 
-        private void button11_Click(object sender, EventArgs e) // Add account
+        private void button11_Click(object sender, EventArgs e) 
         {
             if (string.IsNullOrEmpty(txtTenDangNhap.Text) || string.IsNullOrEmpty(txtMatKhau.Text))
             {
@@ -109,15 +109,16 @@ namespace QuanHat
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dgvTaiKhoan.Rows[e.RowIndex];
-                selectedIDTK = Convert.ToInt32(row.Cells["IDTaiKhoan"].Value);
                 txtTenDangNhap.Text = row.Cells["TenDangNhap"].Value.ToString();
                 txtMatKhau.Text = row.Cells["MatKhau"].Value.ToString();
                 cboChucVu.SelectedItem = row.Cells["VaiTro"].Value.ToString();
                 cboNhanVien.SelectedValue = row.Cells["MaNhanVien"].Value.ToString();
+                selectedIDTK = Convert.ToInt32(row.Cells["IDTaiKhoan"].Value);
+
             }
         }
 
-        private void button10_Click(object sender, EventArgs e) // Update account
+        private void button10_Click(object sender, EventArgs e) 
         {
             if (selectedIDTK == -1)
             {
@@ -191,24 +192,42 @@ namespace QuanHat
             this.Show();
         }
 
+     
+
+        private void btnPhongHat_Click(object sender, EventArgs e)
+        {
+            formPhongHat ph = new formPhongHat();
+            ph.Show();
+        }
+
+        private void btnMatHang_Click(object sender, EventArgs e)
+        {
+            formMatHang mh = new formMatHang();
+            mh.Show();
+        }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            FormKhachHang kh = new FormKhachHang();
+            kh.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormDatPhong dp = new FormDatPhong();
+            dp.Show();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            formHoaDon hd = new formHoaDon();
+            hd.Show();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void tabPage3_Click(object sender, EventArgs e)
-        {
-
+            formNhanVien nv = new formNhanVien();
+            nv.Show();
         }
     }
 }

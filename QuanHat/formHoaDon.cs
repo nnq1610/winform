@@ -28,7 +28,7 @@ namespace QuanHat
             DataTable dt = db.ExecuteQuery(query);
             cboNhanVien.DataSource = dt;
             cboNhanVien.DisplayMember = "HoTen";
-            //cboNhanVien.ValueMember = "MaNhanVien";
+            cboNhanVien.ValueMember = "MaNhanVien";
         }
         private void LoadMatHang()
         {
@@ -49,7 +49,7 @@ namespace QuanHat
 
             cboPhong.DataSource = dt;
             cboPhong.DisplayMember = "MaDatPhong";
-            //cboPhong.ValueMember = "TongTien";
+            cboPhong.ValueMember = "TongTien";
         }
 
         private void dgvMatHang_CellValueChanged(object sender, DataGridViewCellEventArgs e)
@@ -62,7 +62,7 @@ namespace QuanHat
 
         private void dgvMatHang_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.ColumnIndex == 3) // Quantity column
+            if (e.RowIndex >= 0 && e.ColumnIndex == 3) 
             {
                 CalculateRowTotal(e.RowIndex);
             }
