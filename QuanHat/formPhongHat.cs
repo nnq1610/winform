@@ -136,21 +136,30 @@ namespace QuanHat
                 MessageBox.Show("No row selected!", "Debug");
                 return;
             }
+
             int phongId = Convert.ToInt32(dgvPhongHat.CurrentRow.Cells["MaPhong"].Value);
 
-            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa phòng này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa phòng này? Điều này sẽ xóa tất cả dữ liệu liên quan trong Đặt Phòng!",
+                                                  "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.No)
             {
                 return;
             }
 
-            string query = "DELETE FROM PhongHat WHERE MaPhong = @PhongID";
-            Dictionary<string, object> parameters = new Dictionary<string, object>
+            string deleteDatPhongQuery = "DELETE FROM DatPhong WHERE MaPhong = @PhongID";
+            Dictionary<string, object> datPhongParams = new Dictionary<string, object>
+    {
+        { "@PhongID", phongId }
+    };
+            db.ExecuteNonQuery(deleteDatPhongQuery, datPhongParams);
+
+            string deletePhongQuery = "DELETE FROM PhongHat WHERE MaPhong = @PhongID";
+            Dictionary<string, object> phongParams = new Dictionary<string, object>
     {
         { "@PhongID", phongId }
     };
 
-            if (db.ExecuteNonQuery(query, parameters) > 0)
+            if (db.ExecuteNonQuery(deletePhongQuery, phongParams) > 0)
             {
                 MessageBox.Show("Xóa phòng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadPhong();
@@ -160,6 +169,7 @@ namespace QuanHat
                 MessageBox.Show("Xóa phòng thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void dgv_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -180,6 +190,11 @@ namespace QuanHat
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnQuayLai_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

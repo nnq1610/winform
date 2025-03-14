@@ -7,8 +7,7 @@ namespace QuanHat
 {
     class DbHelper
     {
-        private string connectionString = @"Server=Immagorst\MSSQLSERVER01;Database=QuanLyKaraoke;Trusted_Connection=True;";
-
+        private string connectionString = @"Server=quangnn-laptop\sqlexpress;Database=QuanLyKaraoke;Trusted_Connection=True;";
         // ExecuteQuery with optional parameters (returns a DataTable)
         public DataTable ExecuteQuery(string query, Dictionary<string, object> parameters = null)
         {
@@ -27,7 +26,7 @@ namespace QuanHat
                     using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
                     {
                         DataTable dt = new DataTable();
-                        //adapter.Fill(dt);
+                        adapter.Fill(dt);
                         return dt;
                     }
                 }

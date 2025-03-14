@@ -17,22 +17,28 @@ namespace QuanHat
             InitializeComponent();
             LoadRooms();
             LoadBookings();
+            LoadGioiTinh();
+        }
+        private void LoadGioiTinh()
+        {
+            cboGioiTinh.Items.Clear();
+            cboGioiTinh.Items.Add("Nam");
+            cboGioiTinh.Items.Add("Nữ");
+            cboGioiTinh.Items.Add("Khác");
+
+            cboGioiTinh.SelectedIndex = 0;
         }
 
-        // Load danh sách phòng
         private void LoadRooms()
         {
             string query = "SELECT MaPhong, GiaGio, TrangThai FROM PhongHat";
             DataTable dt = db.ExecuteQuery(query);
 
-            // Clear previous data to prevent duplication
             cboPhong.Items.Clear();
-            cboTrangThai.Items.Clear();
 
             foreach (DataRow row in dt.Rows)
             {
                 cboPhong.Items.Add(row["MaPhong"].ToString());
-                cboTrangThai.Items.Add(row["TrangThai"].ToString());
             }
         }
 
@@ -72,8 +78,8 @@ namespace QuanHat
             decimal totalAmount = CalculateTotalAmount();
             txtTongTien.Text = totalAmount.ToString();
 
-            string query = "INSERT INTO DatPhong (MaPhong, HoTenKhach, SoDienThoai, ThoiGianBatDau, ThoiGianKetThuc, TrangThai, TongTien) " +
-                           "VALUES (@MaPhong, @HoTenKhach, @SoDienThoai, @ThoiGianBatDau, @ThoiGianKetThuc, @TrangThai, @TongTien)";
+            string query = "INSERT INTO DatPhong (MaPhong, HoTenKhach, SoDienThoai, ThoiGianBatDau, ThoiGianKetThuc,  TongTien) " +
+                           "VALUES (@MaPhong, @HoTenKhach, @SoDienThoai, @ThoiGianBatDau, @ThoiGianKetThuc, @TongTien)";
             Dictionary<string, object> parameters = new Dictionary<string, object>
             {
                 { "@MaPhong", cboPhong.SelectedItem.ToString() },
@@ -81,18 +87,26 @@ namespace QuanHat
                 { "@SoDienThoai", txtSoDienThoai.Text },
                 { "@ThoiGianBatDau", dtpBatDau.Value },
                 { "@ThoiGianKetThuc", dtpKetThuc.Value },
-                { "@TrangThai", cboTrangThai.SelectedItem.ToString() },
-                {"TongTien", totalAmount }
+                {"@TongTien", totalAmount }
             };
-
-            if (db.ExecuteNonQuery(query, parameters) > 0)
+            
+            
+            string query1 = "INSERT INTO KhachHang ( HoTenKhach, SoDienThoai, GioiTinh) " +
+                          "VALUES ( @HoTenKhach, @SoDienThoai, @GioiTinh)";
+            Dictionary<string, object> parameters1 = new Dictionary<string, object>
+            {
+                { "@HoTenKhach", txtHoTenKhach.Text },
+                { "@SoDienThoai", txtSoDienThoai.Text },
+                { "@GioiTinh", cboGioiTinh.SelectedItem.ToString() }
+                
+            };
+            if (db.ExecuteNonQuery(query, parameters) > 0 && db.ExecuteNonQuery(query1,  parameters1) >0)
             {
                 MessageBox.Show("Thêm đặt phòng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadBookings();
             }
         }
 
-        // Cập nhật đặt phòng
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             if (dgvDatPhong.SelectedRows.Count == 0)
@@ -102,7 +116,7 @@ namespace QuanHat
             }
 
             string query = "UPDATE DatPhong SET HoTenKhach = @HoTenKhach, SoDienThoai = @SoDienThoai, " +
-                           "ThoiGianBatDau = @ThoiGianBatDau, ThoiGianKetThuc = @ThoiGianKetThuc, TrangThai = @TrangThai " +
+                           "ThoiGianBatDau = @ThoiGianBatDau, ThoiGianKetThuc = @ThoiGianKetThuc " +
                            "WHERE MaPhong = @MaPhong";
 
             Dictionary<string, object> parameters = new Dictionary<string, object>
@@ -113,7 +127,6 @@ namespace QuanHat
                 { "@SoDienThoai", txtSoDienThoai.Text },
                 { "@ThoiGianBatDau", dtpBatDau.Value },
                 { "@ThoiGianKetThuc", dtpKetThuc.Value },
-                { "@TrangThai", cboTrangThai.SelectedItem.ToString() }
             };
 
             if (db.ExecuteNonQuery(query, parameters) > 0)
@@ -198,9 +211,32 @@ namespace QuanHat
             }
         }
 
-        private void FormDatPhong_Load(object sender, EventArgs e)
+        private void dgv_Cell_Click(object sender, DataGridViewCellEventArgs e)
         {
 
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvDatPhong.Rows[e.RowIndex];
+                txtHoTenKhach.Text = row.Cells["HoTenKhach"].Value.ToString();
+                txtSoDienThoai.Text = row.Cells["SoDienThoai"].Value.ToString();
+                txtTongTien.Text = row.Cells["TongTien"].Value.ToString();
+
+                string maPhong = row.Cells["MaPhong"].Value?.ToString();
+                if (cboPhong.Items.Contains(maPhong))
+                {
+                    cboPhong.SelectedItem = maPhong;
+                }
+
+
+            }
+
+        
+            }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            decimal tongTien = CalculateTotalAmount();
+            txtTongTien.Text = tongTien.ToString();
         }
     }
 }
