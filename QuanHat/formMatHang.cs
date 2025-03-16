@@ -19,10 +19,17 @@ namespace QuanHat
         private void LoadMatHang()
         {
             string query = "SELECT * FROM MatHang";
-            dgvMatHang.DataSource = db.ExecuteQuery(query);
+            DataTable dt = db.ExecuteQuery(query);
+            dgvMatHang.ForeColor = System.Drawing.Color.Black;
+            dgvMatHang.DataSource = dt;
+            dgvMatHang.AutoGenerateColumns = true;
+            dgvMatHang.ClearSelection();
+            dgvMatHang.Refresh();
         }
-       
-         private void btnThem_Click(object sender, EventArgs e)
+
+
+
+        private void btnThem_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtTenMatHang.Text) || string.IsNullOrWhiteSpace(txtDonGia.Text) || string.IsNullOrWhiteSpace(txtSoLuongTon.Text))
             {
@@ -141,20 +148,7 @@ namespace QuanHat
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void txtDonGia_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+   
 
         private void btnQuayLai_Click(object sender, EventArgs e)
         {

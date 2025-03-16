@@ -31,23 +31,23 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formNhanVien));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtTongNhanVien = new System.Windows.Forms.TextBox();
+            this.txtSoDienThoai = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtHoTen = new System.Windows.Forms.TextBox();
             this.txtLuongCoBan = new System.Windows.Forms.TextBox();
             this.cmbChucVu = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.txtHoTen = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtSoDienThoai = new System.Windows.Forms.TextBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtTongNhanVien = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -99,6 +99,41 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(684, 134);
             this.tableLayoutPanel1.TabIndex = 13;
             // 
+            // txtTongNhanVien
+            // 
+            this.txtTongNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtTongNhanVien.Location = new System.Drawing.Point(110, 91);
+            this.txtTongNhanVien.Name = "txtTongNhanVien";
+            this.txtTongNhanVien.Size = new System.Drawing.Size(228, 23);
+            this.txtTongNhanVien.TabIndex = 17;
+            // 
+            // txtSoDienThoai
+            // 
+            this.txtSoDienThoai.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSoDienThoai.Location = new System.Drawing.Point(110, 47);
+            this.txtSoDienThoai.Name = "txtSoDienThoai";
+            this.txtSoDienThoai.Size = new System.Drawing.Size(228, 23);
+            this.txtSoDienThoai.TabIndex = 15;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(3, 44);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(83, 15);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Số Điện Thoại";
+            // 
+            // txtHoTen
+            // 
+            this.txtHoTen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtHoTen.Location = new System.Drawing.Point(110, 3);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Size = new System.Drawing.Size(228, 23);
+            this.txtHoTen.TabIndex = 13;
+            // 
             // txtLuongCoBan
             // 
             this.txtLuongCoBan.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -127,6 +162,17 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Chức Vụ";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(344, 44);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(85, 15);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Lương Cơ Bản";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -138,16 +184,16 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Họ Và Tên";
             // 
-            // label6
+            // label1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(344, 44);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 15);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Lương Cơ Bản";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(3, 88);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 30);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Tổng số nhân viên";
             // 
             // tableLayoutPanel2
             // 
@@ -234,33 +280,6 @@
             this.txtTimKiem.Size = new System.Drawing.Size(190, 20);
             this.txtTimKiem.TabIndex = 4;
             // 
-            // txtHoTen
-            // 
-            this.txtHoTen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtHoTen.Location = new System.Drawing.Point(110, 3);
-            this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(228, 23);
-            this.txtHoTen.TabIndex = 13;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(3, 44);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 15);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Số Điện Thoại";
-            // 
-            // txtSoDienThoai
-            // 
-            this.txtSoDienThoai.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtSoDienThoai.Location = new System.Drawing.Point(110, 47);
-            this.txtSoDienThoai.Name = "txtSoDienThoai";
-            this.txtSoDienThoai.Size = new System.Drawing.Size(228, 23);
-            this.txtSoDienThoai.TabIndex = 15;
-            // 
             // btnTimKiem
             // 
             this.btnTimKiem.Location = new System.Drawing.Point(445, 192);
@@ -270,25 +289,6 @@
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(3, 88);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 30);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Tổng số nhân viên";
-            // 
-            // txtTongNhanVien
-            // 
-            this.txtTongNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtTongNhanVien.Location = new System.Drawing.Point(110, 91);
-            this.txtTongNhanVien.Name = "txtTongNhanVien";
-            this.txtTongNhanVien.Size = new System.Drawing.Size(228, 23);
-            this.txtTongNhanVien.TabIndex = 17;
             // 
             // formNhanVien
             // 
@@ -304,6 +304,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "formNhanVien";
             this.Text = "formNhanVien";
+            this.Load += new System.EventHandler(this.formNhanVien_Load);
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

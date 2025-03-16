@@ -8,7 +8,6 @@ namespace QuanHat
     class DbHelper
     {
         private string connectionString = @"Server=quangnn-laptop\sqlexpress;Database=QuanLyKaraoke;Trusted_Connection=True;";
-        // ExecuteQuery with optional parameters (returns a DataTable)
         public DataTable ExecuteQuery(string query, Dictionary<string, object> parameters = null)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))

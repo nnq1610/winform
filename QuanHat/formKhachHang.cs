@@ -28,6 +28,7 @@ namespace QuanHat
         private void LoadCustomers()
         {
             string query = "SELECT * FROM KhachHang";
+            dgvKhachHang.ForeColor = System.Drawing.Color.Black;
             dgvKhachHang.DataSource = db.ExecuteQuery(query);
         }
 
@@ -139,19 +140,43 @@ namespace QuanHat
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+     
+   
+        private void dgv_Cell_Click(object sender, DataGridViewCellEventArgs e)
         {
 
+           if(e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvKhachHang.Rows[e.RowIndex];
+                txtHoTen.Text = row.Cells["HoTen"].Value.ToString();
+                txtSoDienThoai.Text = row.Cells["SoDienThoai"].Value.ToString();
+
+                cboGioiTinh.SelectedItem = row.Cells["GioiTinh"].Value?.ToString();
+                
+            }
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
+            if (dgvKhachHang.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn khách hàng để xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-        private void cboGioiTinh_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            string maKhachHang = dgvKhachHang.SelectedRows[0].Cells["MaKhachHang"].Value.ToString();
 
+            string query = "DELETE FROM KhachHang WHERE MaKhachHang = @MaKhachHang";
+            Dictionary<string, object> parameters = new Dictionary<string, object>
+            {
+                { "@MaKhachHang", maKhachHang }
+            };
+
+            if (db.ExecuteNonQuery(query, parameters) > 0)
+            {
+                MessageBox.Show("Xóa khách hàng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadCustomers();
+            }
         }
     }
 }

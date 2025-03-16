@@ -34,12 +34,13 @@ namespace QuanHat
         private void LoadNhanVien()
         {
             string query = "SELECT * FROM NhanVien";
+            dgvNhanVien.ForeColor = System.Drawing.Color.Black;
             dgvNhanVien.DataSource = db.ExecuteQuery(query);
         }
 
         private void LoadChucVuComboBox()
         {
-            List<string> chucVuList = new List<string> { "Quản lý", "Nhân viên", "Thu ngân" };
+            List<string> chucVuList = new List<string> { "Quản lý", "Nhân viên phục vụ", "Thu ngân" };
 
             cmbChucVu.DataSource = chucVuList;  
             cmbChucVu.SelectedIndex = 0;  
@@ -231,7 +232,6 @@ namespace QuanHat
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dgvNhanVien.Rows[e.RowIndex];
-
                 selectedNhanVienID = Convert.ToInt32(row.Cells["MaNhanVien"].Value);
                 txtHoTen.Text = row.Cells["HoTen"].Value.ToString();
                 txtSoDienThoai.Text = row.Cells["SoDienThoai"].Value.ToString();
@@ -245,5 +245,9 @@ namespace QuanHat
             }
         }
 
+        private void formNhanVien_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

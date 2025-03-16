@@ -91,7 +91,7 @@ namespace QuanHat
             };
             
             
-            string query1 = "INSERT INTO KhachHang ( HoTenKhach, SoDienThoai, GioiTinh) " +
+            string query1 = "INSERT INTO KhachHang ( HoTen, SoDienThoai, GioiTinh) " +
                           "VALUES ( @HoTenKhach, @SoDienThoai, @GioiTinh)";
             Dictionary<string, object> parameters1 = new Dictionary<string, object>
             {
@@ -134,40 +134,9 @@ namespace QuanHat
                 MessageBox.Show("Cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadBookings();
             }
+        
         }
 
-        // Xóa đặt phòng
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            if (dgvDatPhong.SelectedRows.Count == 0)
-            {
-                MessageBox.Show("Vui lòng chọn phòng cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            string maPhong = dgvDatPhong.SelectedRows[0].Cells["MaPhong"].Value?.ToString();
-
-            if (string.IsNullOrEmpty(maPhong))
-            {
-                MessageBox.Show("Không thể xác định mã phòng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            string query = "DELETE FROM DatPhong WHERE MaPhong = @MaPhong";
-            Dictionary<string, object> parameters = new Dictionary<string, object>
-            {
-                { "@MaPhong", cboPhong.SelectedItem.ToString() }
-            };
-
-            if (db.ExecuteNonQuery(query, parameters) > 0)
-            {
-                MessageBox.Show("Xóa đặt phòng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadBookings();
-            }
-            else
-            {
-                MessageBox.Show("Không thể xóa đặt phòng. Vui lòng thử lại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
         private void txtHoTenKhach_Enter(object sender, EventArgs e)
         {
@@ -237,6 +206,38 @@ namespace QuanHat
         {
             decimal tongTien = CalculateTotalAmount();
             txtTongTien.Text = tongTien.ToString();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (dgvDatPhong.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn phòng cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            string maPhong = dgvDatPhong.SelectedRows[0].Cells["MaPhong"].Value?.ToString();
+
+            if (string.IsNullOrEmpty(maPhong))
+            {
+                MessageBox.Show("Không thể xác định mã phòng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string query = "DELETE FROM DatPhong WHERE MaPhong = @MaPhong";
+            Dictionary<string, object> parameters = new Dictionary<string, object>
+            {
+                { "@MaPhong", cboPhong.SelectedItem.ToString() }
+            };
+
+            if (db.ExecuteNonQuery(query, parameters) > 0)
+            {
+                MessageBox.Show("Xóa đặt phòng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadBookings();
+            }
+            else
+            {
+                MessageBox.Show("Không thể xóa đặt phòng. Vui lòng thử lại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

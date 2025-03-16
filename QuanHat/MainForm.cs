@@ -15,30 +15,32 @@ namespace QuanHat
         public MainForm(string userRole)
         {
             InitializeComponent();
+            this.userRole = userRole;
             LoadChucVu();
             LoadNhanVien();
             LoadTaiKhoan();
             ConfigureAccess();
-            this.userRole = userRole;
         }
         private void ConfigureAccess()
         {
-            if (userRole == "Nhân viên")
+            MessageBox.Show(userRole);
+            if(userRole == "Nhân viên" || userRole == "Thu ngân")
             {
-                tabNhanSu.Visible = false;
-                tabTaiKhoan.Visible = false;
+                menu.TabPages.Remove(tabNhanSu);
+                menu.TabPages.Remove(tabTaiKhoan);
             }
         }
         private void LoadTaiKhoan()
         {
             string query = "SELECT * FROM TaiKhoan";
             DataTable dt = db.ExecuteQuery(query);
+            dgvTaiKhoan.ForeColor = System.Drawing.Color.Black;
             dgvTaiKhoan.DataSource = dt;
         }
 
         private void LoadChucVu()
         {
-            List<string> chucVu = new List<string> { "Quản lý", "Nhân viên" };
+            List<string> chucVu = new List<string> { "Quản lý", "Nhân viên", "Thu ngân" };
             cboChucVu.DataSource = chucVu;
             cboChucVu.SelectedIndex = 0;
         }
@@ -228,6 +230,21 @@ namespace QuanHat
         {
             formNhanVien nv = new formNhanVien();
             nv.Show();
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            formThongKe tk = new formThongKe();
+            tk.Show();
+        }
+
+        private void btnCLear_Click(object sender, EventArgs e)
+        {
+            txtTenDangNhap.Clear();
+            txtMatKhau.Clear();
+            cboChucVu.SelectedIndex = -1;
+            cboNhanVien.SelectedIndex = -1;
+            selectedIDTK = -1;
         }
     }
 }

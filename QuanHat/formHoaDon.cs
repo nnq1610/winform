@@ -16,6 +16,14 @@ namespace QuanHat
             LoadPhong();
             LoadNhanVien();
             LoadPhuongThucThanhToan();
+            LoadHoaDon();
+        }
+        private void LoadHoaDon()
+        {
+            string query = "Select * from HoaDon";
+            dgvHoaDon.ForeColor = System.Drawing.Color.Black;
+            dgvHoaDon.DataSource = db.ExecuteQuery(query);
+
         }
         private void LoadPhuongThucThanhToan()
         {
@@ -36,6 +44,7 @@ namespace QuanHat
             DataTable dt = db.ExecuteQuery(query);
 
             dgvMatHang.Rows.Clear();
+            dgvMatHang.ForeColor = System.Drawing.Color.Black;
             foreach (DataRow row in dt.Rows)
             {
                 dgvMatHang.Rows.Add(false, row["TenMatHang"], row["DonGia"], 0, 0);
