@@ -154,5 +154,10 @@ namespace QuanHat
         {
             this.Close();
         }
+
+        private void formMatHang_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

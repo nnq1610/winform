@@ -198,10 +198,7 @@ namespace QuanHat
 
 
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void dgvNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

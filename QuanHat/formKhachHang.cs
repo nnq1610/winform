@@ -57,28 +57,6 @@ namespace QuanHat
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (dgvKhachHang.SelectedRows.Count == 0)
-            {
-                MessageBox.Show("Vui lòng chọn khách hàng để sửa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            string maKhachHang = dgvKhachHang.SelectedRows[0].Cells["MaKhachHang"].Value.ToString();
-
-            string query = "UPDATE KhachHang SET HoTen = @HoTen, SoDienThoai = @SoDienThoai, GioiTinh = @GioiTinh WHERE MaKhachHang = @MaKhachHang";
-            Dictionary<string, object> parameters = new Dictionary<string, object>
-            {
-                { "@MaKhachHang", maKhachHang },
-                { "@HoTen", txtHoTen.Text },
-                { "@SoDienThoai", txtSoDienThoai.Text },
-                { "@GioiTinh", cboGioiTinh.SelectedItem.ToString() }
-            };
-
-            if (db.ExecuteNonQuery(query, parameters) > 0)
-            {
-                MessageBox.Show("Cập nhật khách hàng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadCustomers();
-            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -177,6 +155,38 @@ namespace QuanHat
                 MessageBox.Show("Xóa khách hàng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadCustomers();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            if (dgvKhachHang.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn khách hàng để sửa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string maKhachHang = dgvKhachHang.SelectedRows[0].Cells["MaKhachHang"].Value.ToString();
+
+            string query = "UPDATE KhachHang SET HoTen = @HoTen, SoDienThoai = @SoDienThoai, GioiTinh = @GioiTinh WHERE MaKhachHang = @MaKhachHang";
+            Dictionary<string, object> parameters = new Dictionary<string, object>
+            {
+                { "@MaKhachHang", maKhachHang },
+                { "@HoTen", txtHoTen.Text },
+                { "@SoDienThoai", txtSoDienThoai.Text },
+                { "@GioiTinh", cboGioiTinh.SelectedItem.ToString() }
+            };
+
+            if (db.ExecuteNonQuery(query, parameters) > 0)
+            {
+                MessageBox.Show("Cập nhật khách hàng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadCustomers();
+            }
+        }
+
+        private void FormKhachHang_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

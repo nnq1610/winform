@@ -179,6 +179,7 @@
             this.button2.TabIndex = 17;
             this.button2.Text = "Sửa";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnAdd
             // 
@@ -370,6 +371,7 @@
             this.Controls.Add(this.tableLayoutPanel2);
             this.Name = "FormKhachHang";
             this.Text = "formKhachHang";
+            this.Load += new System.EventHandler(this.FormKhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

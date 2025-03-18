@@ -92,7 +92,9 @@
     <Reference Include="Microsoft.IdentityModel.Tokens, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.IdentityModel.Tokens.7.5.0\lib\net472\Microsoft.IdentityModel.Tokens.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
@@ -228,6 +230,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyKaraokeDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyKaraokeDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKaraokeDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Themecolor.cs" />
     <EmbeddedResource Include="formDangNhap.resx">
       <DependentUpon>formDangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -298,6 +306,17 @@
     </None>
     <None Include="QuanLyKaraokeDataSet1.xss">
       <DependentUpon>QuanLyKaraokeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKaraokeDataSet2.xsc">
+      <DependentUpon>QuanLyKaraokeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKaraokeDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKaraokeDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKaraokeDataSet2.xss">
+      <DependentUpon>QuanLyKaraokeDataSet2.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

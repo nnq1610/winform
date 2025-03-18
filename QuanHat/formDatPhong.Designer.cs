@@ -242,14 +242,14 @@
             this.tableLayoutPanel1.Controls.Add(this.label4, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label5, 2, 1);
             this.tableLayoutPanel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(15, 93);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(15, 90);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(973, 139);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(973, 142);
             this.tableLayoutPanel1.TabIndex = 20;
             // 
             // label9
@@ -257,7 +257,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(3, 102);
+            this.label9.Location = new System.Drawing.Point(3, 105);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(52, 13);
             this.label9.TabIndex = 16;
@@ -267,7 +267,7 @@
             // 
             this.cboGioiTinh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cboGioiTinh.FormattingEnabled = true;
-            this.cboGioiTinh.Location = new System.Drawing.Point(124, 105);
+            this.cboGioiTinh.Location = new System.Drawing.Point(124, 108);
             this.cboGioiTinh.Name = "cboGioiTinh";
             this.cboGioiTinh.Size = new System.Drawing.Size(358, 21);
             this.cboGioiTinh.TabIndex = 17;
@@ -288,7 +288,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(3, 34);
+            this.label1.Location = new System.Drawing.Point(3, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 13);
             this.label1.TabIndex = 4;
@@ -299,7 +299,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(3, 68);
+            this.label3.Location = new System.Drawing.Point(3, 70);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 13);
             this.label3.TabIndex = 6;
@@ -318,7 +318,7 @@
             // txtTongTien
             // 
             this.txtTongTien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtTongTien.Location = new System.Drawing.Point(609, 71);
+            this.txtTongTien.Location = new System.Drawing.Point(609, 73);
             this.txtTongTien.Name = "txtTongTien";
             this.txtTongTien.Size = new System.Drawing.Size(361, 22);
             this.txtTongTien.TabIndex = 14;
@@ -326,7 +326,7 @@
             // txtSoDienThoai
             // 
             this.txtSoDienThoai.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtSoDienThoai.Location = new System.Drawing.Point(124, 37);
+            this.txtSoDienThoai.Location = new System.Drawing.Point(124, 38);
             this.txtSoDienThoai.Name = "txtSoDienThoai";
             this.txtSoDienThoai.Size = new System.Drawing.Size(358, 22);
             this.txtSoDienThoai.TabIndex = 5;
@@ -337,7 +337,7 @@
             // 
             this.dtpKetThuc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtpKetThuc.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpKetThuc.Location = new System.Drawing.Point(609, 37);
+            this.dtpKetThuc.Location = new System.Drawing.Point(609, 38);
             this.dtpKetThuc.Name = "dtpKetThuc";
             this.dtpKetThuc.Size = new System.Drawing.Size(361, 22);
             this.dtpKetThuc.TabIndex = 13;
@@ -346,7 +346,7 @@
             // 
             this.cboPhong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cboPhong.FormattingEnabled = true;
-            this.cboPhong.Location = new System.Drawing.Point(124, 71);
+            this.cboPhong.Location = new System.Drawing.Point(124, 73);
             this.cboPhong.Name = "cboPhong";
             this.cboPhong.Size = new System.Drawing.Size(358, 21);
             this.cboPhong.TabIndex = 7;
@@ -364,7 +364,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(488, 68);
+            this.label6.Location = new System.Drawing.Point(488, 70);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(59, 13);
             this.label6.TabIndex = 10;
@@ -386,7 +386,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(488, 34);
+            this.label5.Location = new System.Drawing.Point(488, 35);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 9;
@@ -454,6 +454,7 @@
             this.Name = "FormDatPhong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formDatPhong";
+            this.Load += new System.EventHandler(this.FormDatPhong_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();

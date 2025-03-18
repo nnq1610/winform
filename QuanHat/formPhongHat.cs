@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace QuanHat
@@ -14,6 +15,9 @@ namespace QuanHat
             InitializeComponent();
             LoadComboBoxData();
             LoadPhong();
+            dgvPhongHat.Rows[0].DefaultCellStyle.BackColor = Color.Yellow;
+            dgvPhongHat.Rows[0].DefaultCellStyle.ForeColor = Color.Red;
+
         }
 
         private void LoadComboBoxData()

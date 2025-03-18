@@ -75,37 +75,63 @@ namespace QuanHat
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
             decimal totalAmount = CalculateTotalAmount();
             txtTongTien.Text = totalAmount.ToString();
 
-            string query = "INSERT INTO DatPhong (MaPhong, HoTenKhach, SoDienThoai, ThoiGianBatDau, ThoiGianKetThuc,  TongTien) " +
-                           "VALUES (@MaPhong, @HoTenKhach, @SoDienThoai, @ThoiGianBatDau, @ThoiGianKetThuc, @TongTien)";
-            Dictionary<string, object> parameters = new Dictionary<string, object>
+            // Kiểm tra số điện thoại đã tồn tại chưa
+            string checkPhoneQuery = "SELECT COUNT(*) FROM KhachHang WHERE SoDienThoai = @SoDienThoai";
+            Dictionary<string, object> checkPhoneParams = new Dictionary<string, object>
+    {
+        { "@SoDienThoai", txtSoDienThoai.Text }
+    };
+
+            int phoneExists = Convert.ToInt32(db.ExecuteScalar(checkPhoneQuery, checkPhoneParams));
+
+            if (phoneExists == 0) // Nếu chưa có số điện thoại này trong CSDL, thêm khách hàng mới
             {
-                { "@MaPhong", cboPhong.SelectedItem.ToString() },
-                { "@HoTenKhach", txtHoTenKhach.Text },
-                { "@SoDienThoai", txtSoDienThoai.Text },
-                { "@ThoiGianBatDau", dtpBatDau.Value },
-                { "@ThoiGianKetThuc", dtpKetThuc.Value },
-                {"@TongTien", totalAmount }
-            };
-            
-            
-            string query1 = "INSERT INTO KhachHang ( HoTen, SoDienThoai, GioiTinh) " +
-                          "VALUES ( @HoTenKhach, @SoDienThoai, @GioiTinh)";
-            Dictionary<string, object> parameters1 = new Dictionary<string, object>
+                string insertCustomerQuery = "INSERT INTO KhachHang (HoTen, SoDienThoai, GioiTinh) " +
+                                             "VALUES (@HoTenKhach, @SoDienThoai, @GioiTinh)";
+                Dictionary<string, object> insertCustomerParams = new Dictionary<string, object>
+        {
+            { "@HoTenKhach", txtHoTenKhach.Text },
+            { "@SoDienThoai", txtSoDienThoai.Text },
+            { "@GioiTinh", cboGioiTinh.SelectedItem.ToString() }
+        };
+
+                db.ExecuteNonQuery(insertCustomerQuery, insertCustomerParams);
+            }
+
+            // Thêm đặt phòng
+            string insertBookingQuery = "INSERT INTO DatPhong (MaPhong, HoTenKhach, SoDienThoai, ThoiGianBatDau, ThoiGianKetThuc, TongTien) " +
+                                        "VALUES (@MaPhong, @HoTenKhach, @SoDienThoai, @ThoiGianBatDau, @ThoiGianKetThuc, @TongTien)";
+
+            Dictionary<string, object> insertBookingParams = new Dictionary<string, object>
+    {
+        { "@MaPhong", cboPhong.SelectedItem.ToString() },
+        { "@HoTenKhach", txtHoTenKhach.Text },
+        { "@SoDienThoai", txtSoDienThoai.Text },
+        { "@ThoiGianBatDau", dtpBatDau.Value },
+        { "@ThoiGianKetThuc", dtpKetThuc.Value },
+        { "@TongTien", totalAmount }
+    };
+
+            if (db.ExecuteNonQuery(insertBookingQuery, insertBookingParams) > 0)
             {
-                { "@HoTenKhach", txtHoTenKhach.Text },
-                { "@SoDienThoai", txtSoDienThoai.Text },
-                { "@GioiTinh", cboGioiTinh.SelectedItem.ToString() }
-                
-            };
-            if (db.ExecuteNonQuery(query, parameters) > 0 && db.ExecuteNonQuery(query1,  parameters1) >0)
-            {
+                // Cập nhật trạng thái phòng thành "Đang sử dụng"
+                string updateRoomStatusQuery = "UPDATE PhongHat SET TrangThai = 'Đang sử dụng' WHERE MaPhong = @MaPhong";
+                Dictionary<string, object> updateRoomParams = new Dictionary<string, object>
+        {
+            { "@MaPhong", cboPhong.SelectedItem.ToString() }
+        };
+                db.ExecuteNonQuery(updateRoomStatusQuery, updateRoomParams);
+
                 MessageBox.Show("Thêm đặt phòng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadBookings();
+                LoadRooms();
             }
         }
+
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -238,6 +264,14 @@ namespace QuanHat
             {
                 MessageBox.Show("Không thể xóa đặt phòng. Vui lòng thử lại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            
+            
+        }
+        
+
+private void FormDatPhong_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

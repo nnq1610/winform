@@ -132,8 +132,11 @@
   <data name="txtTenMatHang.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+  <data name="txtDonGia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 89</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -153,8 +156,8 @@
   <data name="&gt;&gt;label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;btnSua.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>367, 47</value>
@@ -192,6 +195,9 @@
   <data name="&gt;&gt;splitContainer1.Panel2.Parent" xml:space="preserve">
     <value>splitContainer1</value>
   </data>
+  <data name="&gt;&gt;txtDonGia.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
   <data name="btnSua.Location" type="System.Drawing.Point, System.Drawing">
     <value>125, 3</value>
   </data>
@@ -222,9 +228,6 @@
   <data name="&gt;&gt;splitContainer1.Panel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnXoa.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Đơn Giá</value>
   </data>
@@ -249,9 +252,6 @@
   <data name="txtDonGia.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="btnThem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
   <data name="&gt;&gt;btnQuayLai.Name" xml:space="preserve">
     <value>btnQuayLai</value>
   </data>
@@ -270,8 +270,8 @@
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>169, 21</value>
   </data>
-  <data name="txtSoLuongTon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>436, 3</value>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -315,9 +315,6 @@
   <data name="dgvMatHang.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="&gt;&gt;btnSua.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="tableLayoutPanel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
   </data>
@@ -326,9 +323,6 @@
   </data>
   <data name="btnThem.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 41</value>
-  </data>
-  <data name="btnQuayLai.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
   </data>
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -348,20 +342,17 @@
   <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
     <value>714, 450</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
-    <value>splitContainer1.Panel1</value>
-  </data>
   <data name="txtSoLuongTon.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>formMatHang</value>
   </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;txtDonGia.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dgvMatHang.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;txtTenMatHang.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -372,11 +363,17 @@
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label4" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtTenMatHang" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtDonGia" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="txtSoLuongTon" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,14.1844,Percent,35.74468,Percent,11.63121,Percent,38.43972" /&gt;&lt;Rows Styles="Percent,50.37594,Percent,49.62406" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <data name="btnXoa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 3</value>
+  </data>
   <data name="&gt;&gt;btnSua.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
   </data>
   <data name="btnSua.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -390,7 +387,7 @@
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnThem" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnXoa" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnSua" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33333,Percent,33.33333,Percent,33.33333" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnXoa.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="&gt;&gt;txtTenMatHang.ZOrder" xml:space="preserve">
@@ -398,6 +395,9 @@
   </data>
   <data name="splitContainer1.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
+  </data>
+  <data name="txtSoLuongTon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>436, 3</value>
   </data>
   <data name="btnThem.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -432,8 +432,8 @@
   <data name="dgvMatHang.Size" type="System.Drawing.Size, System.Drawing">
     <value>667, 158</value>
   </data>
-  <data name="btnXoa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 3</value>
+  <data name="&gt;&gt;dgvMatHang.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -486,23 +486,23 @@
   <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Tên Mặt Hàng</value>
+  <data name="btnThem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
-  <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
   </data>
   <data name="&gt;&gt;btnXoa.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
-  </data>
-  <data name="txtDonGia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 89</value>
   </data>
   <data name="btnQuayLai.Text" xml:space="preserve">
     <value>Back</value>
   </data>
   <data name="&gt;&gt;txtDonGia.Name" xml:space="preserve">
     <value>txtDonGia</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Tên Mặt Hàng</value>
   </data>
   <data name="txtTenMatHang.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -12743,8 +12743,8 @@
   <data name="btnXoa.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="&gt;&gt;txtDonGia.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+  <data name="btnQuayLai.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
   <data name="&gt;&gt;btnQuayLai.Parent" xml:space="preserve">
     <value>splitContainer1.Panel1</value>

@@ -11,51 +11,60 @@ namespace QuanHat
         private string userRole;
         DbHelper db = new DbHelper();
         private int selectedIDTK = -1;
+        private Button currrentButton;
+        private Random random;
+        private int tempIndex;
 
         public MainForm(string userRole)
         {
             InitializeComponent();
             this.userRole = userRole;
-            LoadChucVu();
-            LoadNhanVien();
-            LoadTaiKhoan();
-            ConfigureAccess();
+           
+            random = new Random();
         }
-        private void ConfigureAccess()
+
+        private Color SelectThemeColor()
         {
-            MessageBox.Show(userRole);
-            if(userRole == "Nhân viên" || userRole == "Thu ngân")
+            int index = random.Next(Themecolor.colorList.Count);
+            while (tempIndex == index)
             {
-                menu.TabPages.Remove(tabNhanSu);
-                menu.TabPages.Remove(tabTaiKhoan);
+                index = random.Next(Themecolor.colorList.Count);
+            }
+            tempIndex = index;
+            string color = Themecolor.colorList[index];
+            return ColorTranslator.FromHtml(color);
+        }
+        private void ActivateButton(object btnSender)
+        {
+            if (btnSender != null)
+            {
+                if (currrentButton != (Button)btnSender)
+                {
+                    DisableButton();
+                    Color color = SelectThemeColor();
+                    currrentButton = (Button)btnSender;
+                    currrentButton.BackColor = color;
+                    currrentButton.ForeColor = Color.White;
+                    currrentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    panelTitleBar.BackColor = color;
+                    //panelLogo.BackColor = Themecolor.ChangeColorBrightness(color, -0.3);
+                }
             }
         }
-        private void LoadTaiKhoan()
+        private void DisableButton()
         {
-            string query = "SELECT * FROM TaiKhoan";
-            DataTable dt = db.ExecuteQuery(query);
-            dgvTaiKhoan.ForeColor = System.Drawing.Color.Black;
-            dgvTaiKhoan.DataSource = dt;
+            foreach (Control previousBtn in panelMenuu.Controls)
+            {
+                if (previousBtn.GetType() == typeof(Button))
+                {
+                    previousBtn.BackColor = Color.FromArgb(51, 51, 76);
+                    previousBtn.ForeColor = Color.Gainsboro;
+                    previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                }
+            }
         }
-
-        private void LoadChucVu()
-        {
-            List<string> chucVu = new List<string> { "Quản lý", "Nhân viên", "Thu ngân" };
-            cboChucVu.DataSource = chucVu;
-            cboChucVu.SelectedIndex = 0;
-        }
-
-        private void LoadNhanVien()
-        {
-            string query = "SELECT MaNhanVien, HoTen FROM NhanVien";
-            DataTable dt = db.ExecuteQuery(query);
-
-            cboNhanVien.DataSource = dt;
-            cboNhanVien.DisplayMember = "HoTen";
-            cboNhanVien.ValueMember = "MaNhanVien";
-            cboNhanVien.SelectedIndex = 0;
-        }
-
+        
+       
         private bool IsTenDangNhapExists(string tenDangNhap)
         {
             string query = "SELECT COUNT(*) FROM TaiKhoan WHERE TenDangNhap = @TenDangNhap";
@@ -67,98 +76,11 @@ namespace QuanHat
             return count > 0;
         }
 
-        private void button11_Click(object sender, EventArgs e) 
-        {
-            if (string.IsNullOrEmpty(txtTenDangNhap.Text) || string.IsNullOrEmpty(txtMatKhau.Text))
-            {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+       
 
-            string tenDangNhap = txtTenDangNhap.Text.Trim();
-            string matKhau = txtMatKhau.Text.Trim();
-            string vaiTro = cboChucVu.SelectedItem.ToString();
-            string maNhanVien = cboNhanVien.SelectedValue.ToString();
+       
 
-            if (IsTenDangNhapExists(tenDangNhap))
-            {
-                MessageBox.Show("Tên đăng nhập đã tồn tại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            string query = "INSERT INTO TaiKhoan (TenDangNhap, MatKhau, VaiTro, MaNhanVien) VALUES (@TenDangNhap, @MatKhau, @VaiTro, @MaNhanVien)";
-            Dictionary<string, object> parameters = new Dictionary<string, object>
-            {
-                { "@TenDangNhap", tenDangNhap },
-                { "@MatKhau", matKhau },
-                { "@VaiTro", vaiTro },
-                { "@MaNhanVien", maNhanVien }
-            };
-
-            if (db.ExecuteNonQuery(query, parameters) > 0)
-            {
-                MessageBox.Show("Thêm tài khoản thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadTaiKhoan();
-            }
-            else
-            {
-                MessageBox.Show("Thêm tài khoản thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void dgvTaiKhoan_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = dgvTaiKhoan.Rows[e.RowIndex];
-                txtTenDangNhap.Text = row.Cells["TenDangNhap"].Value.ToString();
-                txtMatKhau.Text = row.Cells["MatKhau"].Value.ToString();
-                cboChucVu.SelectedItem = row.Cells["VaiTro"].Value.ToString();
-                cboNhanVien.SelectedValue = row.Cells["MaNhanVien"].Value.ToString();
-                selectedIDTK = Convert.ToInt32(row.Cells["IDTaiKhoan"].Value);
-
-            }
-        }
-
-        private void button10_Click(object sender, EventArgs e) 
-        {
-            if (selectedIDTK == -1)
-            {
-                MessageBox.Show("Vui lòng chọn tài khoản cần sửa!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            if (string.IsNullOrEmpty(txtTenDangNhap.Text) || string.IsNullOrEmpty(txtMatKhau.Text))
-            {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            string tenDangNhap = txtTenDangNhap.Text.Trim();
-            string matKhau = txtMatKhau.Text.Trim();
-            string vaiTro = cboChucVu.SelectedItem.ToString();
-            string maNhanVien = cboNhanVien.SelectedValue.ToString();
-
-            string query = "UPDATE TaiKhoan SET TenDangNhap = @TenDangNhap, MatKhau = @MatKhau, VaiTro = @VaiTro, MaNhanVien = @MaNhanVien WHERE IDTaiKhoan = @ID";
-            Dictionary<string, object> parameters = new Dictionary<string, object>
-            {
-                { "@TenDangNhap", tenDangNhap },
-                { "@MatKhau", matKhau },
-                { "@VaiTro", vaiTro },
-                { "@MaNhanVien", maNhanVien },
-                { "@ID", selectedIDTK }
-            };
-
-            if (db.ExecuteNonQuery(query, parameters) > 0)
-            {
-                MessageBox.Show("Cập nhật tài khoản thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadTaiKhoan();
-            }
-            else
-            {
-                MessageBox.Show("Cập nhật thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+       
 
         private void button9_Click(object sender, EventArgs e) // Delete account
         {
@@ -178,7 +100,7 @@ namespace QuanHat
             if (db.ExecuteNonQuery(query, parameters) > 0)
             {
                 MessageBox.Show("Xóa tài khoản thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadTaiKhoan();
+               
             }
             else
             {
@@ -200,51 +122,53 @@ namespace QuanHat
         {
             formPhongHat ph = new formPhongHat();
             ph.Show();
+            ActivateButton(sender);
         }
 
         private void btnMatHang_Click(object sender, EventArgs e)
         {
             formMatHang mh = new formMatHang();
             mh.Show();
+            ActivateButton(sender);
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)
         {
             FormKhachHang kh = new FormKhachHang();
             kh.Show();
+            ActivateButton(sender);
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnDP_Click(object sender, EventArgs e)
         {
             FormDatPhong dp = new FormDatPhong();
             dp.Show();
+            ActivateButton(sender);
         }
 
-        private void button13_Click(object sender, EventArgs e)
+        private void btnHoaDon_Click(object sender, EventArgs e)
         {
             formHoaDon hd = new formHoaDon();
             hd.Show();
+            ActivateButton(sender);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnNhanSu_Click(object sender, EventArgs e)
         {
             formNhanVien nv = new formNhanVien();
             nv.Show();
+            ActivateButton(sender);
         }
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
             formThongKe tk = new formThongKe();
             tk.Show();
+            ActivateButton(sender);
         }
 
-        private void btnCLear_Click(object sender, EventArgs e)
-        {
-            txtTenDangNhap.Clear();
-            txtMatKhau.Clear();
-            cboChucVu.SelectedIndex = -1;
-            cboNhanVien.SelectedIndex = -1;
-            selectedIDTK = -1;
-        }
+        
+
+        
     }
 }
