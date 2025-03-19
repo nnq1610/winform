@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.btnThongKe = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.dtpTo = new System.Windows.Forms.DateTimePicker();
+            this.dtpFrom = new System.Windows.Forms.DateTimePicker();
+            this.txtDoanhThu = new System.Windows.Forms.TextBox();
             this.txtMatHangNhieuNhat = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.dgvDoanhThu = new System.Windows.Forms.DataGridView();
             this.chartDoanhThu = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.txtDoanhThu = new System.Windows.Forms.TextBox();
-            this.dtpFrom = new System.Windows.Forms.DateTimePicker();
-            this.dtpTo = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -111,6 +111,30 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(167, 226);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // dtpTo
+            // 
+            this.dtpTo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtpTo.Location = new System.Drawing.Point(3, 84);
+            this.dtpTo.Name = "dtpTo";
+            this.dtpTo.Size = new System.Drawing.Size(161, 20);
+            this.dtpTo.TabIndex = 8;
+            // 
+            // dtpFrom
+            // 
+            this.dtpFrom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtpFrom.Location = new System.Drawing.Point(3, 27);
+            this.dtpFrom.Name = "dtpFrom";
+            this.dtpFrom.Size = new System.Drawing.Size(161, 20);
+            this.dtpFrom.TabIndex = 1;
+            // 
+            // txtDoanhThu
+            // 
+            this.txtDoanhThu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtDoanhThu.Location = new System.Drawing.Point(3, 121);
+            this.txtDoanhThu.Name = "txtDoanhThu";
+            this.txtDoanhThu.Size = new System.Drawing.Size(161, 20);
+            this.txtDoanhThu.TabIndex = 7;
+            // 
             // txtMatHangNhieuNhat
             // 
             this.txtMatHangNhieuNhat.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -168,44 +192,20 @@
             // 
             // chartDoanhThu
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartDoanhThu.ChartAreas.Add(chartArea2);
+            chartArea1.Name = "ChartArea1";
+            this.chartDoanhThu.ChartAreas.Add(chartArea1);
             this.chartDoanhThu.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Name = "Legend1";
-            this.chartDoanhThu.Legends.Add(legend2);
+            legend1.Name = "Legend1";
+            this.chartDoanhThu.Legends.Add(legend1);
             this.chartDoanhThu.Location = new System.Drawing.Point(0, 0);
             this.chartDoanhThu.Name = "chartDoanhThu";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartDoanhThu.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartDoanhThu.Series.Add(series1);
             this.chartDoanhThu.Size = new System.Drawing.Size(423, 450);
             this.chartDoanhThu.TabIndex = 0;
             this.chartDoanhThu.Text = "chart1";
-            // 
-            // txtDoanhThu
-            // 
-            this.txtDoanhThu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDoanhThu.Location = new System.Drawing.Point(3, 121);
-            this.txtDoanhThu.Name = "txtDoanhThu";
-            this.txtDoanhThu.Size = new System.Drawing.Size(161, 20);
-            this.txtDoanhThu.TabIndex = 7;
-            // 
-            // dtpFrom
-            // 
-            this.dtpFrom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtpFrom.Location = new System.Drawing.Point(3, 27);
-            this.dtpFrom.Name = "dtpFrom";
-            this.dtpFrom.Size = new System.Drawing.Size(161, 20);
-            this.dtpFrom.TabIndex = 1;
-            // 
-            // dtpTo
-            // 
-            this.dtpTo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtpTo.Location = new System.Drawing.Point(3, 84);
-            this.dtpTo.Name = "dtpTo";
-            this.dtpTo.Size = new System.Drawing.Size(161, 20);
-            this.dtpTo.TabIndex = 8;
             // 
             // formThongKe
             // 
@@ -216,6 +216,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "formThongKe";
             this.Text = "formThongKe";
+            this.Load += new System.EventHandler(this.formThongKe_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();

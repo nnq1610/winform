@@ -29,10 +29,17 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.btnTinhTien = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.dtpKetThuc = new System.Windows.Forms.DateTimePicker();
+            this.dtpBatDau = new System.Windows.Forms.DateTimePicker();
+            this.cboGioiTinh = new System.Windows.Forms.ComboBox();
+            this.cboPhong = new System.Windows.Forms.ComboBox();
+            this.txtTongTien = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.txtSoDienThoai = new System.Windows.Forms.TextBox();
             this.txtHoTenKhach = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,15 +47,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dgvDatPhong = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtTongTien = new System.Windows.Forms.TextBox();
-            this.btnTinhTien = new System.Windows.Forms.Button();
-            this.cboPhong = new System.Windows.Forms.ComboBox();
-            this.cboGioiTinh = new System.Windows.Forms.ComboBox();
-            this.dtpBatDau = new System.Windows.Forms.DateTimePicker();
-            this.dtpKetThuc = new System.Windows.Forms.DateTimePicker();
+            this.dgvDatPhong = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -77,6 +77,20 @@
             this.splitContainer1.Size = new System.Drawing.Size(800, 450);
             this.splitContainer1.SplitterDistance = 240;
             this.splitContainer1.TabIndex = 1;
+            // 
+            // btnTinhTien
+            // 
+            this.btnTinhTien.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnTinhTien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnTinhTien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnTinhTien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTinhTien.Location = new System.Drawing.Point(6, 304);
+            this.btnTinhTien.Name = "btnTinhTien";
+            this.btnTinhTien.Size = new System.Drawing.Size(75, 37);
+            this.btnTinhTien.TabIndex = 6;
+            this.btnTinhTien.Text = "Tính Tiền";
+            this.btnTinhTien.UseVisualStyleBackColor = true;
+            this.btnTinhTien.Click += new System.EventHandler(this.btnTinhTien_Click);
             // 
             // btnSua
             // 
@@ -159,6 +173,58 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(240, 298);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // dtpKetThuc
+            // 
+            this.dtpKetThuc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtpKetThuc.Location = new System.Drawing.Point(3, 234);
+            this.dtpKetThuc.Name = "dtpKetThuc";
+            this.dtpKetThuc.Size = new System.Drawing.Size(234, 20);
+            this.dtpKetThuc.TabIndex = 15;
+            // 
+            // dtpBatDau
+            // 
+            this.dtpBatDau.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtpBatDau.Location = new System.Drawing.Point(3, 192);
+            this.dtpBatDau.Name = "dtpBatDau";
+            this.dtpBatDau.Size = new System.Drawing.Size(234, 20);
+            this.dtpBatDau.TabIndex = 1;
+            // 
+            // cboGioiTinh
+            // 
+            this.cboGioiTinh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cboGioiTinh.FormattingEnabled = true;
+            this.cboGioiTinh.Location = new System.Drawing.Point(3, 150);
+            this.cboGioiTinh.Name = "cboGioiTinh";
+            this.cboGioiTinh.Size = new System.Drawing.Size(234, 21);
+            this.cboGioiTinh.TabIndex = 14;
+            // 
+            // cboPhong
+            // 
+            this.cboPhong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cboPhong.FormattingEnabled = true;
+            this.cboPhong.Location = new System.Drawing.Point(3, 108);
+            this.cboPhong.Name = "cboPhong";
+            this.cboPhong.Size = new System.Drawing.Size(234, 21);
+            this.cboPhong.TabIndex = 1;
+            // 
+            // txtTongTien
+            // 
+            this.txtTongTien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtTongTien.Location = new System.Drawing.Point(3, 276);
+            this.txtTongTien.Name = "txtTongTien";
+            this.txtTongTien.Size = new System.Drawing.Size(234, 20);
+            this.txtTongTien.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 210);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(62, 17);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Kết Thúc";
+            // 
             // txtSoDienThoai
             // 
             this.txtSoDienThoai.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -225,6 +291,16 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Số Điện Thoại";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(3, 252);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(71, 17);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Tổng Tiền";
+            // 
             // dgvDatPhong
             // 
             this.dgvDatPhong.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -236,82 +312,6 @@
             this.dgvDatPhong.TabIndex = 0;
             this.dgvDatPhong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatPhong_CellClick);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 210);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 17);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Kết Thúc";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 252);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 17);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Tổng Tiền";
-            // 
-            // txtTongTien
-            // 
-            this.txtTongTien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtTongTien.Location = new System.Drawing.Point(3, 276);
-            this.txtTongTien.Name = "txtTongTien";
-            this.txtTongTien.Size = new System.Drawing.Size(234, 20);
-            this.txtTongTien.TabIndex = 13;
-            // 
-            // btnTinhTien
-            // 
-            this.btnTinhTien.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTinhTien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnTinhTien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnTinhTien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTinhTien.Location = new System.Drawing.Point(6, 304);
-            this.btnTinhTien.Name = "btnTinhTien";
-            this.btnTinhTien.Size = new System.Drawing.Size(75, 37);
-            this.btnTinhTien.TabIndex = 6;
-            this.btnTinhTien.Text = "Tính Tiền";
-            this.btnTinhTien.UseVisualStyleBackColor = true;
-            this.btnTinhTien.Click += new System.EventHandler(this.btnTinhTien_Click);
-            // 
-            // cboPhong
-            // 
-            this.cboPhong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cboPhong.FormattingEnabled = true;
-            this.cboPhong.Location = new System.Drawing.Point(3, 108);
-            this.cboPhong.Name = "cboPhong";
-            this.cboPhong.Size = new System.Drawing.Size(234, 21);
-            this.cboPhong.TabIndex = 1;
-            // 
-            // cboGioiTinh
-            // 
-            this.cboGioiTinh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cboGioiTinh.FormattingEnabled = true;
-            this.cboGioiTinh.Location = new System.Drawing.Point(3, 150);
-            this.cboGioiTinh.Name = "cboGioiTinh";
-            this.cboGioiTinh.Size = new System.Drawing.Size(234, 21);
-            this.cboGioiTinh.TabIndex = 14;
-            // 
-            // dtpBatDau
-            // 
-            this.dtpBatDau.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtpBatDau.Location = new System.Drawing.Point(3, 192);
-            this.dtpBatDau.Name = "dtpBatDau";
-            this.dtpBatDau.Size = new System.Drawing.Size(234, 20);
-            this.dtpBatDau.TabIndex = 1;
-            // 
-            // dtpKetThuc
-            // 
-            this.dtpKetThuc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtpKetThuc.Location = new System.Drawing.Point(3, 234);
-            this.dtpKetThuc.Name = "dtpKetThuc";
-            this.dtpKetThuc.Size = new System.Drawing.Size(234, 20);
-            this.dtpKetThuc.TabIndex = 15;
-            // 
             // formDatPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -321,6 +321,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "formDatPhong";
             this.Text = "formDatPhong";
+            this.Load += new System.EventHandler(this.formDatPhong_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();

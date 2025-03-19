@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Karaokelamlai.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Karaokelamlai
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new formDangNhap());
         }
     }
 }

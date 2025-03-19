@@ -30,8 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnHoaDonNhap = new System.Windows.Forms.Button();
             this.btnPhongHat = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDangXuat = new System.Windows.Forms.Button();
             this.btnTaiKhoan = new System.Windows.Forms.Button();
             this.btnThongKe = new System.Windows.Forms.Button();
             this.btnNhanSu = new System.Windows.Forms.Button();
@@ -44,7 +45,7 @@
             this.panelTitle = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDestopPane = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCLoseChilddForm = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitle.SuspendLayout();
@@ -53,9 +54,9 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelMenu.Controls.Add(this.button2);
+            this.panelMenu.Controls.Add(this.btnHoaDonNhap);
             this.panelMenu.Controls.Add(this.btnPhongHat);
-            this.panelMenu.Controls.Add(this.button1);
+            this.panelMenu.Controls.Add(this.btnDangXuat);
             this.panelMenu.Controls.Add(this.btnTaiKhoan);
             this.panelMenu.Controls.Add(this.btnThongKe);
             this.panelMenu.Controls.Add(this.btnNhanSu);
@@ -69,6 +70,27 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(200, 681);
             this.panelMenu.TabIndex = 1;
+            // 
+            // btnHoaDonNhap
+            // 
+            this.btnHoaDonNhap.BackColor = System.Drawing.Color.Transparent;
+            this.btnHoaDonNhap.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHoaDonNhap.FlatAppearance.BorderSize = 0;
+            this.btnHoaDonNhap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnHoaDonNhap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnHoaDonNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHoaDonNhap.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnHoaDonNhap.Image = ((System.Drawing.Image)(resources.GetObject("btnHoaDonNhap.Image")));
+            this.btnHoaDonNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHoaDonNhap.Location = new System.Drawing.Point(0, 560);
+            this.btnHoaDonNhap.Name = "btnHoaDonNhap";
+            this.btnHoaDonNhap.Size = new System.Drawing.Size(200, 60);
+            this.btnHoaDonNhap.TabIndex = 37;
+            this.btnHoaDonNhap.Text = "Hóa Đơn Nhập";
+            this.btnHoaDonNhap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHoaDonNhap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHoaDonNhap.UseVisualStyleBackColor = false;
+            this.btnHoaDonNhap.Click += new System.EventHandler(this.btnHoaDonNhap_Click);
             // 
             // btnPhongHat
             // 
@@ -91,25 +113,26 @@
             this.btnPhongHat.UseVisualStyleBackColor = false;
             this.btnPhongHat.Click += new System.EventHandler(this.btnPhongHat_Click);
             // 
-            // button1
+            // btnDangXuat
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 621);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 60);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "Đăng Xuất";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnDangXuat.BackColor = System.Drawing.Color.Transparent;
+            this.btnDangXuat.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnDangXuat.FlatAppearance.BorderSize = 0;
+            this.btnDangXuat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnDangXuat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnDangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangXuat.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnDangXuat.Image = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.Image")));
+            this.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDangXuat.Location = new System.Drawing.Point(0, 621);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(200, 60);
+            this.btnDangXuat.TabIndex = 35;
+            this.btnDangXuat.Text = "Đăng Xuất";
+            this.btnDangXuat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDangXuat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDangXuat.UseVisualStyleBackColor = false;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
             // btnTaiKhoan
             // 
@@ -282,6 +305,7 @@
             // panelTitle
             // 
             this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.panelTitle.Controls.Add(this.btnCLoseChilddForm);
             this.panelTitle.Controls.Add(this.lblTitle);
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitle.Location = new System.Drawing.Point(200, 0);
@@ -309,25 +333,18 @@
             this.panelDestopPane.Size = new System.Drawing.Size(821, 601);
             this.panelDestopPane.TabIndex = 3;
             // 
-            // button2
+            // btnCLoseChilddForm
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 560);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 60);
-            this.button2.TabIndex = 37;
-            this.button2.Text = "Hóa Đơn Nhập";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnCLoseChilddForm.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnCLoseChilddForm.FlatAppearance.BorderSize = 0;
+            this.btnCLoseChilddForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCLoseChilddForm.Image = ((System.Drawing.Image)(resources.GetObject("btnCLoseChilddForm.Image")));
+            this.btnCLoseChilddForm.Location = new System.Drawing.Point(0, 0);
+            this.btnCLoseChilddForm.Name = "btnCLoseChilddForm";
+            this.btnCLoseChilddForm.Size = new System.Drawing.Size(75, 80);
+            this.btnCLoseChilddForm.TabIndex = 1;
+            this.btnCLoseChilddForm.UseVisualStyleBackColor = true;
+            this.btnCLoseChilddForm.Click += new System.EventHandler(this.btnCLoseChilddForm_Click);
             // 
             // MainForm
             // 
@@ -351,7 +368,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panelMenu;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDangXuat;
         private System.Windows.Forms.Button btnTaiKhoan;
         private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.Button btnNhanSu;
@@ -365,7 +382,8 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button btnPhongHat;
         private System.Windows.Forms.Panel panelDestopPane;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnHoaDonNhap;
+        private System.Windows.Forms.Button btnCLoseChilddForm;
     }
 }
 

@@ -162,6 +162,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DbHelper.cs" />
+    <Compile Include="Forms\formDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formDangKy.Designer.cs">
+      <DependentUpon>formDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\formDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formDangNhap.Designer.cs">
+      <DependentUpon>formDangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\formDatPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +185,12 @@
     </Compile>
     <Compile Include="Forms\formHoaDon.Designer.cs">
       <DependentUpon>formHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\formHoaDonNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formHoaDonNhap.Designer.cs">
+      <DependentUpon>formHoaDonNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\formKhachHang.cs">
       <SubType>Form</SubType>
@@ -198,6 +216,12 @@
     <Compile Include="Forms\formPhongHat.Designer.cs">
       <DependentUpon>formPhongHat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\formTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formTaiKhoan.Designer.cs">
+      <DependentUpon>formTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\formThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,11 +242,20 @@
       <DependentUpon>QuanLyKaraokeDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Themecolor.cs" />
+    <EmbeddedResource Include="Forms\formDangKy.resx">
+      <DependentUpon>formDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\formDangNhap.resx">
+      <DependentUpon>formDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\formDatPhong.resx">
       <DependentUpon>formDatPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\formHoaDon.resx">
       <DependentUpon>formHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\formHoaDonNhap.resx">
+      <DependentUpon>formHoaDonNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\formKhachHang.resx">
       <DependentUpon>formKhachHang.cs</DependentUpon>
@@ -235,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\formPhongHat.resx">
       <DependentUpon>formPhongHat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\formTaiKhoan.resx">
+      <DependentUpon>formTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\formThongKe.resx">
       <DependentUpon>formThongKe.cs</DependentUpon>

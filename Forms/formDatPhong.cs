@@ -83,9 +83,19 @@ namespace Karaokelamlai.Forms
                     btn.ForeColor = Color.White;
                     btn.FlatAppearance.BorderColor = Themecolor.SecondaryColor;
                 }
-                else
+                else if (ctrl is Label lbl)
                 {
-                    ApplyTheme(ctrl); // Đệ quy nếu control có chứa control con
+                    lbl.ForeColor = Themecolor.SecondaryColor;
+                }
+                else if (ctrl is Panel || ctrl is GroupBox)
+                {
+                    ctrl.BackColor = Themecolor.PrimaryColor;
+                }
+
+                // Đệ quy áp dụng theme cho control con bên trong
+                if (ctrl.HasChildren)
+                {
+                    ApplyTheme(ctrl);
                 }
             }
         }
@@ -294,5 +304,7 @@ namespace Karaokelamlai.Forms
 
             }
         }
+
+        
     }
 }

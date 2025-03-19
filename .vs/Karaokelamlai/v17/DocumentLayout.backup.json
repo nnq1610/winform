@@ -3,24 +3,56 @@
   "WorkspaceRootPath": "D:\\SQL\\Karaokelamlai\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|d:\\sql\\karaokelamlai\\forms\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|d:\\sql\\karaokelamlai\\forms\\formtaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formtaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formtaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formtaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formhoadonnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formhoadonnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formhoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formhoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formhoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formhoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formhoadon.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formhoadon.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formmathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formmathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formmathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formmathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formthongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,16 +63,44 @@
       "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formthongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formdatphong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdatphong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formthongke.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formthongke.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formdangky.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdangky.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formhoadon.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formhoadon.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,16 +111,8 @@
       "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formmathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formmathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -69,10 +121,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\forms\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|D:\\SQL\\Karaokelamlai\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -119,15 +167,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "formHoaDon.cs",
-              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formHoaDon.cs",
-              "RelativeDocumentMoniker": "Forms\\formHoaDon.cs",
-              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formHoaDon.cs",
-              "RelativeToolTip": "Forms\\formHoaDon.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAIAwwJ0AAAAtAAAAAAAAAA==",
+              "Title": "formTaiKhoan.cs",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formTaiKhoan.cs",
+              "RelativeDocumentMoniker": "Forms\\formTaiKhoan.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formTaiKhoan.cs",
+              "RelativeToolTip": "Forms\\formTaiKhoan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:48:42.268Z",
+              "WhenOpened": "2025-03-19T11:10:24.336Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -135,123 +187,100 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "formHoaDon.Designer.cs",
-              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formHoaDon.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\formHoaDon.Designer.cs",
-              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formHoaDon.Designer.cs",
-              "RelativeToolTip": "Forms\\formHoaDon.Designer.cs",
-              "ViewState": "AgIAADEBAAAAAAAAAAAowDcBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T18:07:32.43Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "formHoaDon.cs [Design]",
-              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formHoaDon.cs",
-              "RelativeDocumentMoniker": "Forms\\formHoaDon.cs",
-              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formHoaDon.cs [Design]",
-              "RelativeToolTip": "Forms\\formHoaDon.cs [Design]",
+              "Title": "formTaiKhoan.cs [Design]",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formTaiKhoan.cs",
+              "RelativeDocumentMoniker": "Forms\\formTaiKhoan.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formTaiKhoan.cs [Design]",
+              "RelativeToolTip": "Forms\\formTaiKhoan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:48:41.977Z"
+              "WhenOpened": "2025-03-19T11:03:54.275Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "formThongKe.cs",
-              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formThongKe.cs",
-              "RelativeDocumentMoniker": "Forms\\formThongKe.cs",
-              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formThongKe.cs",
-              "RelativeToolTip": "Forms\\formThongKe.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowBIAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "formHoaDonNhap.Designer.cs",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formHoaDonNhap.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\formHoaDonNhap.Designer.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formHoaDonNhap.Designer.cs",
+              "RelativeToolTip": "Forms\\formHoaDonNhap.Designer.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAtwK8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:40:10.086Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "formThongKe.cs [Design]",
-              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formThongKe.cs",
-              "RelativeDocumentMoniker": "Forms\\formThongKe.cs",
-              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formThongKe.cs [Design]",
-              "RelativeToolTip": "Forms\\formThongKe.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:23:48.303Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "formDatPhong.Designer.cs",
-              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formDatPhong.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\formDatPhong.Designer.cs",
-              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formDatPhong.Designer.cs",
-              "RelativeToolTip": "Forms\\formDatPhong.Designer.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAMwGoAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:18:06.481Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "formDatPhong.cs",
-              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formDatPhong.cs",
-              "RelativeDocumentMoniker": "Forms\\formDatPhong.cs",
-              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formDatPhong.cs",
-              "RelativeToolTip": "Forms\\formDatPhong.cs",
-              "ViewState": "AgIAAPkAAAAAAAAAAAAcwAoBAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:17:58.348Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "formDatPhong.cs [Design]",
-              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formDatPhong.cs",
-              "RelativeDocumentMoniker": "Forms\\formDatPhong.cs",
-              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formDatPhong.cs [Design]",
-              "RelativeToolTip": "Forms\\formDatPhong.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:15:45.438Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "formKhachHang.cs",
-              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formKhachHang.cs",
-              "RelativeDocumentMoniker": "Forms\\formKhachHang.cs",
-              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formKhachHang.cs",
-              "RelativeToolTip": "Forms\\formKhachHang.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwD0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:10:04.939Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "formKhachHang.cs [Design]",
-              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formKhachHang.cs",
-              "RelativeDocumentMoniker": "Forms\\formKhachHang.cs",
-              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formKhachHang.cs [Design]",
-              "RelativeToolTip": "Forms\\formKhachHang.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:05:45.268Z"
+              "WhenOpened": "2025-03-19T10:36:43.084Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "formHoaDonNhap.cs",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formHoaDonNhap.cs",
+              "RelativeDocumentMoniker": "Forms\\formHoaDonNhap.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formHoaDonNhap.cs",
+              "RelativeToolTip": "Forms\\formHoaDonNhap.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAkwBUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T09:57:04.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "formHoaDonNhap.cs [Design]",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formHoaDonNhap.cs",
+              "RelativeDocumentMoniker": "Forms\\formHoaDonNhap.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formHoaDonNhap.cs [Design]",
+              "RelativeToolTip": "Forms\\formHoaDonNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T09:36:48.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "formHoaDon.cs",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formHoaDon.cs",
+              "RelativeDocumentMoniker": "Forms\\formHoaDon.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formHoaDon.cs",
+              "RelativeToolTip": "Forms\\formHoaDon.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAF0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:48:42.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\MainForm.cs [Design]",
+              "RelativeToolTip": "MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:00:44.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "MainForm.cs",
               "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "D:\\SQL\\Karaokelamlai\\MainForm.cs",
               "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAewGgAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAH0AAAAAAAAAAIA9wJcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-18T13:04:35.922Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "formDatPhong.cs",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formDatPhong.cs",
+              "RelativeDocumentMoniker": "Forms\\formDatPhong.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formDatPhong.cs",
+              "RelativeToolTip": "Forms\\formDatPhong.cs",
+              "ViewState": "AgIAABEBAAAAAAAAAAAkwDYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:17:58.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "formNhanVien.cs",
               "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formNhanVien.cs",
               "RelativeDocumentMoniker": "Forms\\formNhanVien.cs",
@@ -263,30 +292,30 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "formHoaDon.cs [Design]",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formHoaDon.cs",
+              "RelativeDocumentMoniker": "Forms\\formHoaDon.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formHoaDon.cs [Design]",
+              "RelativeToolTip": "Forms\\formHoaDon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:48:41.977Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "formNhanVien.cs [Design]",
-              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formNhanVien.cs",
-              "RelativeDocumentMoniker": "Forms\\formNhanVien.cs",
-              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formNhanVien.cs [Design]",
-              "RelativeToolTip": "Forms\\formNhanVien.cs [Design]",
+              "Title": "formThongKe.cs",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formThongKe.cs",
+              "RelativeDocumentMoniker": "Forms\\formThongKe.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formThongKe.cs",
+              "RelativeToolTip": "Forms\\formThongKe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T15:52:21.646Z"
+              "WhenOpened": "2025-03-18T16:40:10.086Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "formMatHang.cs",
-              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formMatHang.cs",
-              "RelativeDocumentMoniker": "Forms\\formMatHang.cs",
-              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formMatHang.cs",
-              "RelativeToolTip": "Forms\\formMatHang.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAQwDgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T15:25:48.361Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 9,
               "Title": "formMatHang.cs [Design]",
               "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formMatHang.cs",
               "RelativeDocumentMoniker": "Forms\\formMatHang.cs",
@@ -297,7 +326,181 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "formThongKe.cs [Design]",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formThongKe.cs",
+              "RelativeDocumentMoniker": "Forms\\formThongKe.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formThongKe.cs [Design]",
+              "RelativeToolTip": "Forms\\formThongKe.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:23:48.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "formDatPhong.cs [Design]",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formDatPhong.cs",
+              "RelativeDocumentMoniker": "Forms\\formDatPhong.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formDatPhong.cs [Design]",
+              "RelativeToolTip": "Forms\\formDatPhong.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:15:45.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "formMatHang.cs",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formMatHang.cs",
+              "RelativeDocumentMoniker": "Forms\\formMatHang.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formMatHang.cs",
+              "RelativeToolTip": "Forms\\formMatHang.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAswKcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T15:25:48.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "formDatPhong.Designer.cs",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formDatPhong.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\formDatPhong.Designer.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formDatPhong.Designer.cs",
+              "RelativeToolTip": "Forms\\formDatPhong.Designer.cs",
+              "ViewState": "AgIAAC0BAAAAAAAAAADgv0MBAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:18:06.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "formDangNhap.cs [Design]",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formDangNhap.cs",
+              "RelativeDocumentMoniker": "Forms\\formDangNhap.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formDangNhap.cs [Design]",
+              "RelativeToolTip": "Forms\\formDangNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T03:20:23.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "formDangNhap.cs",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formDangNhap.cs",
+              "RelativeDocumentMoniker": "Forms\\formDangNhap.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formDangNhap.cs",
+              "RelativeToolTip": "Forms\\formDangNhap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T06:44:42.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T07:11:32.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "formThongKe.Designer.cs",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formThongKe.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\formThongKe.Designer.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formThongKe.Designer.cs",
+              "RelativeToolTip": "Forms\\formThongKe.Designer.cs",
+              "ViewState": "AgIAAMQAAAAAAAAAAADgv9oAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T08:11:58.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "formDangKy.cs [Design]",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formDangKy.cs",
+              "RelativeDocumentMoniker": "Forms\\formDangKy.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formDangKy.cs [Design]",
+              "RelativeToolTip": "Forms\\formDangKy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T07:48:09.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "formDangKy.cs",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formDangKy.cs",
+              "RelativeDocumentMoniker": "Forms\\formDangKy.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formDangKy.cs",
+              "RelativeToolTip": "Forms\\formDangKy.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwFQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T07:53:01.842Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 20,
+              "Title": "formDangKy.Designer.cs",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formDangKy.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\formDangKy.Designer.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formDangKy.Designer.cs",
+              "RelativeToolTip": "Forms\\formDangKy.Designer.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAADgvzsAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T07:57:32.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "formHoaDon.Designer.cs",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formHoaDon.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\formHoaDon.Designer.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formHoaDon.Designer.cs",
+              "RelativeToolTip": "Forms\\formHoaDon.Designer.cs",
+              "ViewState": "AgIAADEBAAAAAAAAAAAowDcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T18:07:32.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "formKhachHang.cs",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formKhachHang.cs",
+              "RelativeDocumentMoniker": "Forms\\formKhachHang.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formKhachHang.cs",
+              "RelativeToolTip": "Forms\\formKhachHang.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwD0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:10:04.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "formKhachHang.cs [Design]",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formKhachHang.cs",
+              "RelativeDocumentMoniker": "Forms\\formKhachHang.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formKhachHang.cs [Design]",
+              "RelativeToolTip": "Forms\\formKhachHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:05:45.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "formNhanVien.cs [Design]",
+              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formNhanVien.cs",
+              "RelativeDocumentMoniker": "Forms\\formNhanVien.cs",
+              "ToolTip": "D:\\SQL\\Karaokelamlai\\Forms\\formNhanVien.cs [Design]",
+              "RelativeToolTip": "Forms\\formNhanVien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T15:52:21.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "DbHelper.cs",
               "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\DbHelper.cs",
               "RelativeDocumentMoniker": "DbHelper.cs",
@@ -309,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 31,
               "Title": "Themecolor.cs",
               "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Themecolor.cs",
               "RelativeDocumentMoniker": "Themecolor.cs",
@@ -321,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 28,
               "Title": "formPhongHat.cs",
               "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formPhongHat.cs",
               "RelativeDocumentMoniker": "Forms\\formPhongHat.cs",
@@ -333,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 29,
               "Title": "formPhongHat.cs [Design]",
               "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\Forms\\formPhongHat.cs",
               "RelativeDocumentMoniker": "Forms\\formPhongHat.cs",
@@ -344,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 30,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "MainForm.Designer.cs",
@@ -353,17 +556,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-18T13:04:45.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "D:\\SQL\\Karaokelamlai\\MainForm.cs",
-              "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "D:\\SQL\\Karaokelamlai\\MainForm.cs [Design]",
-              "RelativeToolTip": "MainForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T13:00:44.76Z"
             }
           ]
         }

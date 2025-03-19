@@ -101,3 +101,7 @@ D:\SQL\Karaokelamlai\obj\Debug\Karaokelamlai.Forms.formKhachHang.resources
 D:\SQL\Karaokelamlai\obj\Debug\Karaokelamlai.Forms.formDatPhong.resources
 D:\SQL\Karaokelamlai\obj\Debug\Karaokelamlai.Forms.formThongKe.resources
 D:\SQL\Karaokelamlai\obj\Debug\Karaokelamlai.Forms.formHoaDon.resources
+D:\SQL\Karaokelamlai\obj\Debug\Karaokelamlai.Forms.formDangNhap.resources
+D:\SQL\Karaokelamlai\obj\Debug\Karaokelamlai.Forms.formDangKy.resources
+D:\SQL\Karaokelamlai\obj\Debug\Karaokelamlai.Forms.formHoaDonNhap.resources
+D:\SQL\Karaokelamlai\obj\Debug\Karaokelamlai.Forms.formTaiKhoan.resources

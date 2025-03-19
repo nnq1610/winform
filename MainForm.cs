@@ -1,4 +1,5 @@
 ﻿using Karaokelamlai;
+using Karaokelamlai.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,14 +14,29 @@ namespace Karaokelamlai
 {
     public partial class MainForm: Form
     {
+        private string userRole;
+        DbHelper db = new DbHelper();
+        private int selectedIDTK = -1;
         private Button currrentButton;
         private Random random;
         private int tempIndex;
         private Form activeForm;
-        public MainForm()
+        public MainForm(string userRole)
         {
             InitializeComponent();
             random = new Random();
+            this.userRole = userRole;
+            btnCLoseChilddForm.Visible = false;
+        }
+        private bool IsTenDangNhapExists(string tenDangNhap)
+        {
+            string query = "SELECT COUNT(*) FROM TaiKhoan WHERE TenDangNhap = @TenDangNhap";
+            Dictionary<string, object> parameters = new Dictionary<string, object>
+            {
+                { "@TenDangNhap", tenDangNhap }
+            };
+            int count = Convert.ToInt32(db.ExecuteScalar(query, parameters));
+            return count > 0;
         }
         private Color SelectThemeColor()
         {
@@ -49,6 +65,7 @@ namespace Karaokelamlai
                     panelLogo.BackColor = Themecolor.ChangeColorBrightness(color, -0.3);
                     Themecolor.PrimaryColor = color;
                     Themecolor.SecondaryColor = Themecolor.ChangeColorBrightness(color, -0.3);
+                    btnCLoseChilddForm.Visible = true;
                 }
             }
         }
@@ -80,6 +97,13 @@ namespace Karaokelamlai
             childForm.BringToFront();
             childForm.Show();
             lblTitle.Text = childForm.Text;
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            formDangNhap loginForm = new formDangNhap();
+            loginForm.ShowDialog();
+            this.Show();
         }
         private void btnPhongHat_Click(object sender, EventArgs e)
         {
@@ -125,7 +149,39 @@ namespace Karaokelamlai
 
         private void btnTaiKhoan_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new Forms.formTaiKhoan(), sender);
+            OpenChildForm(new Forms.formTaiKhoan(), sender);
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            formDangNhap loginForm = new formDangNhap();
+            loginForm.ShowDialog();
+            this.Show();
+        }
+
+        private void btnCLoseChilddForm_Click(object sender, EventArgs e)
+        {
+            if(activeForm != null)
+            {
+                activeForm.Close();
+            }
+            Reset();
+        }
+
+        private void Reset()
+        {
+            DisableButton();
+            lblTitle.Text = "Quản Lý Karaoke";
+            panelTitle.BackColor = Color.FromArgb(0, 150, 136);
+            panelLogo.BackColor = Color.FromArgb(39, 39, 58);
+            currrentButton = null;
+            btnCLoseChilddForm.Visible = false;
+        }
+
+        private void btnHoaDonNhap_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.formHoaDonNhap(), sender);
         }
     }
 }
