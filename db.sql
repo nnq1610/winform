@@ -19,17 +19,6 @@ CREATE TABLE PhongHat (
 );
 
 
--- Table: HoaDon
-CREATE TABLE HoaDon (
-    MaHoaDon INT PRIMARY KEY IDENTITY(1,1),
-    NgayLap DATETIME NULL,
-    TongTien DECIMAL(10,2) NULL,
-    MaNhanVien INT NULL,
-    PhuongThucThanhToan NVARCHAR(20) NULL,
-    CONSTRAINT FK_HoaDon_MaNhanVien FOREIGN KEY (MaNhanVien) REFERENCES NhanVien(MaNhanVien)
-);
-
-
 -- Table: MatHang
 CREATE TABLE MatHang (
     MaMatHang INT PRIMARY KEY IDENTITY(1,1),
@@ -74,3 +63,36 @@ CREATE TABLE TaiKhoan (
     MaNhanVien INT NULL,
     CONSTRAINT FK_TaiKhoan_MaNhanVien FOREIGN KEY (MaNhanVien) REFERENCES NhanVien(MaNhanVien)
 );
+
+
+CREATE TABLE HoaDonNhap (
+    MaHDN INT IDENTITY(1,1) PRIMARY KEY,  -- Mã hóa đơn nhập (tự tăng)
+    NgayNhap DATETIME DEFAULT GETDATE(),  -- Ngày nhập hàng
+    NhaCungCap NVARCHAR(255) NOT NULL,    -- Tên nhà cung cấp
+    MaNhanVien NVARCHAR(100) NOT NULL,     -- Nhân viên nhập hàng
+    MaMatHang INT NOT NULL,               -- Mã mặt hàng
+    TenMatHang NVARCHAR(255) NOT NULL,    -- Tên mặt hàng
+    SoLuongTon INT CHECK (SoLuongTon > 0),      -- Số lượng nhập
+    DonGia DECIMAL(18,2) CHECK (DonGia >= 0),  -- Giá nhập hàng
+    TongTien DECIMAL(18,2) 
+);
+CREATE TABLE HoaDon (
+    MaHoaDon INT IDENTITY(1,1) PRIMARY KEY,
+    NgayLap DATE NOT NULL,
+    MaKhachHang INT NULL,
+    TongTien DECIMAL(18,2) NULL,
+    MaNhanVien INT NOT NULL,
+    MaDatPhong INT NULL
+);
+
+CREATE TABLE ChiTietHoaDon (
+    MaChiTiet INT IDENTITY(1,1) PRIMARY KEY,
+    MaHoaDon INT NOT NULL,
+    MaMatHang INT NOT NULL,
+    SoLuong INT NOT NULL CHECK (SoLuong > 0),
+    DonGia DECIMAL(18,2) NOT NULL,
+    CONSTRAINT FK_ChiTietHoaDon_HoaDon FOREIGN KEY (MaHoaDon) REFERENCES HoaDon(MaHoaDon),
+    CONSTRAINT FK_ChiTietHoaDon_MatHang FOREIGN KEY (MaMatHang) REFERENCES MatHang(MaMatHang)
+);
+
+
