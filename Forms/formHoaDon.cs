@@ -10,6 +10,7 @@ namespace Karaokelamlai.Forms
     {
         private DbHelper db = new DbHelper();
 
+        private decimal  tienPhong = 0;
         public formHoaDon()
         {
             InitializeComponent();
@@ -83,7 +84,7 @@ namespace Karaokelamlai.Forms
             return dt.Rows.Count > 0 ? Convert.ToDecimal(dt.Rows[0]["DonGia"]) : 0;
         }      
 
-        private int lastInsertedHoaDonId = -1; // Store the last inserted invoice ID
+        private int lastInsertedHoaDonId = -1; 
         private decimal tien = 0;
         private void btnTaoHoaDon_Click(object sender, EventArgs e)
         {
@@ -138,7 +139,7 @@ namespace Karaokelamlai.Forms
 
                 foreach (DataGridViewRow row in dgvChiTiet.Rows)
                 {
-                    if (row.Cells["MaMatHang"].Value == null) continue; // Skip empty rows
+                    if (row.Cells["MaMatHang"].Value == null) continue;
 
                     int maMatHang = Convert.ToInt32(row.Cells["MaMatHang"].Value);
                     int soLuong = Convert.ToInt32(row.Cells["SoLuong"].Value);
@@ -146,9 +147,6 @@ namespace Karaokelamlai.Forms
                     decimal thanhTien = Convert.ToDecimal(row.Cells["ThanhTien"].Value);
 
                     tongTien += thanhTien;
-                    tien = tongTien;
-                    txtTienHang.Text = tien.ToString();
-
                     string insertChiTietQuery = "INSERT INTO ChiTietHoaDon (MaHoaDon, MaMatHang, SoLuong, DonGia) " +
                                                 "VALUES (@MaHoaDon, @MaMatHang, @SoLuong, @DonGia)";
 
@@ -162,6 +160,8 @@ namespace Karaokelamlai.Forms
 
                     db.ExecuteNonQuery(insertChiTietQuery, chiTietParams);
                 }
+                tongTien += tienPhong;
+                txtTongHoaDon.Text = tongTien.ToString();
 
                 string updateQuery = "UPDATE HoaDon SET TongTien = @TongTien WHERE MaHoaDon = @MaHoaDon";
                 Dictionary<string, object> updateParams = new Dictionary<string, object>
@@ -226,6 +226,7 @@ namespace Karaokelamlai.Forms
                 DataTable dt = db.ExecuteQuery($"SELECT TongTien FROM DatPhong WHERE MaDatPhong = {maDatPhong}");
 
                 txtTienPhong.Text = dt.Rows.Count > 0 ? dt.Rows[0]["TongTien"].ToString() : "0";
+                tienPhong = Convert.ToDecimal(txtTienPhong.Text);
             }
         }
 
@@ -250,7 +251,10 @@ namespace Karaokelamlai.Forms
         }
 
 
+        private void Tông_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
 

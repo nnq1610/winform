@@ -20,10 +20,7 @@ namespace Karaokelamlai.Forms
             LoadBookings();
             LoadGioiTinh();
         }
-        private void formDatPhong_Load(object sender, EventArgs e)
-        {
-            LoadTheme();
-        }
+
         private void LoadGioiTinh()
         {
             cboGioiTinh.Items.Clear();

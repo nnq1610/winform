@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography;
+using System.Text;
 using System.Windows.Forms;
 
 namespace Karaokelamlai.Forms
 {
     public partial class formDangKy : Form
     {
-        DbHelper db = new DbHelper(); 
+        DbHelper db = new DbHelper();
 
         public formDangKy()
         {
             InitializeComponent();
-            
         }
 
         private void btnDangKy_Click(object sender, EventArgs e)
@@ -21,7 +22,6 @@ namespace Karaokelamlai.Forms
             string xacNhanMatKhau = txtNhapLaiMatKhau.Text.Trim();
             string maNhanVien = txtId.Text.Trim();
 
-            // Validate input
             if (string.IsNullOrWhiteSpace(tenDangNhap) || string.IsNullOrWhiteSpace(matKhau) ||
                 string.IsNullOrWhiteSpace(xacNhanMatKhau) || string.IsNullOrWhiteSpace(maNhanVien))
             {
@@ -35,12 +35,11 @@ namespace Karaokelamlai.Forms
                 return;
             }
 
-            // Check if the employee ID already has an account
             string checkIdQuery = "SELECT COUNT(*) FROM TaiKhoan WHERE MaNhanVien = @MaNhanVien";
             Dictionary<string, object> checkIdParams = new Dictionary<string, object>
-    {
-        { "@MaNhanVien", maNhanVien }
-    };
+            {
+                { "@MaNhanVien", maNhanVien }
+            };
 
             object idResult = db.ExecuteScalar(checkIdQuery, checkIdParams);
             int idCount = Convert.ToInt32(idResult);
@@ -51,8 +50,7 @@ namespace Karaokelamlai.Forms
                 return;
             }
 
-            // Retrieve the role (VaiTro) from the NhanVien table
-            string roleQuery = "SELECT VaiTro FROM NhanVien WHERE MaNhanVien = @MaNhanVien";
+            string roleQuery = "SELECT ChucVu FROM NhanVien WHERE MaNhanVien = @MaNhanVien";
             object roleResult = db.ExecuteScalar(roleQuery, checkIdParams);
 
             if (roleResult == null)
@@ -63,12 +61,11 @@ namespace Karaokelamlai.Forms
 
             string vaiTro = roleResult.ToString();
 
-            // Check if the username already exists
             string checkQuery = "SELECT COUNT(*) FROM TaiKhoan WHERE TenDangNhap = @TenDangNhap";
             Dictionary<string, object> checkParams = new Dictionary<string, object>
-    {
-        { "@TenDangNhap", tenDangNhap }
-    };
+            {
+                { "@TenDangNhap", tenDangNhap }
+            };
 
             object result = db.ExecuteScalar(checkQuery, checkParams);
             int count = Convert.ToInt32(result);
@@ -79,16 +76,16 @@ namespace Karaokelamlai.Forms
                 return;
             }
 
-            // Insert new account with MaNhanVien and VaiTro
+
             string insertQuery = "INSERT INTO TaiKhoan (TenDangNhap, MatKhau, MaNhanVien, VaiTro) " +
                                  "VALUES (@TenDangNhap, @MatKhau, @MaNhanVien, @VaiTro)";
             Dictionary<string, object> insertParams = new Dictionary<string, object>
-    {
-        { "@TenDangNhap", tenDangNhap },
-        { "@MatKhau", matKhau },
-        { "@MaNhanVien", maNhanVien },
-        { "@VaiTro", vaiTro }
-    };
+            {
+                { "@TenDangNhap", tenDangNhap },
+                { "@MatKhau", txtMatKhau.Text },
+                { "@MaNhanVien", maNhanVien },
+                { "@VaiTro", vaiTro }
+            };
 
             int rowsAffected = db.ExecuteNonQuery(insertQuery, insertParams);
 
@@ -103,17 +100,12 @@ namespace Karaokelamlai.Forms
             }
         }
 
-
         private void btnHienMatKhau_Click(object sender, EventArgs e)
         {
-            // Đảo trạng thái ẩn/hiện mật khẩu
             txtMatKhau.UseSystemPasswordChar = !txtMatKhau.UseSystemPasswordChar;
             txtNhapLaiMatKhau.UseSystemPasswordChar = !txtNhapLaiMatKhau.UseSystemPasswordChar;
 
-            // Đổi icon của nút (tùy chọn)
             btnHienMatKhau.Text = txtMatKhau.UseSystemPasswordChar ? "👁️" : "🙈";
         }
-
-
     }
 }

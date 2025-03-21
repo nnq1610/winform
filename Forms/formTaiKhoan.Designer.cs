@@ -76,9 +76,9 @@
             this.btnSua.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnSua.BackColor = System.Drawing.Color.Transparent;
             this.btnSua.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnSua.Location = new System.Drawing.Point(87, 201);
+            this.btnSua.Location = new System.Drawing.Point(75, 201);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 31);
+            this.btnSua.Size = new System.Drawing.Size(75, 32);
             this.btnSua.TabIndex = 3;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
@@ -89,9 +89,9 @@
             this.btnXoa.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnXoa.BackColor = System.Drawing.Color.Transparent;
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnXoa.Location = new System.Drawing.Point(168, 201);
+            this.btnXoa.Location = new System.Drawing.Point(156, 201);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(60, 33);
+            this.btnXoa.Size = new System.Drawing.Size(75, 32);
             this.btnXoa.TabIndex = 2;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
@@ -102,9 +102,9 @@
             this.btnThem.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnThem.BackColor = System.Drawing.Color.Transparent;
             this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnThem.Location = new System.Drawing.Point(6, 201);
+            this.btnThem.Location = new System.Drawing.Point(3, 201);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 32);
+            this.btnThem.Size = new System.Drawing.Size(66, 32);
             this.btnThem.TabIndex = 1;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
@@ -228,6 +228,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.splitContainer1);
             this.Name = "formTaiKhoan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formTaiKhoan";
             this.Load += new System.EventHandler(this.formTaiKhoan_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);

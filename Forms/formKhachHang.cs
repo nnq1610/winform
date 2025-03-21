@@ -19,10 +19,7 @@ namespace Karaokelamlai.Forms
             LoadCustomers();
             LoadGioiTinh();
         }
-        private void formKhachHang_Load(object sender, EventArgs e)
-        {
-            LoadTheme();    
-        }
+
         private void LoadGioiTinh()
         {
             cboGioiTinh.Items.Add("Nam");
@@ -53,16 +50,21 @@ namespace Karaokelamlai.Forms
                 }
             }
         }
-        private void LoadTheme()
-        {
-            ApplyTheme(this);
-            label1.ForeColor = Themecolor.SecondaryColor;
-            label2.ForeColor = Themecolor.SecondaryColor;
-            label3.ForeColor = Themecolor.SecondaryColor;
-        }
+
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-
+            string keyword = txtTimKiem.Text.Trim();
+            if(string.IsNullOrEmpty(keyword))
+            {
+                LoadCustomers();
+                return;
+            };
+            string query = "Select  *from KhachHang where HoTen LIKE @HoTen";
+            Dictionary<string, object> para = new Dictionary<string, object>
+            {
+                {"HoTen", keyword }
+            };
+            dgvKhachHang.DataSource = db.ExecuteQuery(query, para);
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -136,23 +138,23 @@ namespace Karaokelamlai.Forms
                 LoadCustomers();
             }
         }
-        private void txtHoTen_Enter(object sender, EventArgs e)
-        {
-            if (txtHoTen.Text == "Nhập tên khách hàng...")
-            {
-                txtHoTen.Text = "";
-                txtHoTen.ForeColor = Color.Black;
-            }
-        }
+        //private void txtHoTen_Enter(object sender, EventArgs e)
+        //{
+        //    if (txtHoTen.Text == "Nhập tên khách hàng...")
+        //    {
+        //        txtHoTen.Text = "";
+        //        txtHoTen.ForeColor = Color.Black;
+        //    }
+        //}
 
-        private void txtHoTen_Leave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(txtHoTen.Text))
-            {
-                txtHoTen.Text = "Nhập tên khách hàng...";
-                txtHoTen.ForeColor = Color.Gray;
-            }
-        }
+        //private void txtHoTen_Leave(object sender, EventArgs e)
+        //{
+        //    if (string.IsNullOrWhiteSpace(txtHoTen.Text))
+        //    {
+        //        txtHoTen.Text = "Nhập tên khách hàng...";
+        //        txtHoTen.ForeColor = Color.Gray;
+        //    }
+        //}
 
         private void txtSoDienThoai_Enter(object sender, EventArgs e)
         {

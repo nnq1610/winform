@@ -116,8 +116,36 @@ namespace Karaokelamlai.Forms
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            if (dgvPhongHat.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn phòng để xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            int phongId = Convert.ToInt32(dgvPhongHat.SelectedRows[0].Cells["MaPhong"].Value);
+
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa phòng này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                string query = "DELETE FROM PhongHat WHERE MaPhong = @PhongID";
+                Dictionary<string, object> parameters = new Dictionary<string, object>
+        {
+            { "@PhongID", phongId }
+        };
+
+                if (db.ExecuteNonQuery(query, parameters) > 0)
+                {
+                    MessageBox.Show("Xóa phòng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadPhong();
+                }
+                else
+                {
+                    MessageBox.Show("Xóa phòng thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
+
+        
 
         private void btnSua_Click(object sender, EventArgs e)
         {

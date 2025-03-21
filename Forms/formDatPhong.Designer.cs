@@ -327,6 +327,7 @@
             // dgvDatPhong
             // 
             this.dgvDatPhong.BackgroundColor = System.Drawing.Color.White;
+            this.dgvDatPhong.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvDatPhong.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgvDatPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDatPhong.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -345,7 +346,6 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "formDatPhong";
             this.Text = "formDatPhong";
-            this.Load += new System.EventHandler(this.formDatPhong_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();

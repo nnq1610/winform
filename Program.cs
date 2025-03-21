@@ -17,7 +17,7 @@ namespace Karaokelamlai
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formDangNhap());
+            Application.Run(new formHoaDon());
         }
     }
 }

@@ -18,11 +18,6 @@ namespace Karaokelamlai.Forms
             InitializeComponent();
             LoadDoanhThu();
         }
-        private void formThongKe_Load(object sender, EventArgs e)
-        {
-            LoadTheme();
-
-        }
         private void LoadDoanhThu()
         {
             string queryDoanhThu = @"
@@ -121,22 +116,11 @@ namespace Karaokelamlai.Forms
                 }
             }
         }
-        private void LoadTheme()
-        {
-            ApplyTheme(this);
-            label1.ForeColor = Themecolor.SecondaryColor;
-            label2.ForeColor = Themecolor.SecondaryColor;
-            
-        }
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
             LoadDoanhThu();
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

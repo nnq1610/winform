@@ -7,7 +7,8 @@ namespace Karaokelamlai
 {
     class DbHelper
     {
-        private string connectionString = @"Server=QUANGNN-LAPTOP\SQLEXPRESS;Database=QuanLyKaraoke;Trusted_Connection=True;"; public DataTable ExecuteQuery(string query, Dictionary<string, object> parameters = null)
+        private string connectionString = @"Server=QUANGNN-LAPTOP\SQLEXPRESS;Database=QuanLyKaraoke;Trusted_Connection=True;"; 
+        public DataTable ExecuteQuery(string query, Dictionary<string, object> parameters = null)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {

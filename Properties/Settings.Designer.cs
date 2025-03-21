@@ -33,5 +33,16 @@ namespace Karaokelamlai.Properties {
                 return ((string)(this["QuanLyKaraokeConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=QUANGNN-LAPTOP\\SQLEXPRESS;Initial Catalog=QuanLyKaraoke;Integrated Se" +
+            "curity=True;Encrypt=False")]
+        public string QuanLyKaraokeConnectionString1 {
+            get {
+                return ((string)(this["QuanLyKaraokeConnectionString1"]));
+            }
+        }
     }
 }

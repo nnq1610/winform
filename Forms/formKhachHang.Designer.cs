@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnTimKiiem = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
@@ -43,6 +44,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvKhachHang = new System.Windows.Forms.DataGridView();
+            this.quanLyKaraokeDataSet = new Karaokelamlai.QuanLyKaraokeDataSet();
+            this.quanLyKaraokeDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.khachHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.khachHangTableAdapter = new Karaokelamlai.QuanLyKaraokeDataSetTableAdapters.KhachHangTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -50,6 +55,9 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyKaraokeDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyKaraokeDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -78,14 +86,14 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.76923F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.23077F));
-            this.tableLayoutPanel2.Controls.Add(this.textBox1, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnTimKiiem, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.txtTimKiem, 1, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 248);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(237, 50);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(237, 30);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // btnTimKiiem
@@ -95,7 +103,7 @@
             this.btnTimKiiem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnTimKiiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiiem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnTimKiiem.Location = new System.Drawing.Point(3, 13);
+            this.btnTimKiiem.Location = new System.Drawing.Point(3, 3);
             this.btnTimKiiem.Name = "btnTimKiiem";
             this.btnTimKiiem.Size = new System.Drawing.Size(66, 24);
             this.btnTimKiiem.TabIndex = 6;
@@ -103,12 +111,12 @@
             this.btnTimKiiem.UseVisualStyleBackColor = true;
             this.btnTimKiiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
-            // textBox1
+            // txtTimKiem
             // 
-            this.textBox1.Location = new System.Drawing.Point(75, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtTimKiem.Location = new System.Drawing.Point(75, 3);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(159, 20);
+            this.txtTimKiem.TabIndex = 0;
             // 
             // btnSua
             // 
@@ -117,7 +125,7 @@
             this.btnSua.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnSua.Location = new System.Drawing.Point(185, 347);
+            this.btnSua.Location = new System.Drawing.Point(84, 300);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 36);
             this.btnSua.TabIndex = 5;
@@ -132,7 +140,7 @@
             this.btnXoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnXoa.Location = new System.Drawing.Point(185, 389);
+            this.btnXoa.Location = new System.Drawing.Point(165, 301);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 35);
             this.btnXoa.TabIndex = 4;
@@ -147,7 +155,7 @@
             this.btnThem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnThem.Location = new System.Drawing.Point(185, 304);
+            this.btnThem.Location = new System.Drawing.Point(3, 299);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 37);
             this.btnThem.TabIndex = 3;
@@ -244,6 +252,25 @@
             this.dgvKhachHang.TabIndex = 0;
             this.dgvKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachHang_CellClick);
             // 
+            // quanLyKaraokeDataSet
+            // 
+            this.quanLyKaraokeDataSet.DataSetName = "QuanLyKaraokeDataSet";
+            this.quanLyKaraokeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // quanLyKaraokeDataSetBindingSource
+            // 
+            this.quanLyKaraokeDataSetBindingSource.DataSource = this.quanLyKaraokeDataSet;
+            this.quanLyKaraokeDataSetBindingSource.Position = 0;
+            // 
+            // khachHangBindingSource
+            // 
+            this.khachHangBindingSource.DataMember = "KhachHang";
+            this.khachHangBindingSource.DataSource = this.quanLyKaraokeDataSetBindingSource;
+            // 
+            // khachHangTableAdapter
+            // 
+            this.khachHangTableAdapter.ClearBeforeFill = true;
+            // 
             // formKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,8 +279,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.splitContainer1);
             this.Name = "formKhachHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formKhachHang";
-            this.Load += new System.EventHandler(this.formKhachHang_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -263,6 +290,9 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyKaraokeDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyKaraokeDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -271,7 +301,7 @@
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThem;
@@ -284,5 +314,9 @@
         private System.Windows.Forms.DataGridView dgvKhachHang;
         private System.Windows.Forms.Button btnTimKiiem;
         private System.Windows.Forms.ComboBox cboGioiTinh;
+        private System.Windows.Forms.BindingSource quanLyKaraokeDataSetBindingSource;
+        private QuanLyKaraokeDataSet quanLyKaraokeDataSet;
+        private System.Windows.Forms.BindingSource khachHangBindingSource;
+        private QuanLyKaraokeDataSetTableAdapters.KhachHangTableAdapter khachHangTableAdapter;
     }
 }

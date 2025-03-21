@@ -28,8 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvChiTiet = new System.Windows.Forms.DataGridView();
+            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
+            this.hoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quanLyKaraokeDataSet = new Karaokelamlai.QuanLyKaraokeDataSet();
             this.btnLuuChiTietHoaDon = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
@@ -37,6 +41,7 @@
             this.btnTaoHoaDon = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
+            this.btnClear = new System.Windows.Forms.Button();
             this.txtTongHoaDon = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
@@ -82,12 +87,11 @@
             this.btnXoaDgv = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
             this.btnThemVaoDgv = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
-            this.Tông = new System.Windows.Forms.Button();
-            this.txtTienHang = new System.Windows.Forms.TextBox();
+            this.hoaDonTableAdapter = new Karaokelamlai.QuanLyKaraokeDataSetTableAdapters.HoaDonTableAdapter();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTiet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyKaraokeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -122,7 +126,6 @@
             this.tableLayoutPanel10.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel16.SuspendLayout();
-            this.tableLayoutPanel13.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -149,6 +152,30 @@
             this.dgvChiTiet.Name = "dgvChiTiet";
             this.dgvChiTiet.Size = new System.Drawing.Size(437, 231);
             this.dgvChiTiet.TabIndex = 0;
+            // 
+            // tableLayoutPanel13
+            // 
+            this.tableLayoutPanel13.ColumnCount = 2;
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.95195F));
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.04806F));
+            this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(3, 240);
+            this.tableLayoutPanel13.Name = "tableLayoutPanel13";
+            this.tableLayoutPanel13.RowCount = 1;
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 207F));
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(437, 207);
+            this.tableLayoutPanel13.TabIndex = 1;
+            // 
+            // hoaDonBindingSource
+            // 
+            this.hoaDonBindingSource.DataMember = "HoaDon";
+            this.hoaDonBindingSource.DataSource = this.quanLyKaraokeDataSet;
+            // 
+            // quanLyKaraokeDataSet
+            // 
+            this.quanLyKaraokeDataSet.DataSetName = "QuanLyKaraokeDataSet";
+            this.quanLyKaraokeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnLuuChiTietHoaDon
             // 
@@ -205,7 +232,7 @@
             this.panel18.Controls.Add(this.label9);
             this.panel18.Location = new System.Drawing.Point(3, 3);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(156, 56);
+            this.panel18.Size = new System.Drawing.Size(155, 56);
             this.panel18.TabIndex = 0;
             // 
             // btnTaoHoaDon
@@ -214,11 +241,11 @@
             this.btnTaoHoaDon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnTaoHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTaoHoaDon.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnTaoHoaDon.Location = new System.Drawing.Point(-3, 20);
+            this.btnTaoHoaDon.Location = new System.Drawing.Point(3, 20);
             this.btnTaoHoaDon.Name = "btnTaoHoaDon";
-            this.btnTaoHoaDon.Size = new System.Drawing.Size(124, 25);
+            this.btnTaoHoaDon.Size = new System.Drawing.Size(95, 25);
             this.btnTaoHoaDon.TabIndex = 8;
-            this.btnTaoHoaDon.Text = "Tạo hóa đơn";
+            this.btnTaoHoaDon.Text = "Tạo HD";
             this.btnTaoHoaDon.UseVisualStyleBackColor = true;
             this.btnTaoHoaDon.Click += new System.EventHandler(this.btnTaoHoaDon_Click);
             // 
@@ -237,10 +264,23 @@
             // 
             this.panel19.Controls.Add(this.btnClear);
             this.panel19.Controls.Add(this.txtTongHoaDon);
-            this.panel19.Location = new System.Drawing.Point(165, 3);
+            this.panel19.Location = new System.Drawing.Point(164, 3);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(171, 56);
             this.panel19.TabIndex = 1;
+            // 
+            // btnClear
+            // 
+            this.btnClear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnClear.Location = new System.Drawing.Point(23, 26);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(65, 25);
+            this.btnClear.TabIndex = 9;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
             // 
             // txtTongHoaDon
             // 
@@ -620,9 +660,9 @@
             // panel13
             // 
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel13.Location = new System.Drawing.Point(161, 3);
+            this.panel13.Location = new System.Drawing.Point(160, 3);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(183, 24);
+            this.panel13.Size = new System.Drawing.Size(184, 24);
             this.panel13.TabIndex = 1;
             // 
             // panel12
@@ -630,7 +670,7 @@
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel12.Location = new System.Drawing.Point(3, 3);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(152, 24);
+            this.panel12.Size = new System.Drawing.Size(151, 24);
             this.panel12.TabIndex = 0;
             // 
             // tableLayoutPanel9
@@ -751,55 +791,9 @@
             this.btnThemVaoDgv.UseVisualStyleBackColor = true;
             this.btnThemVaoDgv.Click += new System.EventHandler(this.btnThemVaoDgv_Click);
             // 
-            // btnClear
+            // hoaDonTableAdapter
             // 
-            this.btnClear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnClear.Location = new System.Drawing.Point(23, 26);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(65, 25);
-            this.btnClear.TabIndex = 9;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel13
-            // 
-            this.tableLayoutPanel13.ColumnCount = 2;
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.95195F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.04806F));
-            this.tableLayoutPanel13.Controls.Add(this.Tông, 0, 0);
-            this.tableLayoutPanel13.Controls.Add(this.txtTienHang, 1, 0);
-            this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(3, 240);
-            this.tableLayoutPanel13.Name = "tableLayoutPanel13";
-            this.tableLayoutPanel13.RowCount = 1;
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(437, 207);
-            this.tableLayoutPanel13.TabIndex = 1;
-            // 
-            // Tông
-            // 
-            this.Tông.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Tông.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Tông.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Tông.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.Tông.Location = new System.Drawing.Point(3, 3);
-            this.Tông.Name = "Tông";
-            this.Tông.Size = new System.Drawing.Size(132, 32);
-            this.Tông.TabIndex = 9;
-            this.Tông.Text = "Tổng tiền khác:";
-            this.Tông.UseVisualStyleBackColor = true;
-            // 
-            // txtTienHang
-            // 
-            this.txtTienHang.Location = new System.Drawing.Point(147, 3);
-            this.txtTienHang.Name = "txtTienHang";
-            this.txtTienHang.ReadOnly = true;
-            this.txtTienHang.Size = new System.Drawing.Size(132, 20);
-            this.txtTienHang.TabIndex = 10;
+            this.hoaDonTableAdapter.ClearBeforeFill = true;
             // 
             // formHoaDon
             // 
@@ -809,9 +803,12 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.splitContainer1);
             this.Name = "formHoaDon";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formHoaDon";
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTiet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyKaraokeDataSet)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -857,8 +854,6 @@
             this.tableLayoutPanel10.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
-            this.tableLayoutPanel13.ResumeLayout(false);
-            this.tableLayoutPanel13.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -921,7 +916,9 @@
         private System.Windows.Forms.Button btnTaoHoaDon;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
-        private System.Windows.Forms.TextBox txtTienHang;
-        private System.Windows.Forms.Button Tông;
+        private QuanLyKaraokeDataSet quanLyKaraokeDataSet;
+        private System.Windows.Forms.BindingSource hoaDonBindingSource;
+        private QuanLyKaraokeDataSetTableAdapters.HoaDonTableAdapter hoaDonTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phuongThucThanhToanDataGridViewTextBoxColumn;
     }
 }

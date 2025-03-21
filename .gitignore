@@ -1,0 +1,28 @@
+﻿# Thư mục và file tạm của Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.cache
+*.csproj.user
+*.sln.docstates
+
+# Thư mục build
+bin/
+obj/
+
+# Thư viện NuGet
+packages/
+*.nupkg
+project.lock.json
+
+# Thư viện tạm của ứng dụng
+AppPackages/
+Backup*/
+TestResults/
+node_modules/
+
+# Log và file tạm
+*.log
+*.tmp
+*.bak

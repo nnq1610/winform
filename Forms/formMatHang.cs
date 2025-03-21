@@ -20,6 +20,7 @@ namespace Karaokelamlai.Forms
         }
         private void formMatHang_Load(object sender, EventArgs e)
         {
+            this.matHangTableAdapter.Fill(this.quanLyKaraokeDataSet.MatHang);
             LoadTheme();
         }
         private void LoadMatHang()
@@ -147,6 +148,17 @@ namespace Karaokelamlai.Forms
 
             int maMatHang = Convert.ToInt32(dgvMatHang.SelectedRows[0].Cells["MaMatHang"].Value);
 
+            string checkQuery = "SELECT COUNT(*) FROM ChiTietHoaDon WHERE MaMatHang = @MaMatHang";
+            Dictionary<string, object> checkParams = new Dictionary<string, object> { { "@MaMatHang", maMatHang } };
+
+            int referenceCount = Convert.ToInt32(db.ExecuteScalar(checkQuery, checkParams));
+
+            if (referenceCount > 0)
+            {
+                MessageBox.Show("Không thể xóa! Mặt hàng đang được sử dụng trong hóa đơn.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa mặt hàng này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.No) return;
 
@@ -169,6 +181,36 @@ namespace Karaokelamlai.Forms
             txtDonGia.Clear();
             txtSoLuongTon.Clear();
             txtTenMatHang.Clear();
+        }
+
+        private void dgvMatHang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) 
+            {
+                DataGridViewRow row = dgvMatHang.Rows[e.RowIndex];
+
+                txtTenMatHang.Text = row.Cells["TenMatHang"].Value.ToString();
+                txtDonGia.Text = row.Cells["DonGia"].Value.ToString();
+                txtSoLuongTon.Text = row.Cells["SoLuongTon"].Value.ToString();
+            }
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            string keyword = txtTimKiem.Text.Trim();
+
+            if(string.IsNullOrEmpty(keyword))
+            {
+                LoadMatHang();
+                return;
+            }
+
+            string query = "Select  * from MatHang where TenMatHang LIKE @TenMatHang";
+            Dictionary<string, object> para = new Dictionary<string, object>
+            {
+                {"TenMatHang", keyword }
+            };
+            dgvMatHang.DataSource = db.ExecuteQuery(query, para);
         }
     }
 }

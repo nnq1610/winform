@@ -3,43 +3,19 @@
   "WorkspaceRootPath": "C:\\BAITAPLON\\winform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|c:\\baitaplon\\winform\\forms\\formhoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formhoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formmathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formmathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|c:\\baitaplon\\winform\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formthongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formthongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|c:\\baitaplon\\winform\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
@@ -47,16 +23,116 @@
       "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formtaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formmathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formmathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formhoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formhoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formthongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formthongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formthongke.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formthongke.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formthongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formthongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formhoadon.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formhoadon.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formdatphong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdatphong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formphonghat.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formphonghat.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formhoadonnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formhoadonnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formdangnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdangnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formdangnhap.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdangnhap.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formdatphong.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdatphong.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formmathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formmathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formkhachhang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formkhachhang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,72 +143,20 @@
       "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formthongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formthongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formhoadon.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formhoadon.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formmathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formmathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formhoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formhoadonnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formdangky.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdangky.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formhoadonnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formhoadonnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formdatphong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formdatphong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formphonghat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formtaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formtaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formthongke.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formthongke.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\forms\\formkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|solutionrelative:forms\\formkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA31E825-7907-452D-83A3-80BE41B2336D}|Karaokelamlai.csproj|C:\\BAITAPLON\\winform\\themecolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -146,20 +170,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 1,
               "Title": "formHoaDon.cs",
               "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formHoaDon.cs",
               "RelativeDocumentMoniker": "Forms\\formHoaDon.cs",
               "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formHoaDon.cs",
               "RelativeToolTip": "Forms\\formHoaDon.cs",
-              "ViewState": "AgIAAOQAAAAAAAAAAAAjwPAAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAQwKMAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-18T16:48:42.268Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\BAITAPLON\\winform\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-03-21T14:46:01.578Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -175,107 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "formHoaDonNhap.cs [Design]",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formHoaDonNhap.cs",
-              "RelativeDocumentMoniker": "Forms\\formHoaDonNhap.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formHoaDonNhap.cs [Design]",
-              "RelativeToolTip": "Forms\\formHoaDonNhap.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T09:36:48.696Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "formMatHang.cs [Design]",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formMatHang.cs",
-              "RelativeDocumentMoniker": "Forms\\formMatHang.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formMatHang.cs [Design]",
-              "RelativeToolTip": "Forms\\formMatHang.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T15:08:46.322Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "formDangNhap.cs [Design]",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formDangNhap.cs",
-              "RelativeDocumentMoniker": "Forms\\formDangNhap.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formDangNhap.cs [Design]",
-              "RelativeToolTip": "Forms\\formDangNhap.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T03:20:23.183Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "formPhongHat.cs [Design]",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formPhongHat.cs",
-              "RelativeDocumentMoniker": "Forms\\formPhongHat.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formPhongHat.cs [Design]",
-              "RelativeToolTip": "Forms\\formPhongHat.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T13:31:30.095Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "formNhanVien.cs [Design]",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formNhanVien.cs",
-              "RelativeDocumentMoniker": "Forms\\formNhanVien.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formNhanVien.cs [Design]",
-              "RelativeToolTip": "Forms\\formNhanVien.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T15:52:21.646Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "formKhachHang.cs [Design]",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formKhachHang.cs",
-              "RelativeDocumentMoniker": "Forms\\formKhachHang.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formKhachHang.cs [Design]",
-              "RelativeToolTip": "Forms\\formKhachHang.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:05:45.268Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "formHoaDon.cs [Design]",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formHoaDon.cs",
-              "RelativeDocumentMoniker": "Forms\\formHoaDon.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formHoaDon.cs [Design]",
-              "RelativeToolTip": "Forms\\formHoaDon.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:48:41.977Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "formDangKy.cs [Design]",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formDangKy.cs",
-              "RelativeDocumentMoniker": "Forms\\formDangKy.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formDangKy.cs [Design]",
-              "RelativeToolTip": "Forms\\formDangKy.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T07:48:09.907Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "formThongKe.cs [Design]",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formThongKe.cs",
-              "RelativeDocumentMoniker": "Forms\\formThongKe.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formThongKe.cs [Design]",
-              "RelativeToolTip": "Forms\\formThongKe.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:23:48.303Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "App.config",
               "DocumentMoniker": "C:\\BAITAPLON\\winform\\App.config",
               "RelativeDocumentMoniker": "App.config",
@@ -283,11 +221,24 @@
               "RelativeToolTip": "App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-03-21T02:47:00.283Z"
+              "WhenOpened": "2025-03-21T02:47:00.283Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
+              "Title": "formPhongHat.cs [Design]",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formPhongHat.cs",
+              "RelativeDocumentMoniker": "Forms\\formPhongHat.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formPhongHat.cs [Design]",
+              "RelativeToolTip": "Forms\\formPhongHat.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:31:30.095Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "formTaiKhoan.cs [Design]",
               "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formTaiKhoan.cs",
               "RelativeDocumentMoniker": "Forms\\formTaiKhoan.cs",
@@ -298,7 +249,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
+              "Title": "formMatHang.cs [Design]",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formMatHang.cs",
+              "RelativeDocumentMoniker": "Forms\\formMatHang.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formMatHang.cs [Design]",
+              "RelativeToolTip": "Forms\\formMatHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T15:08:46.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "formKhachHang.cs [Design]",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formKhachHang.cs",
+              "RelativeDocumentMoniker": "Forms\\formKhachHang.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formKhachHang.cs [Design]",
+              "RelativeToolTip": "Forms\\formKhachHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:05:45.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "formHoaDonNhap.cs [Design]",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formHoaDonNhap.cs",
+              "RelativeDocumentMoniker": "Forms\\formHoaDonNhap.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formHoaDonNhap.cs [Design]",
+              "RelativeToolTip": "Forms\\formHoaDonNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T09:36:48.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "formDatPhong.cs [Design]",
               "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formDatPhong.cs",
               "RelativeDocumentMoniker": "Forms\\formDatPhong.cs",
@@ -309,42 +293,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\MainForm.cs",
-              "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\MainForm.cs",
-              "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAQwCQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "formDangNhap.cs [Design]",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formDangNhap.cs",
+              "RelativeDocumentMoniker": "Forms\\formDangNhap.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formDangNhap.cs [Design]",
+              "RelativeToolTip": "Forms\\formDangNhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T13:04:35.922Z"
+              "WhenOpened": "2025-03-19T03:20:23.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "formDangKy.cs [Design]",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formDangKy.cs",
+              "RelativeDocumentMoniker": "Forms\\formDangKy.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formDangKy.cs [Design]",
+              "RelativeToolTip": "Forms\\formDangKy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T07:48:09.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "formHoaDon.cs [Design]",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formHoaDon.cs",
+              "RelativeDocumentMoniker": "Forms\\formHoaDon.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formHoaDon.cs [Design]",
+              "RelativeToolTip": "Forms\\formHoaDon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:48:41.977Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "formNhanVien.cs [Design]",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formNhanVien.cs",
+              "RelativeDocumentMoniker": "Forms\\formNhanVien.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formNhanVien.cs [Design]",
+              "RelativeToolTip": "Forms\\formNhanVien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T15:52:21.646Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\MainForm.cs",
-              "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\MainForm.cs [Design]",
-              "RelativeToolTip": "MainForm.cs [Design]",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T13:00:44.76Z"
+              "WhenOpened": "2025-03-19T07:11:32.083Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "formDangNhap.cs",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formDangNhap.cs",
-              "RelativeDocumentMoniker": "Forms\\formDangNhap.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formDangNhap.cs",
-              "RelativeToolTip": "Forms\\formDangNhap.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwBYAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "formThongKe.cs [Design]",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formThongKe.cs",
+              "RelativeDocumentMoniker": "Forms\\formThongKe.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formThongKe.cs [Design]",
+              "RelativeToolTip": "Forms\\formThongKe.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T06:44:42.824Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "WhenOpened": "2025-03-18T16:23:48.303Z"
             },
             {
               "$type": "Bookmark",
@@ -355,8 +368,240 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
+              "Title": "formThongKe.Designer.cs",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formThongKe.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\formThongKe.Designer.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formThongKe.Designer.cs",
+              "RelativeToolTip": "Forms\\formThongKe.Designer.cs",
+              "ViewState": "AgIAABgBAAAAAAAAAIAwwGABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T08:11:58.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "formThongKe.cs",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formThongKe.cs",
+              "RelativeDocumentMoniker": "Forms\\formThongKe.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formThongKe.cs",
+              "RelativeToolTip": "Forms\\formThongKe.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T14:26:28.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DbHelper.cs",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\DbHelper.cs",
+              "RelativeDocumentMoniker": "DbHelper.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\DbHelper.cs",
+              "RelativeToolTip": "DbHelper.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAowEAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T14:36:10.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "formDangKy.cs",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formDangKy.cs",
+              "RelativeDocumentMoniker": "Forms\\formDangKy.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formDangKy.cs",
+              "RelativeToolTip": "Forms\\formDangKy.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAmwDcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T07:53:01.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "formHoaDon.Designer.cs",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formHoaDon.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\formHoaDon.Designer.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formHoaDon.Designer.cs",
+              "RelativeToolTip": "Forms\\formHoaDon.Designer.cs",
+              "ViewState": "AgIAABQDAAAAAAAAAIAwwCcDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T18:07:32.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "formDatPhong.cs",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formDatPhong.cs",
+              "RelativeDocumentMoniker": "Forms\\formDatPhong.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formDatPhong.cs",
+              "RelativeToolTip": "Forms\\formDatPhong.cs",
+              "ViewState": "AgIAAB0BAAAAAAAAAAAQwDEBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:17:58.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "formDatPhong.Designer.cs",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formDatPhong.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\formDatPhong.Designer.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formDatPhong.Designer.cs",
+              "RelativeToolTip": "Forms\\formDatPhong.Designer.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAIA9wBwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:18:06.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "formPhongHat.Designer.cs",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formPhongHat.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\formPhongHat.Designer.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formPhongHat.Designer.cs",
+              "RelativeToolTip": "Forms\\formPhongHat.Designer.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T13:59:52.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "formHoaDonNhap.Designer.cs",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formHoaDonNhap.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\formHoaDonNhap.Designer.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formHoaDonNhap.Designer.cs",
+              "RelativeToolTip": "Forms\\formHoaDonNhap.Designer.cs",
+              "ViewState": "AgIAADcBAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T10:36:43.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "formDangNhap.Designer.cs",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formDangNhap.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\formDangNhap.Designer.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formDangNhap.Designer.cs",
+              "RelativeToolTip": "Forms\\formDangNhap.Designer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T13:59:24.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "formDangNhap.resx",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formDangNhap.resx",
+              "RelativeDocumentMoniker": "Forms\\formDangNhap.resx",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formDangNhap.resx",
+              "RelativeToolTip": "Forms\\formDangNhap.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-03-21T13:59:25.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "formDatPhong.resx",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formDatPhong.resx",
+              "RelativeDocumentMoniker": "Forms\\formDatPhong.resx",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formDatPhong.resx",
+              "RelativeToolTip": "Forms\\formDatPhong.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-03-21T10:28:15.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "formPhongHat.cs",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formPhongHat.cs",
+              "RelativeDocumentMoniker": "Forms\\formPhongHat.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formPhongHat.cs",
+              "RelativeToolTip": "Forms\\formPhongHat.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAIAwwJMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:38:15.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "formMatHang.cs",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formMatHang.cs",
+              "RelativeDocumentMoniker": "Forms\\formMatHang.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formMatHang.cs",
+              "RelativeToolTip": "Forms\\formMatHang.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAwwLIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T15:25:48.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "formKhachHang.cs",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formKhachHang.cs",
+              "RelativeDocumentMoniker": "Forms\\formKhachHang.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formKhachHang.cs",
+              "RelativeToolTip": "Forms\\formKhachHang.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAswEIAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:10:04.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "formKhachHang.Designer.cs",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formKhachHang.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\formKhachHang.Designer.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formKhachHang.Designer.cs",
+              "RelativeToolTip": "Forms\\formKhachHang.Designer.cs",
+              "ViewState": "AgIAAAgBAAAAAAAAAIAwwBYBAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T13:07:02.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\MainForm.cs [Design]",
+              "RelativeToolTip": "MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:00:44.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\MainForm.cs",
+              "RelativeToolTip": "MainForm.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAB4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:04:35.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "formDangNhap.cs",
+              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formDangNhap.cs",
+              "RelativeDocumentMoniker": "Forms\\formDangNhap.cs",
+              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formDangNhap.cs",
+              "RelativeToolTip": "Forms\\formDangNhap.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwBYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T06:44:42.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "C:\\BAITAPLON\\winform\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "MainForm.Designer.cs",
@@ -368,67 +613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "DbHelper.cs",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\DbHelper.cs",
-              "RelativeDocumentMoniker": "DbHelper.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\DbHelper.cs",
-              "RelativeToolTip": "DbHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T14:36:10.477Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "formThongKe.cs",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formThongKe.cs",
-              "RelativeDocumentMoniker": "Forms\\formThongKe.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formThongKe.cs",
-              "RelativeToolTip": "Forms\\formThongKe.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAswFwAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:40:10.086Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "formHoaDon.Designer.cs",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formHoaDon.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\formHoaDon.Designer.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formHoaDon.Designer.cs",
-              "RelativeToolTip": "Forms\\formHoaDon.Designer.cs",
-              "ViewState": "AgIAAMsAAAAAAAAAAIAwwN8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T18:07:32.43Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "formMatHang.cs",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formMatHang.cs",
-              "RelativeDocumentMoniker": "Forms\\formMatHang.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formMatHang.cs",
-              "RelativeToolTip": "Forms\\formMatHang.cs",
-              "ViewState": "AgIAAGUAAAAA/v////8HwH4AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T15:25:48.361Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "formDatPhong.cs",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formDatPhong.cs",
-              "RelativeDocumentMoniker": "Forms\\formDatPhong.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formDatPhong.cs",
-              "RelativeToolTip": "Forms\\formDatPhong.cs",
-              "ViewState": "AgIAAMAAAAAAAAAAAAAAwNMAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:17:58.348Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 35,
               "Title": "formHoaDonNhap.cs",
               "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formHoaDonNhap.cs",
               "RelativeDocumentMoniker": "Forms\\formHoaDonNhap.cs",
@@ -440,19 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "formDangKy.cs",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formDangKy.cs",
-              "RelativeDocumentMoniker": "Forms\\formDangKy.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formDangKy.cs",
-              "RelativeToolTip": "Forms\\formDangKy.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBUAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T07:53:01.842Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 36,
               "Title": "formDangKy.Designer.cs",
               "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formDangKy.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\formDangKy.Designer.cs",
@@ -464,31 +637,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T07:11:32.083Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "formHoaDonNhap.Designer.cs",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formHoaDonNhap.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\formHoaDonNhap.Designer.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formHoaDonNhap.Designer.cs",
-              "RelativeToolTip": "Forms\\formHoaDonNhap.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T10:36:43.084Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 37,
               "Title": "formNhanVien.cs",
               "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formNhanVien.cs",
               "RelativeDocumentMoniker": "Forms\\formNhanVien.cs",
@@ -500,31 +649,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "formDatPhong.Designer.cs",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formDatPhong.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\formDatPhong.Designer.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formDatPhong.Designer.cs",
-              "RelativeToolTip": "Forms\\formDatPhong.Designer.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAgwIIAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:18:06.481Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "formPhongHat.cs",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formPhongHat.cs",
-              "RelativeDocumentMoniker": "Forms\\formPhongHat.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formPhongHat.cs",
-              "RelativeToolTip": "Forms\\formPhongHat.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAQwGsAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T13:38:15.033Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 38,
               "Title": "formTaiKhoan.cs",
               "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formTaiKhoan.cs",
               "RelativeDocumentMoniker": "Forms\\formTaiKhoan.cs",
@@ -536,31 +661,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "formThongKe.Designer.cs",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formThongKe.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\formThongKe.Designer.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formThongKe.Designer.cs",
-              "RelativeToolTip": "Forms\\formThongKe.Designer.cs",
-              "ViewState": "AgIAAMQAAAAAAAAAAADgv9oAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T08:11:58.304Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "formKhachHang.cs",
-              "DocumentMoniker": "C:\\BAITAPLON\\winform\\Forms\\formKhachHang.cs",
-              "RelativeDocumentMoniker": "Forms\\formKhachHang.cs",
-              "ToolTip": "C:\\BAITAPLON\\winform\\Forms\\formKhachHang.cs",
-              "RelativeToolTip": "Forms\\formKhachHang.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwD0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:10:04.939Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 39,
               "Title": "Themecolor.cs",
               "DocumentMoniker": "C:\\BAITAPLON\\winform\\Themecolor.cs",
               "RelativeDocumentMoniker": "Themecolor.cs",

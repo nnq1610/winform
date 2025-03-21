@@ -28,7 +28,7 @@ namespace Karaokelamlai
             this.userRole = userRole;
             btnCLoseChilddForm.Visible = false;
 
-            if (userRole != "Quản lý")
+            if (userRole != "Admin")
             {
                 btnNhanSu.Visible = false;
                 btnTaiKhoan.Visible = false;

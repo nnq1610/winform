@@ -71,7 +71,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 681);
+            this.panelMenu.Size = new System.Drawing.Size(200, 520);
             this.panelMenu.TabIndex = 1;
             // 
             // btnHoaDonNhap
@@ -127,7 +127,7 @@
             this.btnDangXuat.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnDangXuat.Image = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.Image")));
             this.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangXuat.Location = new System.Drawing.Point(0, 621);
+            this.btnDangXuat.Location = new System.Drawing.Point(0, 460);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(200, 60);
             this.btnDangXuat.TabIndex = 35;
@@ -301,9 +301,9 @@
             this.label2.ForeColor = System.Drawing.Color.LightGray;
             this.label2.Location = new System.Drawing.Point(40, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 37);
+            this.label2.Size = new System.Drawing.Size(128, 37);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Xin chào";
+            this.label2.Text = "Nhóm 16";
             // 
             // panelTitle
             // 
@@ -313,7 +313,7 @@
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitle.Location = new System.Drawing.Point(200, 0);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(821, 80);
+            this.panelTitle.Size = new System.Drawing.Size(612, 80);
             this.panelTitle.TabIndex = 2;
             // 
             // btnCLoseChilddForm
@@ -335,11 +335,11 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(273, 15);
+            this.lblTitle.Location = new System.Drawing.Point(169, 15);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(287, 37);
+            this.lblTitle.Size = new System.Drawing.Size(246, 37);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Quản Lý Quán Karaoke";
+            this.lblTitle.Text = "Quán lý MUSICBOX";
             this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
             // 
             // panelDestopPane
@@ -348,7 +348,7 @@
             this.panelDestopPane.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDestopPane.Location = new System.Drawing.Point(200, 80);
             this.panelDestopPane.Name = "panelDestopPane";
-            this.panelDestopPane.Size = new System.Drawing.Size(821, 601);
+            this.panelDestopPane.Size = new System.Drawing.Size(612, 440);
             this.panelDestopPane.TabIndex = 3;
             // 
             // pictureBox1
@@ -357,7 +357,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(821, 601);
+            this.pictureBox1.Size = new System.Drawing.Size(612, 440);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -365,11 +365,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1021, 681);
+            this.ClientSize = new System.Drawing.Size(812, 520);
             this.Controls.Add(this.panelDestopPane);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelMenu);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
