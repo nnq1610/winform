@@ -163,5 +163,12 @@ namespace Karaokelamlai.Forms
                 MessageBox.Show("Xóa thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtDonGia.Clear();
+            txtSoLuongTon.Clear();
+            txtTenMatHang.Clear();
+        }
     }
 }

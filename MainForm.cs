@@ -27,17 +27,14 @@ namespace Karaokelamlai
             random = new Random();
             this.userRole = userRole;
             btnCLoseChilddForm.Visible = false;
-        }
-        private bool IsTenDangNhapExists(string tenDangNhap)
-        {
-            string query = "SELECT COUNT(*) FROM TaiKhoan WHERE TenDangNhap = @TenDangNhap";
-            Dictionary<string, object> parameters = new Dictionary<string, object>
+
+            if (userRole != "Quản lý")
             {
-                { "@TenDangNhap", tenDangNhap }
-            };
-            int count = Convert.ToInt32(db.ExecuteScalar(query, parameters));
-            return count > 0;
+                btnNhanSu.Visible = false;
+                btnTaiKhoan.Visible = false;
+            }
         }
+
         private Color SelectThemeColor()
         {
             int index = random.Next(Themecolor.colorList.Count);
@@ -182,6 +179,11 @@ namespace Karaokelamlai
         private void btnHoaDonNhap_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.formHoaDonNhap(), sender);
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

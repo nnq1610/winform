@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnTinhTien = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -65,6 +66,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Controls.Add(this.btnTinhTien);
             this.splitContainer1.Panel1.Controls.Add(this.btnSua);
             this.splitContainer1.Panel1.Controls.Add(this.btnXoa);
@@ -75,8 +77,23 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dgvDatPhong);
             this.splitContainer1.Size = new System.Drawing.Size(800, 450);
-            this.splitContainer1.SplitterDistance = 240;
+            this.splitContainer1.SplitterDistance = 273;
             this.splitContainer1.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(206, 357);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(57, 37);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Clear";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnTinhTien
             // 
@@ -84,9 +101,10 @@
             this.btnTinhTien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnTinhTien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnTinhTien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTinhTien.Location = new System.Drawing.Point(6, 304);
+            this.btnTinhTien.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnTinhTien.Location = new System.Drawing.Point(12, 302);
             this.btnTinhTien.Name = "btnTinhTien";
-            this.btnTinhTien.Size = new System.Drawing.Size(75, 37);
+            this.btnTinhTien.Size = new System.Drawing.Size(57, 53);
             this.btnTinhTien.TabIndex = 6;
             this.btnTinhTien.Text = "Tính Tiền";
             this.btnTinhTien.UseVisualStyleBackColor = true;
@@ -98,9 +116,10 @@
             this.btnSua.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnSua.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSua.Location = new System.Drawing.Point(162, 347);
+            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnSua.Location = new System.Drawing.Point(146, 302);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 36);
+            this.btnSua.Size = new System.Drawing.Size(57, 37);
             this.btnSua.TabIndex = 5;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -112,9 +131,10 @@
             this.btnXoa.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnXoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Location = new System.Drawing.Point(162, 389);
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnXoa.Location = new System.Drawing.Point(206, 302);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 35);
+            this.btnXoa.Size = new System.Drawing.Size(57, 37);
             this.btnXoa.TabIndex = 4;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -126,9 +146,10 @@
             this.btnThem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnThem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem.Location = new System.Drawing.Point(162, 304);
+            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnThem.Location = new System.Drawing.Point(84, 302);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 37);
+            this.btnThem.Size = new System.Drawing.Size(56, 37);
             this.btnThem.TabIndex = 3;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -170,23 +191,25 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(240, 298);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(273, 298);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // dtpKetThuc
             // 
             this.dtpKetThuc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtpKetThuc.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpKetThuc.Location = new System.Drawing.Point(3, 234);
             this.dtpKetThuc.Name = "dtpKetThuc";
-            this.dtpKetThuc.Size = new System.Drawing.Size(234, 20);
+            this.dtpKetThuc.Size = new System.Drawing.Size(267, 20);
             this.dtpKetThuc.TabIndex = 15;
             // 
             // dtpBatDau
             // 
             this.dtpBatDau.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtpBatDau.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpBatDau.Location = new System.Drawing.Point(3, 192);
             this.dtpBatDau.Name = "dtpBatDau";
-            this.dtpBatDau.Size = new System.Drawing.Size(234, 20);
+            this.dtpBatDau.Size = new System.Drawing.Size(267, 20);
             this.dtpBatDau.TabIndex = 1;
             // 
             // cboGioiTinh
@@ -195,7 +218,7 @@
             this.cboGioiTinh.FormattingEnabled = true;
             this.cboGioiTinh.Location = new System.Drawing.Point(3, 150);
             this.cboGioiTinh.Name = "cboGioiTinh";
-            this.cboGioiTinh.Size = new System.Drawing.Size(234, 21);
+            this.cboGioiTinh.Size = new System.Drawing.Size(267, 21);
             this.cboGioiTinh.TabIndex = 14;
             // 
             // cboPhong
@@ -204,7 +227,7 @@
             this.cboPhong.FormattingEnabled = true;
             this.cboPhong.Location = new System.Drawing.Point(3, 108);
             this.cboPhong.Name = "cboPhong";
-            this.cboPhong.Size = new System.Drawing.Size(234, 21);
+            this.cboPhong.Size = new System.Drawing.Size(267, 21);
             this.cboPhong.TabIndex = 1;
             // 
             // txtTongTien
@@ -212,7 +235,7 @@
             this.txtTongTien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtTongTien.Location = new System.Drawing.Point(3, 276);
             this.txtTongTien.Name = "txtTongTien";
-            this.txtTongTien.Size = new System.Drawing.Size(234, 20);
+            this.txtTongTien.Size = new System.Drawing.Size(267, 20);
             this.txtTongTien.TabIndex = 13;
             // 
             // label6
@@ -230,7 +253,7 @@
             this.txtSoDienThoai.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtSoDienThoai.Location = new System.Drawing.Point(3, 66);
             this.txtSoDienThoai.Name = "txtSoDienThoai";
-            this.txtSoDienThoai.Size = new System.Drawing.Size(234, 20);
+            this.txtSoDienThoai.Size = new System.Drawing.Size(267, 20);
             this.txtSoDienThoai.TabIndex = 6;
             // 
             // txtHoTenKhach
@@ -238,7 +261,7 @@
             this.txtHoTenKhach.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtHoTenKhach.Location = new System.Drawing.Point(3, 24);
             this.txtHoTenKhach.Name = "txtHoTenKhach";
-            this.txtHoTenKhach.Size = new System.Drawing.Size(234, 20);
+            this.txtHoTenKhach.Size = new System.Drawing.Size(267, 20);
             this.txtHoTenKhach.TabIndex = 5;
             // 
             // label1
@@ -303,12 +326,13 @@
             // 
             // dgvDatPhong
             // 
-            this.dgvDatPhong.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvDatPhong.BackgroundColor = System.Drawing.Color.White;
+            this.dgvDatPhong.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgvDatPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDatPhong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDatPhong.Location = new System.Drawing.Point(0, 0);
             this.dgvDatPhong.Name = "dgvDatPhong";
-            this.dgvDatPhong.Size = new System.Drawing.Size(556, 450);
+            this.dgvDatPhong.Size = new System.Drawing.Size(523, 450);
             this.dgvDatPhong.TabIndex = 0;
             this.dgvDatPhong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatPhong_CellClick);
             // 
@@ -356,5 +380,6 @@
         private System.Windows.Forms.DateTimePicker dtpBatDau;
         private System.Windows.Forms.ComboBox cboGioiTinh;
         private System.Windows.Forms.ComboBox cboPhong;
+        private System.Windows.Forms.Button button1;
     }
 }

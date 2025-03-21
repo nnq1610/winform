@@ -37,25 +37,27 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtNhapLaiMatKhau = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.cbChucVu = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnHienMatKhau
             // 
-            this.btnHienMatKhau.Location = new System.Drawing.Point(286, 76);
+            this.btnHienMatKhau.Location = new System.Drawing.Point(318, 78);
             this.btnHienMatKhau.Name = "btnHienMatKhau";
             this.btnHienMatKhau.Size = new System.Drawing.Size(26, 22);
             this.btnHienMatKhau.TabIndex = 15;
             this.btnHienMatKhau.UseVisualStyleBackColor = true;
+            this.btnHienMatKhau.Click += new System.EventHandler(this.btnHienMatKhau_Click);
             // 
             // btnDangKy
             // 
-            this.btnDangKy.Location = new System.Drawing.Point(143, 166);
+            this.btnDangKy.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnDangKy.Location = new System.Drawing.Point(171, 170);
             this.btnDangKy.Name = "btnDangKy";
             this.btnDangKy.Size = new System.Drawing.Size(92, 32);
             this.btnDangKy.TabIndex = 14;
-            this.btnDangKy.Text = "Đăng Kí";
+            this.btnDangKy.Text = "Đăng Ký";
             this.btnDangKy.UseVisualStyleBackColor = true;
             this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
             // 
@@ -80,9 +82,9 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(168, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 30);
+            this.label3.Size = new System.Drawing.Size(95, 30);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Đăng Kí";
+            this.label3.Text = "Đăng Ký";
             // 
             // label2
             // 
@@ -122,23 +124,23 @@
             this.label4.TabIndex = 17;
             this.label4.Text = "Nhập Lại Mật Khẩu";
             // 
-            // cbChucVu
-            // 
-            this.cbChucVu.FormattingEnabled = true;
-            this.cbChucVu.Location = new System.Drawing.Point(143, 130);
-            this.cbChucVu.Name = "cbChucVu";
-            this.cbChucVu.Size = new System.Drawing.Size(121, 21);
-            this.cbChucVu.TabIndex = 18;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(12, 130);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 17);
+            this.label5.Size = new System.Drawing.Size(96, 17);
             this.label5.TabIndex = 19;
-            this.label5.Text = "Chức Vụ";
+            this.label5.Text = "Mã Nhân Viên";
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(143, 130);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(169, 20);
+            this.txtId.TabIndex = 20;
+            this.txtId.UseSystemPasswordChar = true;
             // 
             // formDangKy
             // 
@@ -146,8 +148,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(437, 233);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.cbChucVu);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtNhapLaiMatKhau);
             this.Controls.Add(this.btnHienMatKhau);
@@ -158,7 +160,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "formDangKy";
-            this.Text = "formDangKy";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Đăng ký";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,7 +178,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNhapLaiMatKhau;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cbChucVu;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtId;
     }
 }

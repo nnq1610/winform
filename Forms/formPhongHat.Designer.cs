@@ -96,7 +96,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(33, 7);
+            this.label1.Location = new System.Drawing.Point(34, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(184, 42);
             this.label1.TabIndex = 0;
@@ -130,22 +130,22 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 26);
+            this.label2.Size = new System.Drawing.Size(48, 34);
             this.label2.TabIndex = 0;
             this.label2.Text = "Tên Phòng";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(3, 62);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 26);
+            this.label4.Size = new System.Drawing.Size(48, 34);
             this.label4.TabIndex = 2;
             this.label4.Text = "Giá Phòng";
             // 
@@ -163,11 +163,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(3, 124);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 26);
+            this.label5.Size = new System.Drawing.Size(48, 34);
             this.label5.TabIndex = 4;
             this.label5.Text = "Loại Phòng";
             // 
@@ -185,11 +185,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.Location = new System.Drawing.Point(3, 186);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 26);
+            this.label6.Size = new System.Drawing.Size(47, 34);
             this.label6.TabIndex = 6;
             this.label6.Text = "Trạng Thái";
             // 
@@ -240,6 +240,7 @@
             this.btnThem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnThem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnThem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnThem.Location = new System.Drawing.Point(3, 3);
             this.btnThem.Name = "btnThem";
@@ -256,6 +257,7 @@
             this.btnXoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnXoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnXoa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnXoa.Location = new System.Drawing.Point(3, 49);
             this.btnXoa.Name = "btnXoa";
@@ -272,6 +274,7 @@
             this.btnSua.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnSua.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnSua.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSua.Location = new System.Drawing.Point(3, 95);
             this.btnSua.Name = "btnSua";
@@ -355,6 +358,7 @@
             this.dgvPhongHat.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvPhongHat.Size = new System.Drawing.Size(524, 393);
             this.dgvPhongHat.TabIndex = 0;
+            this.dgvPhongHat.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Cell_Click);
             this.dgvPhongHat.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPhongHat_CellContentClick);
             // 
             // formPhongHat

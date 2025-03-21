@@ -15,12 +15,22 @@ namespace Karaokelamlai.Forms
             InitializeComponent();
             LoadMatHang();
             LoadHoaDonNhap();
-            dtpNgayNhap.Value = DateTime.Today; // Set ngày nhập mặc định là hôm nay
+            LoadNhanVien();
+            dtpNgayNhap.Value = DateTime.Today;
+        }
+        private void LoadNhanVien()
+        {
+            string query = "SELECT HoTen, MaNhanVien from NhanVien";
+            DataTable dt = db.ExecuteQuery(query);
+            cboNhanVien.DataSource = dt;
+            cboNhanVien.DisplayMember = "HoTen";
+            cboNhanVien.ValueMember = "MaNhanVien";
         }
         private void formHoaDonNhap_Load(object sender, EventArgs e)
         {
-            LoadTheme();
+            ApplyTheme(this);
         }
+
         private void ApplyTheme(Control parent)
         {
             foreach (Control ctrl in parent.Controls)
@@ -33,19 +43,11 @@ namespace Karaokelamlai.Forms
                 }
                 else
                 {
-                    ApplyTheme(ctrl); // Đệ quy nếu control có chứa control con
+                    ApplyTheme(ctrl);
                 }
             }
         }
-        private void LoadTheme()
-        {
-            ApplyTheme(this);
-            label1.ForeColor = Themecolor.SecondaryColor;
-            label2.ForeColor = Themecolor.SecondaryColor;
-            label3.ForeColor = Themecolor.SecondaryColor;
-            label4.ForeColor = Themecolor.SecondaryColor;
-            label5.ForeColor = Themecolor.SecondaryColor;
-        }
+
         private void LoadMatHang()
         {
             string query = "SELECT MaMatHang, TenMatHang, DonGia FROM MatHang";
@@ -58,49 +60,33 @@ namespace Karaokelamlai.Forms
 
         private void LoadHoaDonNhap()
         {
-            string query = "SELECT hdn.MaHoaDonNhap, mh.TenMatHang, hdn.SoLuongNhap, hdn.TongTien, hdn.NgayNhap " +
+            string query = "SELECT hdn.MaHDN, mh.TenMatHang, hdn.SoLuongTon, hdn.TongTien, hdn.NgayNhap " +
                            "FROM HoaDonNhap hdn JOIN MatHang mh ON hdn.MaMatHang = mh.MaMatHang";
             DataTable dt = db.ExecuteQuery(query);
 
             dgvHoaDonNhap.ForeColor = Color.Black;
             dgvHoaDonNhap.DataSource = dt;
-            dgvHoaDonNhap.AutoGenerateColumns = true;
             dgvHoaDonNhap.ClearSelection();
-            dgvHoaDonNhap.Refresh();
         }
 
-        private void cboMatHang_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void nudSoLuong_ValueChanged(object sender, EventArgs e)
         {
-            if (cboMatHang.SelectedValue != null)
+            if (nudSoLuong.Value < 1)
             {
-                int maMatHang = Convert.ToInt32(cboMatHang.SelectedValue);
-                string query = "SELECT DonGia FROM MatHang WHERE MaMatHang = @MaMatHang";
-                Dictionary<string, object> parameters = new Dictionary<string, object>
-                {
-                    { "@MaMatHang", maMatHang }
-                };
-
-                object result = db.ExecuteScalar(query, parameters);
-                if (result != null)
-                {
-                    txtDonGia.Text = result.ToString();
-                    TinhTongTien();
-                }
+                nudSoLuong.Value = 1; 
             }
-        }
 
-        private void txtSoLuong_TextChanged(object sender, EventArgs e)
-        {
             TinhTongTien();
         }
 
+       
         private void TinhTongTien()
         {
             if (decimal.TryParse(txtDonGia.Text, out decimal donGia) &&
-                int.TryParse(txtSoLuong.Text, out int soLuong))
+                int.TryParse(nudSoLuong.Value.ToString(), out int soLuong))
             {
-                decimal tongTien = donGia * soLuong;
-                txtTongTien.Text = tongTien.ToString("N2");
+                txtTongTien.Text = (donGia * soLuong).ToString();
             }
             else
             {
@@ -110,25 +96,39 @@ namespace Karaokelamlai.Forms
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            if (cboMatHang.SelectedValue == null || string.IsNullOrWhiteSpace(txtSoLuong.Text))
+            if (cboMatHang.SelectedValue == null || cboNhanVien.SelectedValue == null || nudSoLuong.Value <= 0)
             {
-                MessageBox.Show("Vui lòng chọn mặt hàng và nhập số lượng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng chọn mặt hàng, nhân viên và nhập số lượng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             int maMatHang = Convert.ToInt32(cboMatHang.SelectedValue);
-            int soLuong = int.Parse(txtSoLuong.Text);
-            decimal tongTien = decimal.Parse(txtTongTien.Text);
-            DateTime ngayNhap = dtpNgayNhap.Value.Date; // Lấy ngày nhập từ DateTimePicker
+            string tenMatHang = cboMatHang.Text;
+            int maNhanVien = Convert.ToInt32(cboNhanVien.SelectedValue);
+            int soLuong = (int)nudSoLuong.Value;
 
-            string query = "INSERT INTO HoaDonNhap (MaMatHang, SoLuongNhap, TongTien, NgayNhap) VALUES (@MaMatHang, @SoLuongNhap, @TongTien, @NgayNhap)";
-            Dictionary<string, object> parameters = new Dictionary<string, object>
+            TinhTongTien();
+            if (!decimal.TryParse(txtTongTien.Text, out decimal tongTien))
             {
-                { "@MaMatHang", maMatHang },
-                { "@SoLuongNhap", soLuong },
-                { "@TongTien", tongTien },
-                { "@NgayNhap", ngayNhap }
-            };
+                MessageBox.Show("Tổng tiền không hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            DateTime ngayNhap = dtpNgayNhap.Value.Date;
+
+            string query = "INSERT INTO HoaDonNhap (MaMatHang, TenMatHang, SoLuongTon, TongTien, NgayNhap, NhaCungCap, MaNhanVien) " +
+                           "VALUES (@MaMatHang, @TenMatHang, @SoLuongNhap, @TongTien, @NgayNhap, @NhaCungCap, @MaNhanVien)";
+
+            Dictionary<string, object> parameters = new Dictionary<string, object>
+    {
+        { "@MaMatHang", maMatHang },
+        { "@TenMatHang", tenMatHang },
+        { "@SoLuongNhap", soLuong },
+        { "@TongTien", tongTien },
+        { "@NgayNhap", ngayNhap },
+        { "@NhaCungCap", txtNCC.Text },
+        { "@MaNhanVien", maNhanVien }
+    };
 
             if (db.ExecuteNonQuery(query, parameters) > 0)
             {
@@ -139,7 +139,42 @@ namespace Karaokelamlai.Forms
             {
                 MessageBox.Show("Lưu thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
+
+            string checkQuery = "SELECT COUNT (*) FROM MatHang Where MaMatHang = @MaMatHang";
+            Dictionary<string, object> checkParam = new Dictionary<string, object>
+            {
+                {"@MaMatHang", maMatHang }
+            };
+            int count = Convert.ToInt32(db.ExecuteScalar(checkQuery, checkParam));
+                {
+                if (count > 0)
+                {
+                    string updateQuery = "Update MatHang set SoLuongTon = SoLuongTon + @SoLuongTon Where MaMatHang = @MaMatHang";
+                    Dictionary<string, object> c1 = new Dictionary<string, object>
+                    {
+                        { "SoLuongTon", soLuong },
+                        { "MaMatHang", maMatHang }
+                    };
+                    db.ExecuteNonQuery(updateQuery, c1);
+
+                }
+                else
+                {
+                    string insertQuery = "INSERT INTO MatHang (MaMatHang, TenMatHang, DonGia, SoLuongTon) VALUES (@MaMatHang, @TenMatHang, @DonGia, @SoLuongTon)";
+                    Dictionary<string, object> insertParams = new Dictionary<string, object>
+                    {
+                        { "@MaMatHang", maMatHang },
+                        { "@TenMatHang", tenMatHang },
+                        { "@DonGia", txtDonGia.Text },
+                        { "@SoLuongTon", soLuong }
+                    };
+                    db.ExecuteNonQuery(insertQuery, insertParams);
+                }
+                }
+
+            }
+
+
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
@@ -149,12 +184,12 @@ namespace Karaokelamlai.Forms
                 return;
             }
 
-            int maHoaDonNhap = Convert.ToInt32(dgvHoaDonNhap.SelectedRows[0].Cells["MaHoaDonNhap"].Value);
+            int maHoaDonNhap = Convert.ToInt32(dgvHoaDonNhap.SelectedRows[0].Cells["MaHDN"].Value);
 
             DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa hóa đơn này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.No) return;
 
-            string query = "DELETE FROM HoaDonNhap WHERE MaHoaDonNhap = @MaHoaDonNhap";
+            string query = "DELETE FROM HoaDonNhap WHERE MaHDN = @MaHoaDonNhap";
             Dictionary<string, object> parameters = new Dictionary<string, object>
             {
                 { "@MaHoaDonNhap", maHoaDonNhap }
@@ -170,7 +205,5 @@ namespace Karaokelamlai.Forms
                 MessageBox.Show("Xóa thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        
     }
 }

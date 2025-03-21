@@ -43,12 +43,15 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panelTitle = new System.Windows.Forms.Panel();
+            this.btnCLoseChilddForm = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDestopPane = new System.Windows.Forms.Panel();
-            this.btnCLoseChilddForm = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitle.SuspendLayout();
+            this.panelDestopPane.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -298,9 +301,9 @@
             this.label2.ForeColor = System.Drawing.Color.LightGray;
             this.label2.Location = new System.Drawing.Point(40, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 37);
+            this.label2.Size = new System.Drawing.Size(119, 37);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Nhóm 6";
+            this.label2.Text = "Xin chào";
             // 
             // panelTitle
             // 
@@ -312,26 +315,6 @@
             this.panelTitle.Name = "panelTitle";
             this.panelTitle.Size = new System.Drawing.Size(821, 80);
             this.panelTitle.TabIndex = 2;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(273, 15);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(287, 37);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Quản Lý Quán Karaoke";
-            // 
-            // panelDestopPane
-            // 
-            this.panelDestopPane.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDestopPane.Location = new System.Drawing.Point(200, 80);
-            this.panelDestopPane.Name = "panelDestopPane";
-            this.panelDestopPane.Size = new System.Drawing.Size(821, 601);
-            this.panelDestopPane.TabIndex = 3;
             // 
             // btnCLoseChilddForm
             // 
@@ -345,6 +328,38 @@
             this.btnCLoseChilddForm.TabIndex = 1;
             this.btnCLoseChilddForm.UseVisualStyleBackColor = true;
             this.btnCLoseChilddForm.Click += new System.EventHandler(this.btnCLoseChilddForm_Click);
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(273, 15);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(287, 37);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Quản Lý Quán Karaoke";
+            this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
+            // 
+            // panelDestopPane
+            // 
+            this.panelDestopPane.Controls.Add(this.pictureBox1);
+            this.panelDestopPane.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDestopPane.Location = new System.Drawing.Point(200, 80);
+            this.panelDestopPane.Name = "panelDestopPane";
+            this.panelDestopPane.Size = new System.Drawing.Size(821, 601);
+            this.panelDestopPane.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(821, 601);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // MainForm
             // 
@@ -361,6 +376,8 @@
             this.panelLogo.PerformLayout();
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
+            this.panelDestopPane.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -384,6 +401,7 @@
         private System.Windows.Forms.Panel panelDestopPane;
         private System.Windows.Forms.Button btnHoaDonNhap;
         private System.Windows.Forms.Button btnCLoseChilddForm;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

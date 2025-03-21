@@ -52,7 +52,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(18, 120);
+            this.label2.Location = new System.Drawing.Point(32, 120);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 17);
             this.label2.TabIndex = 1;
@@ -85,6 +85,7 @@
             // 
             // btnDangNhap
             // 
+            this.btnDangNhap.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnDangNhap.Location = new System.Drawing.Point(116, 163);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(87, 32);
@@ -95,17 +96,18 @@
             // 
             // btnDangKi
             // 
+            this.btnDangKi.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnDangKi.Location = new System.Drawing.Point(222, 163);
             this.btnDangKi.Name = "btnDangKi";
             this.btnDangKi.Size = new System.Drawing.Size(92, 32);
             this.btnDangKi.TabIndex = 6;
-            this.btnDangKi.Text = "Đăng Kí";
+            this.btnDangKi.Text = "Đăng Ký";
             this.btnDangKi.UseVisualStyleBackColor = true;
             this.btnDangKi.Click += new System.EventHandler(this.btnDangKi_Click);
             // 
             // btnHienMatKhau
             // 
-            this.btnHienMatKhau.Location = new System.Drawing.Point(271, 120);
+            this.btnHienMatKhau.Location = new System.Drawing.Point(303, 120);
             this.btnHienMatKhau.Name = "btnHienMatKhau";
             this.btnHienMatKhau.Size = new System.Drawing.Size(26, 22);
             this.btnHienMatKhau.TabIndex = 7;
@@ -127,6 +129,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "formDangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "    ";
             this.ResumeLayout(false);
             this.PerformLayout();

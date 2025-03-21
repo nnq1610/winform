@@ -1,185 +1,256 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Karaokelamlai.Forms
 {
-    public partial class formHoaDon: Form
+    public partial class formHoaDon : Form
     {
-        DbHelper db = new DbHelper();
+        private DbHelper db = new DbHelper();
+
         public formHoaDon()
         {
             InitializeComponent();
+            InitializeDataGridView();
+            LoadData();
+        }
+
+        private void InitializeDataGridView()
+        {
+            dgvChiTiet.Columns.Clear();
+            dgvChiTiet.Columns.Add("MaMatHang", "Mã Mặt Hàng");
+            dgvChiTiet.Columns.Add("TenMatHang", "Tên Mặt Hàng");
+            dgvChiTiet.Columns.Add("SoLuong", "Số Lượng");
+            dgvChiTiet.Columns.Add("DonGia", "Đơn Giá");
+            dgvChiTiet.Columns.Add("ThanhTien", "Thành Tiền");
+        }
+
+        private void LoadData()
+        {
+            LoadKhachHang();
+            LoadNhanVien();
             LoadMatHang();
             LoadPhong();
-            LoadNhanVien();
-            LoadPhuongThucThanhToan();
-            LoadHoaDon();
         }
-        private void LoadHoaDon()
-        {
-            string query = "Select * from HoaDon";
-            dgvHoaDon.ForeColor = System.Drawing.Color.Black;
-            dgvHoaDon.DataSource = db.ExecuteQuery(query);
 
-        }
-        private void LoadPhuongThucThanhToan()
+        private void LoadKhachHang()
         {
-            List<string> phuongThuc = new List<string> { "Tiền mặt", "Chuyển khoản" };
-            cboPhuongThucThanhToan.DataSource = phuongThuc;
+            cboKhachHang.DataSource = db.ExecuteQuery("SELECT MaKhachHang, HoTen FROM KhachHang");
+            cboKhachHang.DisplayMember = "HoTen";
+            cboKhachHang.ValueMember = "MaKhachHang";
         }
+
+
         private void LoadNhanVien()
         {
-            string query = "select MaNhanVien, HoTen, ChucVu FROM NhanVien";
-            DataTable dt = db.ExecuteQuery(query);
-            cboNhanVien.DataSource = dt;
+            cboNhanVien.DataSource = db.ExecuteQuery("SELECT MaNhanVien, HoTen FROM NhanVien");
             cboNhanVien.DisplayMember = "HoTen";
             cboNhanVien.ValueMember = "MaNhanVien";
         }
+
         private void LoadMatHang()
         {
-            string query = "SELECT TenMatHang, DonGia FROM MatHang";
-            DataTable dt = db.ExecuteQuery(query);
-
-            dgvMatHang.Rows.Clear();
-            dgvMatHang.ForeColor = System.Drawing.Color.Black;
-            foreach (DataRow row in dt.Rows)
-            {
-                dgvMatHang.Rows.Add(false, row["TenMatHang"], row["DonGia"], 0, 0);
-            }
+            cboMatHang.DataSource = db.ExecuteQuery("SELECT MaMatHang, TenMatHang, DonGia FROM MatHang");
+            cboMatHang.DisplayMember = "TenMatHang";
+            cboMatHang.ValueMember = "MaMatHang";
         }
 
         private void LoadPhong()
         {
-            string query = "SELECT MaDatPhong, TongTien FROM DatPhong";
-            DataTable dt = db.ExecuteQuery(query);
-
-            cboPhong.DataSource = dt;
+            cboPhong.DataSource = db.ExecuteQuery("SELECT MaDatPhong, TongTien FROM DatPhong");
             cboPhong.DisplayMember = "MaDatPhong";
-            cboPhong.ValueMember = "TongTien";
+            cboPhong.ValueMember = "MaDatPhong";
         }
-
-        private void formHoaDon_Load(object sender, EventArgs e)
-        {
-            LoadTheme();
-        }
-        private void ApplyTheme(Control parent)
-        {
-            foreach (Control ctrl in parent.Controls)
-            {
-                if (ctrl is Button btn)
-                {
-                    btn.BackColor = Themecolor.ChangeColorBrightness(Themecolor.PrimaryColor, 0.2);
-                    btn.ForeColor = Color.White;
-                    btn.FlatAppearance.BorderColor = Themecolor.SecondaryColor;
-                }
-                else
-                {
-                    ApplyTheme(ctrl); // Đệ quy nếu control có chứa control con
-                }
-            }
-        }
-        private void LoadTheme()
-        {
-            ApplyTheme(this);
-            label1.ForeColor = Themecolor.SecondaryColor;
-            label2.ForeColor = Themecolor.SecondaryColor;
-            label3.ForeColor = Themecolor.SecondaryColor;
-        }
-
 
         private void btnTinhTien_Click(object sender, EventArgs e)
         {
             decimal tongTienHang = 0;
-
-            foreach (DataGridViewRow row in dgvMatHang.Rows)
+            foreach (DataGridViewRow row in dgvChiTiet.Rows)
             {
-                bool isChecked = Convert.ToBoolean(row.Cells[0].Value);
-                if (isChecked)
+                if (row.Cells[4].Value != null)
+                    tongTienHang += Convert.ToDecimal(row.Cells[4].Value);
+            }
+
+            decimal giaPhong = Convert.ToDecimal(cboPhong.SelectedValue ?? 0);
+            txtTongHoaDon.Text = (tongTienHang + giaPhong).ToString();
+        }
+        
+        private decimal GetDonGia(int maMatHang)
+        {
+            DataTable dt = db.ExecuteQuery($"SELECT DonGia FROM MatHang WHERE MaMatHang = {maMatHang}");
+            return dt.Rows.Count > 0 ? Convert.ToDecimal(dt.Rows[0]["DonGia"]) : 0;
+        }      
+
+        private int lastInsertedHoaDonId = -1; // Store the last inserted invoice ID
+        private decimal tien = 0;
+        private void btnTaoHoaDon_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string ngayLap = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                int maNhanVien = Convert.ToInt32(cboNhanVien.SelectedValue);
+                int maKhachHang = Convert.ToInt32(cboKhachHang.SelectedValue);
+                int maDatPhong = Convert.ToInt32(cboPhong.SelectedValue);
+                decimal tongTien = 0; 
+
+                string insertHoaDonQuery = "INSERT INTO HoaDon (NgayLap, MaKhachHang, TongTien, MaNhanVien, MaDatPhong) " +
+                                           "OUTPUT INSERTED.MaHoaDon VALUES (@NgayLap, @MaKhachHang, @TongTien, @MaNhanVien, @MaDatPhong)";
+
+                Dictionary<string, object> parameters = new Dictionary<string, object>
+        {
+            { "@NgayLap", ngayLap },
+            { "@MaKhachHang", maKhachHang },
+            { "@TongTien", tongTien },
+            { "@MaNhanVien", maNhanVien },
+            { "@MaDatPhong", maDatPhong }
+        };
+
+                object result = db.ExecuteScalar(insertHoaDonQuery, parameters);
+                if (result != null)
                 {
-                    decimal thanhTien = 0;
-                    decimal.TryParse(row.Cells[4].Value?.ToString(), out thanhTien);
-                    tongTienHang += thanhTien;
+                    lastInsertedHoaDonId = Convert.ToInt32(result);
+                    MessageBox.Show($"Hóa đơn đã được tạo thành công! Mã hóa đơn: {lastInsertedHoaDonId}", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Lỗi khi tạo hóa đơn!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnLuuChiTietHoaDon_Click(object sender, EventArgs e)
+        {
+            if (lastInsertedHoaDonId == -1)
+            {
+                MessageBox.Show("Vui lòng tạo hóa đơn trước!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            try
+            {
+                decimal tongTien = 0;
+
+                foreach (DataGridViewRow row in dgvChiTiet.Rows)
+                {
+                    if (row.Cells["MaMatHang"].Value == null) continue; // Skip empty rows
+
+                    int maMatHang = Convert.ToInt32(row.Cells["MaMatHang"].Value);
+                    int soLuong = Convert.ToInt32(row.Cells["SoLuong"].Value);
+                    decimal donGia = Convert.ToDecimal(row.Cells["DonGia"].Value);
+                    decimal thanhTien = Convert.ToDecimal(row.Cells["ThanhTien"].Value);
+
+                    tongTien += thanhTien;
+                    tien = tongTien;
+                    txtTienHang.Text = tien.ToString();
+
+                    string insertChiTietQuery = "INSERT INTO ChiTietHoaDon (MaHoaDon, MaMatHang, SoLuong, DonGia) " +
+                                                "VALUES (@MaHoaDon, @MaMatHang, @SoLuong, @DonGia)";
+
+                    Dictionary<string, object> chiTietParams = new Dictionary<string, object>
+            {
+                { "@MaHoaDon", lastInsertedHoaDonId },
+                { "@MaMatHang", maMatHang },
+                { "@SoLuong", soLuong },
+                { "@DonGia", donGia },
+            };
+
+                    db.ExecuteNonQuery(insertChiTietQuery, chiTietParams);
+                }
+
+                string updateQuery = "UPDATE HoaDon SET TongTien = @TongTien WHERE MaHoaDon = @MaHoaDon";
+                Dictionary<string, object> updateParams = new Dictionary<string, object>
+        {
+            { "@TongTien", tongTien },
+            { "@MaHoaDon", lastInsertedHoaDonId }
+        };
+                db.ExecuteNonQuery(updateQuery, updateParams);
+
+                MessageBox.Show("Lưu chi tiết hóa đơn thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnThemVaoDgv_Click(object sender, EventArgs e)
+        {
+            if (cboMatHang.SelectedIndex == -1 || nudSoLuong.Value <= 0) return;
+
+            int maMatHang = (int)cboMatHang.SelectedValue;
+            string tenMatHang = cboMatHang.Text;
+            decimal donGia = GetDonGia(maMatHang);
+            int soLuong = (int)nudSoLuong.Value;
+            decimal thanhTien = donGia * soLuong;
+
+            foreach (DataGridViewRow row in dgvChiTiet.Rows)
+            {
+                if (row.Cells[0].Value != null && row.Cells[0].Value.ToString() == maMatHang.ToString())
+                {
+                    int existingSoLuong = Convert.ToInt32(row.Cells[2].Value);
+                    row.Cells[2].Value = existingSoLuong + soLuong;
+                    row.Cells[4].Value = (existingSoLuong + soLuong) * donGia;
+                    return;
                 }
             }
 
-            decimal giaPhong = 0;
-            decimal.TryParse(cboPhong.SelectedValue?.ToString(), out giaPhong);
-
-            decimal tongHoaDon = giaPhong + tongTienHang;
-
-            txtThanhTien.Text = tongHoaDon.ToString();
+            dgvChiTiet.Rows.Add(maMatHang, tenMatHang, soLuong, donGia, thanhTien);
         }
 
-        private void dgvMatHang_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        private void btnXoaDgv_Click(object sender, EventArgs e)
         {
-            if (e.RowIndex >= 0 && (e.ColumnIndex == 0 || e.ColumnIndex == 3)) // Checkbox or quantity change
+            if (dgvChiTiet.SelectedRows.Count > 0)
             {
-                CalculateRowTotal(e.RowIndex);
-            }
-        }
-
-        private void dgvMatHang_CellEndEdit(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0 && e.ColumnIndex == 3)
-            {
-                CalculateRowTotal(e.RowIndex);
-            }
-        }
-        private void CalculateRowTotal(int rowIndex)
-        {
-            if (rowIndex < 0 || rowIndex >= dgvMatHang.Rows.Count)
-                return;
-
-            bool isChecked = Convert.ToBoolean(dgvMatHang.Rows[rowIndex].Cells[0].Value);
-            int soLuong = 0;
-            decimal donGia = 0, thanhTien = 0;
-
-            int.TryParse(dgvMatHang.Rows[rowIndex].Cells[3].Value?.ToString(), out soLuong);
-            decimal.TryParse(dgvMatHang.Rows[rowIndex].Cells[2].Value?.ToString(), out donGia);
-
-            if (isChecked)
-            {
-                thanhTien = soLuong * donGia;
-            }
-
-            dgvMatHang.Rows[rowIndex].Cells[4].Value = thanhTien;
-        }
-
-        private void btnLuu_Click(object sender, EventArgs e)
-        {
-            string ngayLap = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-            decimal tongTien = decimal.Parse(txtThanhTien.Text);
-            int maNhanVien = Convert.ToInt32(cboNhanVien.SelectedValue);
-            int maDatPhong = Convert.ToInt32(cboPhong.SelectedValue);
-            string phuongThucThanhToan = cboPhuongThucThanhToan.SelectedItem.ToString();
-
-            string query = "INSERT INTO HoaDon (NgayLap, TongTien, MaNhanVien, PhuongThucThanhToan) VALUES " +
-                           $"('{ngayLap}', {tongTien}, {(maNhanVien)}, '{phuongThucThanhToan}')";
-
-            Dictionary<string, object> parameters = new Dictionary<string, object>
-        {
-            { "@NgayLap", ngayLap },
-            { "@TongTien", tongTien },
-            { "@MaNhanVien", maNhanVien },
-                    {"@MaDatPhong", maDatPhong }
-        };
-
-            if (db.ExecuteNonQuery(query, parameters) > 0)
-            {
-                MessageBox.Show("Luu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadMatHang();
+                foreach (DataGridViewRow row in dgvChiTiet.SelectedRows)
+                {
+                    dgvChiTiet.Rows.Remove(row);
+                }
             }
             else
             {
-                MessageBox.Show("Thêm  thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Vui lòng chọn một mặt hàng để xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void cboPhong_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboPhong.SelectedItem is DataRowView drv)
+            {
+                int maDatPhong = Convert.ToInt32(drv["MaDatPhong"]);
+                DataTable dt = db.ExecuteQuery($"SELECT TongTien FROM DatPhong WHERE MaDatPhong = {maDatPhong}");
+
+                txtTienPhong.Text = dt.Rows.Count > 0 ? dt.Rows[0]["TongTien"].ToString() : "0";
+            }
+        }
+
+
+
+        private void cboMatHang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboMatHang.SelectedItem is DataRowView drv)
+            {
+                int maMatHang = Convert.ToInt32(drv["MaMatHang"]);
+                DataTable dt = db.ExecuteQuery($"SELECT DonGia FROM MatHang WHERE MaMatHang = {maMatHang}");
+
+                if (dt.Rows.Count > 0)
+                {
+                    txtDonGia.Text = dt.Rows[0]["DonGia"].ToString();
+                }
+                else
+                {
+                    txtDonGia.Text = "0";
+                }
+            }
+        }
+
+
+
     }
 }
+

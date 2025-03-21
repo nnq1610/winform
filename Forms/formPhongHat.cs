@@ -173,5 +173,18 @@ namespace Karaokelamlai.Forms
                 cboLoaiPhong.SelectedItem = row.Cells["TrangThai"].Value.ToString();
             }
         }
+
+        private void dgv_Cell_Click(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex > 0)
+            {
+                DataGridViewRow row = dgvPhongHat.Rows[e.RowIndex];
+                txtTenPhong.Text = row.Cells["TenPhong"].Value.ToString();
+                txtGiaPhong.Text = row.Cells["GiaGio"].Value.ToString();
+                cboLoaiPhong.SelectedItem = row.Cells["TrangThai"].Value.ToString();
+
+                
+            }
+        }
     }
 }

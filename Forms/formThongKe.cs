@@ -23,32 +23,79 @@ namespace Karaokelamlai.Forms
             LoadTheme();
 
         }
-        private void LoadBestSeller()
-        {
-            string query = "S";
-        }
         private void LoadDoanhThu()
         {
-            string query = "SELECT NgayLap, SUM(TongTien) AS DoanhThu FROM HoaDon WHERE NgayLap BETWEEN @From AND @To GROUP BY NgayLap";
+            string queryDoanhThu = @"
+        SELECT NgayLap, SUM(TongTien) AS DoanhThu
+        FROM HoaDon
+        WHERE NgayLap BETWEEN @From AND @To
+        GROUP BY NgayLap
+        ORDER BY NgayLap";
+
+            string queryBanNhieuNhat = @"
+        SELECT TOP 1 cthd.MaMatHang, mh.TenMatHang, SUM(cthd.SoLuong) AS SoLuongBan
+        FROM ChiTietHoaDon cthd
+        JOIN MatHang mh ON cthd.MaMatHang = mh.MaMatHang
+        GROUP BY cthd.MaMatHang, mh.TenMatHang
+        ORDER BY SUM(cthd.SoLuong) DESC";
+
+            string queryBanItNhat = @"
+        SELECT TOP 1 cthd.MaMatHang, mh.TenMatHang, SUM(cthd.SoLuong) AS SoLuongBan
+        FROM ChiTietHoaDon cthd
+        JOIN MatHang mh ON cthd.MaMatHang = mh.MaMatHang
+        GROUP BY cthd.MaMatHang, mh.TenMatHang
+        ORDER BY SUM(cthd.SoLuong) ASC";
+
             Dictionary<string, object> parameters = new Dictionary<string, object>
     {
         { "@From", dtpFrom.Value.Date },
         { "@To", dtpTo.Value.Date }
     };
-            DataTable dt = db.ExecuteQuery(query, parameters);
-            dgvDoanhThu.DataSource = dt;
-            MessageBox.Show(query);
 
-            double totalRevenue = (double)dt.AsEnumerable().Sum(row => row.Field<decimal>("DoanhThu"));
+            DataTable dtDoanhThu = db.ExecuteQuery(queryDoanhThu, parameters);
+            dgvDoanhThu.DataSource = dtDoanhThu;
+
+            decimal totalRevenue = dtDoanhThu.AsEnumerable().Sum(row => row.Field<decimal>("DoanhThu"));
             txtDoanhThu.Text = $"Tổng Doanh Thu: {totalRevenue:N0} VNĐ";
 
             chartDoanhThu.Series[0].Points.Clear();
-            foreach (DataRow row in dt.Rows)
+            foreach (DataRow row in dtDoanhThu.Rows)
             {
-                chartDoanhThu.Series[0].Points.AddXY(row["NgayLap"].ToString(), Convert.ToDouble(row["DoanhThu"]));
+                DateTime ngayLap = Convert.ToDateTime(row["NgayLap"]);
+                double doanhThu = Convert.ToDouble(row["DoanhThu"]);
+
+                chartDoanhThu.Series[0].Points.AddXY(ngayLap.ToString("dd/MM"), doanhThu);
+            }
+            chartDoanhThu.ChartAreas[0].AxisX.Interval = 1;
+
+            DataTable dtBanNhieuNhat = db.ExecuteQuery(queryBanNhieuNhat);
+            if (dtBanNhieuNhat.Rows.Count > 0)
+            {
+                string tenMatHang = dtBanNhieuNhat.Rows[0]["TenMatHang"].ToString();
+                int soLuongBan = Convert.ToInt32(dtBanNhieuNhat.Rows[0]["SoLuongBan"]);
+                txtBanChayNhat.Text = $"{tenMatHang} ({soLuongBan} sản phẩm)";
+            }
+            else
+            {
+                txtBanChayNhat.Text = "Không có dữ liệu";
+            }
+
+            DataTable dtBanItNhat = db.ExecuteQuery(queryBanItNhat);
+            if (dtBanItNhat.Rows.Count > 0)
+            {
+                string tenMatHang = dtBanItNhat.Rows[0]["TenMatHang"].ToString();
+                int soLuongBan = Convert.ToInt32(dtBanItNhat.Rows[0]["SoLuongBan"]);
+                txtBanItNhat.Text = $"{tenMatHang} ({soLuongBan} sản phẩm)";
+            }
+            else
+            {
+                txtBanItNhat.Text = "Không có dữ liệu";
             }
         }
-       
+
+
+
+
         private void ApplyTheme(Control parent)
         {
             foreach (Control ctrl in parent.Controls)
@@ -68,7 +115,6 @@ namespace Karaokelamlai.Forms
                     ctrl.BackColor = Themecolor.PrimaryColor;
                 }
 
-                // Đệ quy áp dụng theme cho control con bên trong
                 if (ctrl.HasChildren)
                 {
                     ApplyTheme(ctrl);
@@ -85,9 +131,12 @@ namespace Karaokelamlai.Forms
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-
+            LoadDoanhThu();
         }
 
-       
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

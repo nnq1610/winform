@@ -30,19 +30,19 @@
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnTimKiiem = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.cboGioiTinh = new System.Windows.Forms.ComboBox();
             this.txtSoDienThoai = new System.Windows.Forms.TextBox();
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvKhachHang = new System.Windows.Forms.DataGridView();
-            this.btnTimKiiem = new System.Windows.Forms.Button();
-            this.cboGioiTinh = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -70,7 +70,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dgvKhachHang);
             this.splitContainer1.Size = new System.Drawing.Size(800, 450);
-            this.splitContainer1.SplitterDistance = 240;
+            this.splitContainer1.SplitterDistance = 263;
             this.splitContainer1.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -78,19 +78,33 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.76923F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.23077F));
-            this.tableLayoutPanel2.Controls.Add(this.btnTimKiiem, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.textBox1, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnTimKiiem, 0, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 248);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(237, 27);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(237, 50);
             this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // btnTimKiiem
+            // 
+            this.btnTimKiiem.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnTimKiiem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnTimKiiem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnTimKiiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiiem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnTimKiiem.Location = new System.Drawing.Point(3, 13);
+            this.btnTimKiiem.Name = "btnTimKiiem";
+            this.btnTimKiiem.Size = new System.Drawing.Size(66, 24);
+            this.btnTimKiiem.TabIndex = 6;
+            this.btnTimKiiem.Text = "Tìm Kiếm";
+            this.btnTimKiiem.UseVisualStyleBackColor = true;
+            this.btnTimKiiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox1.Location = new System.Drawing.Point(75, 3);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(159, 20);
@@ -102,7 +116,8 @@
             this.btnSua.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnSua.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSua.Location = new System.Drawing.Point(162, 347);
+            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnSua.Location = new System.Drawing.Point(185, 347);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 36);
             this.btnSua.TabIndex = 5;
@@ -116,7 +131,8 @@
             this.btnXoa.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnXoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Location = new System.Drawing.Point(162, 389);
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnXoa.Location = new System.Drawing.Point(185, 389);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 35);
             this.btnXoa.TabIndex = 4;
@@ -130,7 +146,8 @@
             this.btnThem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnThem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem.Location = new System.Drawing.Point(162, 304);
+            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnThem.Location = new System.Drawing.Point(185, 304);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 37);
             this.btnThem.TabIndex = 3;
@@ -158,15 +175,24 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(240, 242);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(263, 242);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // cboGioiTinh
+            // 
+            this.cboGioiTinh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cboGioiTinh.FormattingEnabled = true;
+            this.cboGioiTinh.Location = new System.Drawing.Point(3, 203);
+            this.cboGioiTinh.Name = "cboGioiTinh";
+            this.cboGioiTinh.Size = new System.Drawing.Size(257, 21);
+            this.cboGioiTinh.TabIndex = 1;
             // 
             // txtSoDienThoai
             // 
             this.txtSoDienThoai.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtSoDienThoai.Location = new System.Drawing.Point(3, 123);
             this.txtSoDienThoai.Name = "txtSoDienThoai";
-            this.txtSoDienThoai.Size = new System.Drawing.Size(234, 20);
+            this.txtSoDienThoai.Size = new System.Drawing.Size(257, 20);
             this.txtSoDienThoai.TabIndex = 6;
             // 
             // txtHoTen
@@ -174,7 +200,7 @@
             this.txtHoTen.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtHoTen.Location = new System.Drawing.Point(3, 43);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(234, 20);
+            this.txtHoTen.Size = new System.Drawing.Size(257, 20);
             this.txtHoTen.TabIndex = 5;
             // 
             // label1
@@ -214,32 +240,9 @@
             this.dgvKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvKhachHang.Location = new System.Drawing.Point(0, 0);
             this.dgvKhachHang.Name = "dgvKhachHang";
-            this.dgvKhachHang.Size = new System.Drawing.Size(556, 450);
+            this.dgvKhachHang.Size = new System.Drawing.Size(533, 450);
             this.dgvKhachHang.TabIndex = 0;
             this.dgvKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachHang_CellClick);
-            // 
-            // btnTimKiiem
-            // 
-            this.btnTimKiiem.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnTimKiiem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnTimKiiem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnTimKiiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimKiiem.Location = new System.Drawing.Point(3, 3);
-            this.btnTimKiiem.Name = "btnTimKiiem";
-            this.btnTimKiiem.Size = new System.Drawing.Size(66, 21);
-            this.btnTimKiiem.TabIndex = 6;
-            this.btnTimKiiem.Text = "Tìm Kiếm";
-            this.btnTimKiiem.UseVisualStyleBackColor = true;
-            this.btnTimKiiem.Click += new System.EventHandler(this.btnTimKiem_Click);
-            // 
-            // cboGioiTinh
-            // 
-            this.cboGioiTinh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cboGioiTinh.FormattingEnabled = true;
-            this.cboGioiTinh.Location = new System.Drawing.Point(3, 203);
-            this.cboGioiTinh.Name = "cboGioiTinh";
-            this.cboGioiTinh.Size = new System.Drawing.Size(234, 21);
-            this.cboGioiTinh.TabIndex = 1;
             // 
             // formKhachHang
             // 

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
@@ -56,6 +57,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Controls.Add(this.btnSua);
             this.splitContainer1.Panel1.Controls.Add(this.btnXoa);
             this.splitContainer1.Panel1.Controls.Add(this.btnThem);
@@ -64,9 +66,24 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dgvMatHang);
-            this.splitContainer1.Size = new System.Drawing.Size(800, 450);
-            this.splitContainer1.SplitterDistance = 212;
+            this.splitContainer1.Size = new System.Drawing.Size(709, 450);
+            this.splitContainer1.SplitterDistance = 187;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(6, 236);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 37);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Clear";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnSua
             // 
@@ -74,7 +91,8 @@
             this.btnSua.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnSua.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSua.Location = new System.Drawing.Point(128, 279);
+            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnSua.Location = new System.Drawing.Point(103, 279);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 36);
             this.btnSua.TabIndex = 2;
@@ -88,7 +106,8 @@
             this.btnXoa.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnXoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Location = new System.Drawing.Point(128, 321);
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnXoa.Location = new System.Drawing.Point(103, 321);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 35);
             this.btnXoa.TabIndex = 1;
@@ -102,7 +121,8 @@
             this.btnThem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnThem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem.Location = new System.Drawing.Point(128, 236);
+            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnThem.Location = new System.Drawing.Point(103, 236);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 37);
             this.btnThem.TabIndex = 0;
@@ -130,7 +150,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(212, 230);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(187, 230);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // txtSoLuongTon
@@ -138,7 +158,7 @@
             this.txtSoLuongTon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtSoLuongTon.Location = new System.Drawing.Point(3, 193);
             this.txtSoLuongTon.Name = "txtSoLuongTon";
-            this.txtSoLuongTon.Size = new System.Drawing.Size(206, 20);
+            this.txtSoLuongTon.Size = new System.Drawing.Size(181, 20);
             this.txtSoLuongTon.TabIndex = 4;
             // 
             // txtDonGia
@@ -146,7 +166,7 @@
             this.txtDonGia.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtDonGia.Location = new System.Drawing.Point(3, 117);
             this.txtDonGia.Name = "txtDonGia";
-            this.txtDonGia.Size = new System.Drawing.Size(206, 20);
+            this.txtDonGia.Size = new System.Drawing.Size(181, 20);
             this.txtDonGia.TabIndex = 3;
             // 
             // txtTenMatHang
@@ -154,7 +174,7 @@
             this.txtTenMatHang.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtTenMatHang.Location = new System.Drawing.Point(3, 41);
             this.txtTenMatHang.Name = "txtTenMatHang";
-            this.txtTenMatHang.Size = new System.Drawing.Size(206, 20);
+            this.txtTenMatHang.Size = new System.Drawing.Size(181, 20);
             this.txtTenMatHang.TabIndex = 0;
             // 
             // label1
@@ -193,7 +213,7 @@
             this.dgvMatHang.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvMatHang.Location = new System.Drawing.Point(0, 0);
             this.dgvMatHang.Name = "dgvMatHang";
-            this.dgvMatHang.Size = new System.Drawing.Size(584, 450);
+            this.dgvMatHang.Size = new System.Drawing.Size(518, 450);
             this.dgvMatHang.TabIndex = 0;
             // 
             // formMatHang
@@ -201,7 +221,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(709, 450);
             this.Controls.Add(this.splitContainer1);
             this.Name = "formMatHang";
             this.Text = "formMatHang";
@@ -231,5 +251,6 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.DataGridView dgvMatHang;
+        private System.Windows.Forms.Button button1;
     }
 }
